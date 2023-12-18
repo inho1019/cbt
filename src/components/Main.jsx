@@ -52,7 +52,7 @@ const Main = () => {
     }
     return (
         <div className={styles.box}>
-            <h1>네이버클라우드플랫폼 CBT</h1>
+            <h1>{page >= 0 && '네이버클라우드플랫폼 CBT'}</h1>
             <h1>{sel === '0' && 'NCA'}</h1>
             {
                 page === -1 && <div>
