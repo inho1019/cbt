@@ -1,0 +1,40 @@
+import React, { useState } from 'react';
+
+const Start = (props) => {
+    const {onQuestion,onPage,onSel,styles,sel} = props
+
+    const [num,setNum] = useState(1)
+    const [error,setError] = useState('')
+    
+    const onNum = (e) => {
+        if(e.target.value > 0 && e.target.value <= 60) setNum(e.target.value)
+        else if(e.target.value < 1) setNum(1)
+        else if(e.target.value > 60) setNum(60)
+    }
+
+    const onStart = () => {
+        if(sel === '-1') {
+            setError('선택해주세요')
+        } else {
+            onQuestion(num)
+            onPage(1)
+        }
+    }
+
+    return (
+        <div className={styles.box}>
+            <h2>시험 유형을 선택하세요</h2>
+            <select onChange={(e) => onSel(e.target.value)} className={styles.sel}>
+                <option value='-1'>선택</option>
+                <option value='0'>NCA</option>
+            </select>
+            {sel === '-1' && <h3 style={{color:'red'}}>{error}</h3>}
+            <h2>문제수를 선택해주세요 (1~60)</h2>
+            <input type='number' value={num} onChange={(e) => onNum(e)}/>
+            <br/>
+            <button onClick={() => onStart()} className={styles.allBut}>시작</button>
+        </div>
+    );
+};
+
+export default Start;
