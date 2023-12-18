@@ -30,7 +30,8 @@ const Start = (props) => {
             </select>
             {sel === '-1' && <h3 style={{color:'red'}}>{error}</h3>}
             <h2>문제수를 선택해주세요 (1~60)</h2>
-            <input type='number' value={num} onChange={(e) => onNum(e)}/>
+                <h2>{num}</h2>
+                <input type='range' min={1} max={60}  value={num} onChange={(e) => onNum(e)}/>
             <br/>
             <button onClick={() => onStart()} className={styles.allBut}>시작</button>
         </div>

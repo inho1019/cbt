@@ -48,7 +48,7 @@ const Main = () => {
     const onReset = () => {
         setPage(0)
         setResult(0)
-        setSel(-1)
+        setSel('-1')
     }
     return (
         <div className={styles.box}>
