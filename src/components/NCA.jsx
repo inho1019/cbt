@@ -1,4 +1,4 @@
-export default [
+const nca = [
     {
         question: 'CDN+ 설정시 설정항목에 대한 설명중 올바르지 않은 것은 무엇인가요?',
         answer: [
@@ -1602,3 +1602,4 @@ export default [
         ],
       },
 ]
+export default nca;

@@ -9,7 +9,7 @@ const Result = (props) => {
         <div>
             <h2 style={{color: result/(question+1) * 100 >= 60 ? 'yellowgreen' : 'tomato'}}>
                 {parseInt(result/(question+1) * 100)}점으로 {result/(question+1) * 100 >= 60 ? '합격!!!' : '불합격ㅋㅋ'}</h2>
-            <img src={result/(question+1) * 100 >= 60 ? success : fail} width={300}/>
+            <img src={result/(question+1) * 100 >= 60 ? success : fail} width={300} alt="result image"/>
             <br/>
             <button onClick={() => onReset()} className={styles.allBut}>다시하기</button>
         </div>
