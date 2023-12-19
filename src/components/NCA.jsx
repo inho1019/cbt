@@ -837,7 +837,7 @@ const nca = [
         ],
       },
       {
-        question: 'CentOS를 사용중인 VM에서 파일시스템 증설 관련 내용 중 틀린 것은? (복수정답)',
+        question: 'CentOS를 사용중인 VM에서 파일시스템 증설 관련 내용 중 틀린 것은?',
         answer: [
           { text: 'NCP 콘솔에서 Block Storage 크기 변경 액션을 수행하면 사전 설치된 Agent가 자동으로 파일시스템을 확장한다.', type: false },
           { text: '최초 구축 시 Block Storage로 할당하는 부분은 LVM으로 구성하여 파일시스템 확장 필요시 PV, LV를 추가한다.', type: false },
