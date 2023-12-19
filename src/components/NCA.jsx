@@ -387,7 +387,7 @@ const nca = [
         ],
       },
       {
-        question: '다음이 설명하는 내용은 Auto Scaling의 어떤 항목인가? "새로운 서버가 생성되었다고 해도 Init-Script 실행이나 업데이트 설치 등의 이유로 실제 서비스를 수행할 수 있을 정도로 준비되기까지는 시간이 소요될 수 있습니다. 이것은 실제 SCaling이 수행중이거나 수행 완료된 이후에 모니터링 이벤트 알람이 발생하더라도 무시하도록 설정란 기간입니다.',
+        question: '다음이 설명하는 내용은 Auto Scaling의 어떤 항목인가 - 새로운 서버가 생성되었다고 해도 Init-Script 실행이나 업데이트 설치 등의 이유로 실제 서비스를 수행할 수 있을 정도로 준비되기까지는 시간이 소요될 수 있습니다. 이것은 실제 SCaling이 수행중이거나 수행 완료된 이후에 모니터링 이벤트 알람이 발생하더라도 무시하도록 설정란 기간입니다.',
         answer: [
           { text: '쿨다운', type: true },
           { text: '헬스체크', type: false },
@@ -609,15 +609,6 @@ const nca = [
           { text: '오토스케일링에서 사용할 Launch Configuration', type: false },
           { text: '서버 증가, 감소 정책', type: false },
           { text: '일정 설정', type: false },
-        ],
-      },
-      {
-        question: '다음이 설명하는 내용은 Auto Scaling의 어떤 항목인가?',
-        answer: [
-          { text: '쿨다운', type: true },
-          { text: '헬스체크', type: false },
-          { text: '기대용량', type: false },
-          { text: 'Policy', type: false },
         ],
       },
       {
