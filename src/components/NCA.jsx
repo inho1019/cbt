@@ -342,15 +342,6 @@ const nca = [
         ],
       },
       {
-        question: '서버 생성시 Init script를 통해 서버를 구성할 수 있습니다. CentOS 7.x 버전의 서버를 생성하면 HTTPD를 설치한 후 HTTPD가 자동으로 기동되도록 init script에 명령어를 입력하고자 하는 경우 올바른 명령어는 무엇인가요?',
-        answer: [
-          { text: 'systemctl start httpd', type: false },
-          { text: 'chconfig start httpd', type: false },
-          { text: 'systemctl enable httpd', type: false },
-          { text: 'chconfig on httpd', type: true },
-        ],
-      },
-      {
         question: '서버 생성시 init script를 통해 서버를 구성할 수 있습니다. CentOS 7.x 버전의 서버를 생성하면서 HTTPD를 설치하도록 init script에 명령어를 입력하고자 하는 경우 올바른 명령어는 무엇인가요?',
         answer: [
           { text: 'install httpd', type: false },
