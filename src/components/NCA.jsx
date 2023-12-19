@@ -560,9 +560,9 @@ const nca = [
       {
         question: '다음 중, 사용자가 Agent를 설치해야만 사용할 수 있는 서비스가 아닌 것은?',
         answer: [
-          { text: 'Cloud Insight', type: false },
+          { text: 'Cloud Insight', type: true },
           { text: 'System Security Checker', type: false },
-          { text: 'CLA', type: true },
+          { text: 'CLA', type: false },
           { text: '백업 서비스', type: false },
         ],
       },
@@ -587,19 +587,19 @@ const nca = [
       {
         question: '다음 중 콘솔에서 서비스를 신청할 수 없는 서비스는?',
         answer: [
-          { text: '백업 서비스', type: false },
+          { text: '백업 서비스', type: true },
           { text: '서버 이미지 생성', type: false },
           { text: '스냅샷 기능', type: false },
-          { text: '모니터링 서비스', type: true },
+          { text: '모니터링 서비스', type: false },
         ],
       },
       {
         question: '서버 정지가 필요한 경우가 아닌 것은? (복수정답)',
         answer: [
-          { text: '서버 이미지 생성', type: false },
+          { text: '서버 이미지 생성', type: true },
           { text: '서버 스펙 변경', type: false },
-          { text: '서버 반납', type: true },
-          { text: '공인 IP 부여', type: false },
+          { text: '서버 반납', type: false },
+          { text: '공인 IP 부여', type: true },
         ],
       },
       {
@@ -624,9 +624,9 @@ const nca = [
         question: 'Data Teleporter에 대한 설명으로 잘못된 것은?',
         answer: [
           { text: 'Data Teleporter 한 대당 100TB의 저장용량을 가지며, 내부적으로 디스크 문제가 최소화될 수 있도록 설계되었습니다.', type: false },
-          { text: '별도의 요청이 없다면 Data Teleporter는 최초 대여 후 60일 이내에 네이버 클라우드 플랫폼으로 반환되어야 합니다.', type: false },
+          { text: '별도의 요청이 없다면 Data Teleporter는 최초 대여 후 60일 이내에 네이버 클라우드 플랫폼으로 반환되어야 합니다.', type: true },
           { text: 'Data Teleporter는 고객이 신청한 암호화 키로 256비트 암호화되며, 암호화 키는 장치내 그 어디에도 저장되지 않습니다.', type: false },
-          { text: 'Linux Server와 Windows Server는 모두 NFS 또는 CIFS 공유 파일시스템으로 연결(mount) 할 수 있습니다.', type: true },
+          { text: 'Linux Server와 Windows Server는 모두 NFS 또는 CIFS 공유 파일시스템으로 연결(mount) 할 수 있습니다.', type: false },
         ],
       },
       {
@@ -641,10 +641,10 @@ const nca = [
       {
         question: '베어메탈에 대한 설명 중 틀린 것은?',
         answer: [
-          { text: '3가지 스펙을 제공하고 있다.', type: false },
+          { text: '3가지 스펙을 제공하고 있다.', type: true },
           { text: 'OS로 Oracle Linux도 제공한다.', type: false },
           { text: '디스크 구성시 RAID 방식을 선택할 수 있다.', type: false },
-          { text: '내 서버 이미지, 스냅샷, 추가 스토리지 기능은 제공하지 않는다.', type: true },
+          { text: '내 서버 이미지, 스냅샷, 추가 스토리지 기능은 제공하지 않는다.', type: false },
         ],
       },
       {
@@ -849,8 +849,8 @@ const nca = [
         question: 'CentOS를 사용중인 VM에서 파일시스템 증설 관련 내용 중 틀린 것은? (복수정답)',
         answer: [
           { text: 'NCP 콘솔에서 Block Storage 크기 변경 액션을 수행하면 사전 설치된 Agent가 자동으로 파일시스템을 확장한다.', type: false },
-          { text: '최초 구축 시 Block Storage로 할당하는 부분은 LVM으로 구성하여 파일시스템 확장 필요시 PV, LV를 추가한다.', type: true },
-          { text: 'Block Storage 크기 변경 액션을 통해 자유롭게 할당 용량을 증설/감설 할 수 있다.', type: false },
+          { text: '최초 구축 시 Block Storage로 할당하는 부분은 LVM으로 구성하여 파일시스템 확장 필요시 PV, LV를 추가한다.', type: false },
+          { text: 'Block Storage 크기 변경 액션을 통해 자유롭게 할당 용량을 증설/감설 할 수 있다.', type: true },
           { text: 'Block Storage 크기 변경 액션을 수행하려면, 대상 블록 스토리지가 사용중일 경우 파일시스템을 연결 해제해야 한다.', type: false },
         ],
       },
@@ -875,9 +875,9 @@ const nca = [
       {
         question: '네이버 클라우드 플랫폼에서 제공하는 GPU 카드는?',
         answer: [
-          { text: 'P40', type: true },
-          { text: 'T4', type: true },
-          { text: 'V100', type: true },
+          { text: 'P40', type: false },
+          { text: 'T4', type: false },
+          { text: 'V100', type: false },
           { text: 'P40, T4, V100 모두 제공', type: true },
         ],
       },
@@ -885,9 +885,9 @@ const nca = [
         question: '네이버 클라우드 플랫폼 서버에 스토리지 추가를 할 경우 단일 추가 스토리지당 최대 용량은 얼마인가요?',
         answer: [
           { text: '1TB', type: false },
-          { text: '2TB', type: false },
+          { text: '2TB', type: true },
           { text: '3TB', type: false },
-          { text: '4TB', type: true },
+          { text: '4TB', type: false },
         ],
       },
       {
@@ -930,9 +930,9 @@ const nca = [
         question: 'Load Balancer로 연결 가능한 프로토콜이 아닌 것은 무엇인가요?',
         answer: [
           { text: 'TCP', type: false },
-          { text: 'UDP', type: false },
+          { text: 'UDP', type: true },
           { text: 'HTTPS', type: false },
-          { text: 'SSL', type: true },
+          { text: 'SSL', type: false },
         ],
       },
       {
@@ -948,7 +948,7 @@ const nca = [
         question: '네이버 클라우드 플랫폼의 VPC 환경에서 서버 NIC 하나에 적용할 수 있는 ACG의 개수는?',
         answer: [
           { text: '2개', type: false },
-          { text: '3개', type: false },
+          { text: '3개', type: true },
           { text: '4개', type: false },
           { text: '5개', type: false },
         ],
@@ -1038,18 +1038,18 @@ const nca = [
         question: '네이버 클라우드 플랫폼 CLI를 이용하고자 할 때 사용하는 명령어는 무엇인가요?',
         answer: [
           { text: 'Ncpcli', type: false },
-          { text: 'Ncloud', type: false },
+          { text: 'Ncloud', type: true },
           { text: 'Ncloudcli', type: false },
-          { text: 'Ncli', type: true },
+          { text: 'Ncli', type: false },
         ],
       },
       {
         question: '다음 중 클라우드의 특징에 대해 잘못 설명한 것은 무엇인가요?',
         answer: [
-          { text: '동일한 네트웍 사용량을 기준으로 보면 Legacy 인프라보다 클라우드가 저렴하다.', type: false },
+          { text: '동일한 네트웍 사용량을 기준으로 보면 Legacy 인프라보다 클라우드가 저렴하다.', type: true },
           { text: 'Scale-In/Out이 Legacy 인프라보다 자유롭다.', type: false },
           { text: '요금은 사용량에 따른 종량제를 기본으로 하지만 상품에 따라 정액제 요금도 존재한다.', type: false },
-          { text: '사용할 수 있는 서버 OS가 제한한다.', type: true },
+          { text: '사용할 수 있는 서버 OS가 제한한다.', type: false },
         ],
       },
       {
@@ -1118,10 +1118,10 @@ const nca = [
       {
         question: 'Cloud Log Analytics에 저장할 수 있는 최대 로그 용량은?',
         answer: [
-          { text: '100GB', type: false },
+          { text: '100GB', type: true },
           { text: '200GB', type: false },
           { text: '300GB', type: false },
-          { text: '사용자가 설정할 수 있다.', type: true },
+          { text: '사용자가 설정할 수 있다.', type: false },
         ],
       },
       {
@@ -1136,10 +1136,10 @@ const nca = [
       {
         question: 'Cloud Log Analytics의 최대 저장 기간은?',
         answer: [
-          { text: '30일', type: false },
+          { text: '30일', type: true },
           { text: '120일', type: false },
           { text: '180일', type: false },
-          { text: '사용자가 설정할 수 있다.', type: true },
+          { text: '사용자가 설정할 수 있다.', type: false },
         ],
       },
       {
@@ -1155,17 +1155,17 @@ const nca = [
         question: '네이버 클라우드 플랫폼 AI 서비스에서 제공하지 않는 상품은?',
         answer: [
           { text: 'Clova OCR', type: false },
-          { text: 'Clova Image Recognition', type: false },
+          { text: 'Clova Image Recognition', type: true },
           { text: 'Clova Voice', type: false },
-          { text: 'Clova Face Recognition', type: true },
+          { text: 'Clova Face Recognition', type: false },
         ],
       },
       {
         question: '클라우드는 기존 Legacy와 비교하여 다양한 장점이 있습니다. 아래 보기 중 클라우드 장점이 아닌 것은?',
         answer: [
-          { text: '동일한 성능의 서버를 비교하였을 때 Legacy보다 클라우드가 비용 경쟁력이 높다.', type: false },
+          { text: '동일한 성능의 서버를 비교하였을 때 Legacy보다 클라우드가 비용 경쟁력이 높다.', type: true },
           { text: '서버 구성 시 짧은 시간 내에 구성이 가능하다.', type: false },
-          { text: '기본적인 보안 장비 및 네트웍이 구성되어 있다.', type: true },
+          { text: '기본적인 보안 장비 및 네트웍이 구성되어 있다.', type: false },
           { text: '오토스케일링 플랫폼과 같이 비용 효율적인 상품들이 준비되어 있다.', type: false },
         ],
       },
@@ -1244,10 +1244,10 @@ const nca = [
       {
         question: 'VPC 환경 / Classic 2세대 서버의 Standard 서버 스펙 중 생성 가능한 서버 스펙은 무엇인가요?',
         answer: [
-          { text: 'vCPU 2개, RAM 8GB', type: false },
+          { text: 'vCPU 2개, RAM 8GB', type: true },
           { text: 'vCPU 2개, RAM 4GB', type: false },
           { text: 'vCPU 2개, RAM 16GB', type: false },
-          { text: 'vCPU 4개, RAM 4GB', type: true },
+          { text: 'vCPU 4개, RAM 4GB', type: false },
         ],
       },
       {
@@ -1433,9 +1433,9 @@ const nca = [
       {
         question: 'VPC 환경에서 서버를 한 대 생성하였다. 서버 Network Interface에 대한 설명 중 맞는 것은?',
         answer: [
-          { text: '서버 Network Interface는 최대 3개까지 만들 수 있다.', type: false },
+          { text: '서버 Network Interface는 최대 3개까지 만들 수 있다.', type: true },
           { text: 'Network Interface 하나에 여러 개의 IP를 부여할 수 있다.', type: false },
-          { text: 'NIC에는 해당 서버를 처음 생성할 때 선택한 Subnet 범위의 IP만 할당할 수 있다.', type: true },
+          { text: 'NIC에는 해당 서버를 처음 생성할 때 선택한 Subnet 범위의 IP만 할당할 수 있다.', type: false },
           { text: '원하는 사설IP 설정은 불가능하며, DHCP로 자동 할당만 가능하다.', type: false },
         ],
       },
@@ -1550,7 +1550,7 @@ const nca = [
       {
         question: '네이버 클라우드 플랫폼의 GPU 상품에 대한 설명 중 틀린 것은?',
         answer: [
-          { text: '최대 12개의 GPU를 하나의 VM에 할당할 수 있다.', type: false },
+          { text: '최대 12개의 GPU를 하나의 VM에 할당할 수 있다.', type: true },
           { text: '서버를 정지시켜도 요금이 발생한다.', type: false },
           { text: 'Linux OS를 지원한다.', type: false },
           { text: 'T4, V100 등의 GPU 카드가 제공된다.', type: false },
