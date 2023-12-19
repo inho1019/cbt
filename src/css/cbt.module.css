@@ -30,11 +30,11 @@
 }
 @media (max-width: 800px) {
     .ansBut {
-        left: 5%;
-        max-width: 90%;
+        left: 7.5%;
+        max-width: 85%;
     }
     .questioin {
-        left: 2.5%;
-        max-width: 95%;
+        left: 5%;
+        max-width: 90%;
     }
 }
