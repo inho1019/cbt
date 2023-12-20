@@ -605,10 +605,10 @@ const nca2 = [
     {
         question: '네이버 클라우드 Classic 환경에서 AutoScaling 적용이 가능한 서버타입으로 올바르게 묶인것은?',
         answer: [
-          { text: 'High-CPU - Standard', type: false },
-          { text: 'Compact - Standard', type: true },
-          { text: 'High-CPU - Standard', type: false },, 
-          { text: 'High-CPU - High-Memory', type: false },
+          { text: 'High-CPU, Standard', type: false },
+          { text: 'Compact, Standard', type: true },
+          { text: 'High-CPU, Standard', type: false },
+          { text: 'High-CPU, High-Memory', type: false },
         ],
     },
     {
