@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import bono from '../image/bono.png'
+import bono from '../image/bono.jpg'
 
 const Start = (props) => {
     const {onQuestion,onPage,onSel,styles,sel,nca,nca2} = props
@@ -38,7 +38,8 @@ const Start = (props) => {
             <br/>
             <button onClick={() => onStart()} className={styles.allBut}>시작</button>
             <br/>
-            <img src={bono} width={400} alt='bono'/>
+            <br/>
+            <img src={bono} width={450} alt='bono'/>
         </div>
     );
 };
