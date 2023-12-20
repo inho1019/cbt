@@ -62,7 +62,8 @@ const Main = () => {
                 </div>
             }
             {
-                page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel}/>
+                page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel} 
+                            nca={nca.length} nca2={nca2.length}/>
             }
             {
                 page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles}/>
