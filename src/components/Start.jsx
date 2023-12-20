@@ -37,6 +37,7 @@ const Start = (props) => {
                 <input type='range' min={1} max={60}  value={num} onChange={(e) => onNum(e)}/>
             <br/>
             <button onClick={() => onStart()} className={styles.allBut}>시작</button>
+            <br/>
             <img src={bono} width={400} alt='bono'/>
         </div>
     );
