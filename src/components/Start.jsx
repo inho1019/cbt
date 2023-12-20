@@ -26,7 +26,8 @@ const Start = (props) => {
             <h2>시험 유형을 선택하세요</h2>
             <select onChange={(e) => onSel(e.target.value)} className={styles.sel}>
                 <option value='-1'>선택</option>
-                <option value='0'>NCA</option>
+                <option value='0'>NCA 문제은행</option>
+                <option value='1'>NCA 예상기출</option>
             </select>
             {sel === '-1' && <h3 style={{color:'red'}}>{error}</h3>}
             <h2>문제수를 선택해주세요 (1~60)</h2>

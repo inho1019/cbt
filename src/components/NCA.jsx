@@ -144,15 +144,6 @@ const nca = [
         ],
       },
       {
-        question: '서버 패스워드에 대한 설명 중 틀린 것은?',
-        answer: [
-          { text: '초기 패스워드 서버 생성시 생성한 인증키를 가지고 확인할 수 있다', type: false },
-          { text: '서버에서 패스워드를 변경후 잊어버린 경우 네이버클라우드플랫폼 Console 화면에서 관리자 비밀번호 확인을 통해 확인할 수 있다.', type: false },
-          { text: '서버 생성시 생성한 인증키는 다른 인증키로 교체할 수 있다', type: true },
-          { text: '서버 초기 패스워드는 난수로 부여된다', type: false },
-        ],
-      },
-      {
         question: '오토스케일링 설정시 오토스케일링 그룹에서 설정 가능한 내용이 아닌것은 무엇인가?',
         answer: [
           { text: '오토스케일링으로 생성될 서버의 OS', type: true },
@@ -231,15 +222,6 @@ const nca = [
           { text: 'Load Balancer', type: false },
           { text: 'NAT Gateway', type: false },
           { text: 'SSL VPN', type: true },
-        ],
-      },
-      {
-        question: '서버의 하나의 NIC에 두개 이상의 IP를 부여하였을 때 발생할 수 있는 상황은?',
-        answer: [
-          { text: '기존 IP로는 통신이 되나 추가된 IP로 통신이 되지 않는다', type: false },
-          { text: '추가된 IP뿐만 아니라 기존 IP도 통신이 되지 않는다', type: false },
-          { text: '서버가 강제 정지된다', type: false },
-          { text: '기존 IP는 통신이 안되고 추가된 IP로만 통신이 된다', type: true },
         ],
       },
       {
@@ -333,15 +315,6 @@ const nca = [
         ],
       },
       {
-        question: '오토스케일링의 Launch Configuration 구성시 구성 가능한 항목이 아닌것은?',
-        answer: [
-          { text: '생성될 서버의 OS', type: true },
-          { text: '사전에 만들어논 내 서버 이미지', type: false },
-          { text: 'Int Script', type: false },
-          { text: '로드밸런서', type: false },
-        ],
-      },
-      {
         question: '서버 생성시 init script를 통해 서버를 구성할 수 있습니다. CentOS 7.x 버전의 서버를 생성하면서 HTTPD를 설치하도록 init script에 명령어를 입력하고자 하는 경우 올바른 명령어는 무엇인가요?',
         answer: [
           { text: 'install httpd', type: false },
@@ -393,15 +366,6 @@ const nca = [
           { text: '오토스케일링으로 생성되는 서버가 속할 ACG', type: false },
           { text: '오토스케일링으로 생성되는 서버가 속할 NAT Gateway', type: false },
           { text: '오토스케일링이 동작할 시간 및 주기', type: true },
-        ],
-      },
-      {
-        question: '다음중 네이버클라우드플랫폼의 Live Station의 특징이 아닌것은?',
-        answer: [
-          { text: '방송 서비스 구현에 꼭 필요한 Thumbnail image를 추출하고 직접 관리 할 수 있습니다', type: false },
-          { text: 'CDN 서비스는 Live Station의 연계가 되어 있지 않아 CDN 서비스를 별도로 신청해야됩니다', type: false },
-          { text: 'Live Station은 사용자가 라이브 방송 도중 일시정지를 하고 다시 재생이 가능하도록 타임머신(Time Shift)기능을 제공합니다', type: false },
-          { text: '라이브방송 종료 후 녹화 영상을 저장할 수 있습니다', type: true },
         ],
       },
       {
