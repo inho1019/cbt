@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import bono from '../image/bono.png'
+
 const Start = (props) => {
     const {onQuestion,onPage,onSel,styles,sel,nca,nca2} = props
 
@@ -35,6 +37,7 @@ const Start = (props) => {
                 <input type='range' min={1} max={60}  value={num} onChange={(e) => onNum(e)}/>
             <br/>
             <button onClick={() => onStart()} className={styles.allBut}>시작</button>
+            <img src={bono} width={400}/>
         </div>
     );
 };
