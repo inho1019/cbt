@@ -39,7 +39,7 @@ const Start = (props) => {
             <button onClick={() => onStart()} className={styles.allBut}>시작</button>
             <br/>
             <br/>
-            <img src={bono} width={450} alt='bono'/>
+            <img src={bono} className={styles.bono} alt='bono'/>
         </div>
     );
 };

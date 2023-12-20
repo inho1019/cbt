@@ -28,6 +28,10 @@
 .sel{
     font-size: 17px;
 }
+.bono{
+    width: 500px;
+    border-radius: 10px;
+}
 @media (max-width: 800px) {
     .ansBut {
         left: 7.5%;
@@ -36,5 +40,8 @@
     .questioin {
         left: 5%;
         max-width: 90%;
+    }
+    .bono{
+        width: 70%;
     }
 }
