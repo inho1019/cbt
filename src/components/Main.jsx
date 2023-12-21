@@ -57,7 +57,7 @@ const Main = () => {
             <h1>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}</h1>
             {
                 page === -1 && <div>
-                    <h3>패스워드 입력 : <input type='password' value={pass} onChange={(e) => setPass(e.target.value)}/></h3>
+                    <p>패스워드 입력 : <input type='password' value={pass} onChange={(e) => setPass(e.target.value)}/></p>
                     <button onClick={()=> onPass()}>확인</button>
                 </div>
             }
