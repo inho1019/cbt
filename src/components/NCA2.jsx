@@ -193,7 +193,7 @@ const nca2 = [
         answer: [
           { text: '3306', type: false },
           { text: '4479', type: false },
-          { text: '6379', type: false },
+          { text: '6379', type: true},
           { text: '8129', type: false },
         ],
     },
@@ -652,7 +652,7 @@ const nca2 = [
         answer: [
           { text: '각각 10개, 합쳐서 20개', type: false },
           { text: '각각 30개, 합쳐서 60개', type: false },
-          { text: '각각 50개, 합쳐서 100개', type: false },
+          { text: '각각 50개, 합쳐서 100개', type: true },
           { text: '각각 100개, 합쳐서 200개', type: false },
         ],
     },
@@ -1020,7 +1020,7 @@ const nca2 = [
         question: '네이버 클라우드 내 리소스에 대한 액세스를 제어할 수 있는 기한 제한이 있는 임시 Access Key를 생성해주는 서비스는?',
         answer: [
           { text: 'Private Token Service', type: false },
-          { text: 'Secure Token Service', type: false },
+          { text: 'Secure Token Service', type: true },
           { text: 'Temp Token Service', type: false },
           { text: 'Limit Token Service', type: false },
         ],
