@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'SUITE-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-family: 'EASTARJET-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
 *{
-	font-family: 'SUITE-Regular';
+	font-family: 'EASTARJET-Medium';
 }
 .box {
     margin: 30px auto;
