@@ -28,7 +28,7 @@ const Content = (props) => {
     }
     return (
         <div className={styles.box}>
-            <h2 style={{color:'yellowgreen'}}>{num+1}/{question+1}</h2>
+            <h2 style={{color:'yellowgreen'}}>{num+1} / {question+1}</h2>
             <div className={styles.questioin}>{datas[num].question}</div>
             <br/>
             {datas[num].answer.map((ans,index) => 
