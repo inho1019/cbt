@@ -13,6 +13,11 @@ const Main = () => {
     const [sel,setSel] = useState('-1')
     const [datas,setDatas] = useState([])
     const [pass,setPass] = useState()
+    const [ran,setRan] = useState(false)
+
+    const onRan = () => {
+        setRan(!ran)
+    } 
 
     const getRandomItems = (array, n) => {
         const shuffledArray = array.sort(() => 0.5 - Math.random());
@@ -50,6 +55,7 @@ const Main = () => {
         setPage(0)
         setResult(0)
         setSel('-1')
+        setRan(false)
     }
     return (
         <div className={styles.box}>
@@ -63,10 +69,10 @@ const Main = () => {
             }
             {
                 page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel} 
-                            nca={nca.length} nca2={nca2.length}/>
+                            nca={nca.length} nca2={nca2.length} ran={ran} onRan={onRan}/>
             }
             {
-                page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles}/>
+                page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran}/>
             }
             {
                 page === 2 && <Result result={result} question={question} onReset={onReset} styles={styles}/>
