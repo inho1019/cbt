@@ -639,15 +639,6 @@ const nca = [
         ],
       },
       {
-        question: 'CDN+ 설정 시 설정 항목에 대한 설명 중 올바르지 않은 것은 무엇인가요?',
-        answer: [
-          { text: 'Purge: CDN 캐시 서버에 저장되어 있는 콘텐츠를 삭제하는 기능', type: false },
-          { text: 'Secure Token: 토큰 기반의 인증으로 허용된 접근에만 콘텐츠를 전달', type: false },
-          { text: 'Ignore Query String: 콘텐츠가 지정된 도메인에만 제공되며 다른 사이트에서 참조되는 것을 방지', type: true },
-          { text: 'Access Log: CDN 사용 로그를 확인할 수 있는 기능', type: false },
-        ],
-      },
-      {
         question: '다음 상품 중 상품 생성 시 CDN을 함께 생성하는 기능이 없는 상품은 무엇인가요?',
         answer: [
           { text: 'VOD Transcoder', type: true },
