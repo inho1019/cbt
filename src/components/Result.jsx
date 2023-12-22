@@ -3,7 +3,7 @@ import fail from '../image/fail.png'
 import success from '../image/success.png'
 
 const Result = (props) => {
-    const {result,question,onReset,styles} = props
+    const {result,question,onReset,styles,wrongNum,onWrongStart} = props
 
     return (
         <div>
@@ -12,6 +12,7 @@ const Result = (props) => {
             <img style={{borderRadius:'10px'}} src={result/(question+1) * 100 >= 60 ? success : fail} width={300} alt="result"/>
             <br/>
             <button onClick={() => onReset()} className={styles.allBut}>다시하기</button>
+            {wrongNum > 0 && <span>&nbsp;&nbsp;<button onClick={() => onWrongStart()} className={styles.allBut}>오답풀기</button></span>}
         </div>
     );
 };

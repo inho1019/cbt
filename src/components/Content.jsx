@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Content = (props) => {
-    const {question,datas,onPage,onResult,styles,ran} = props
+    const {question,datas,onPage,onResult,styles,ran,onWrong} = props
     
     const [num,setNum] = useState(0)
     const [ok,setOk] = useState(false)
@@ -14,6 +14,7 @@ const Content = (props) => {
             onResult(1)
         } else {
             setDap(false)
+            onWrong(datas[num])
         }
     }
 

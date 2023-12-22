@@ -12,12 +12,17 @@ const Main = () => {
     const [page,setPage] = useState(-1)
     const [sel,setSel] = useState('-1')
     const [datas,setDatas] = useState([])
+    const [wrongData,setWrongData] = useState([])
     const [pass,setPass] = useState()
     const [ran,setRan] = useState(false)
 
     const onRan = () => {
         setRan(!ran)
     } 
+
+    const onWrong = (data) => {
+        setWrongData([...wrongData, data])
+    }
 
     const getRandomItems = (array, n) => {
         const shuffledArray = array.sort(() => 0.5 - Math.random());
@@ -55,7 +60,16 @@ const Main = () => {
         setPage(0)
         setResult(0)
         setSel('-1')
+        setWrongData([])
         setRan(false)
+    }
+
+    const onWrongStart =() => {
+        setDatas(wrongData)
+        setQuestion(wrongData.length-1)
+        setResult(0)
+        setWrongData([])
+        setPage(1)
     }
     return (
         <div className={styles.box}>
@@ -72,10 +86,10 @@ const Main = () => {
                             nca={nca.length} nca2={nca2.length} ran={ran} onRan={onRan}/>
             }
             {
-                page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran}/>
+                page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran} onWrong={onWrong}/>
             }
             {
-                page === 2 && <Result result={result} question={question} onReset={onReset} styles={styles}/>
+                page === 2 && <Result result={result} question={question} onReset={onReset} styles={styles} wrongNum={wrongData.length} onWrongStart={onWrongStart}/>
             }
         </div>
     );
