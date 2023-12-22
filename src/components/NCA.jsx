@@ -1224,15 +1224,6 @@ const nca = [
         ],
       },
       {
-        question: '서버 생성 시 선택 가능한 스토리지 종류에 대한 설명 중 틀린 것은?',
-        answer: [
-          { text: 'SSD 타입은 저장장치가 SSD인 디스크이다.', type: false },
-          { text: 'HDD 타입은 저장장치가 SATA인 디스크이다.', type: true },
-          { text: '서버 타입에 따라 NVMe 디스크를 사용할 수 있다.', type: false },
-          { text: 'SSD 타입은 MAX IOPS가 지정된다', type: false },
-        ],
-      },
-      {
         question: 'VPC 환경 / Classic 2세대 서버의 High CPU 서버 스펙 중 생성 가능한 서버 스펙은 무엇인가요?',
         answer: [
           { text: 'vCPU 4개, RAM 8GB', type: true },
