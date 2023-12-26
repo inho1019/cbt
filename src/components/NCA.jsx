@@ -288,15 +288,6 @@ const nca = [
         ],
       },
       {
-        question: 'ACG에 대한 설명중 틀린 것은?',
-        answer: [
-          { text: '아웃바인드에 대한 설정이 가능하다', type: false },
-          { text: '접근 허용에 대한 룰을 설정한다', type: false },
-          { text: 'ACG하나 당 최대 100개의 룰을 적용할 수 있다.', type: true },
-          { text: '서버는 최대 5개의 ACG를 맵핑할 수 있다', type: false },
-        ],
-      },
-      {
         question: 'Auto Scaling으로 생성 가능한 서버는 몇대인가?',
         answer: [
           { text: '10대', type: false },
