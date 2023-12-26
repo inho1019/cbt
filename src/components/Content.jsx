@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Content = (props) => {
     const {question,datas,onPage,onResult,styles,ran,onWrong} = props
