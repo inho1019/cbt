@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import bono from '../image/bono.jpg'
 
 const Start = (props) => {
-    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ran,onRan} = props
+    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ran,onRan} = props
 
     const [num,setNum] = useState(1)
    
@@ -31,6 +31,7 @@ const Start = (props) => {
                 <option value='-1'>선택</option>
                 <option value='0'>NCA 문제은행({nca})</option>
                 <option value='1'>NCA 예상기출({nca2})</option>
+                <option value='2'>NCP200 문제은행({ncp200})</option>
             </select>
             {sel === '-1' && <h3 style={{color:'red'}}>{error}</h3>}
             <h2>문제수를 선택해주세요 (1~60)</h2>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import nca from './NCA';
 import nca2 from './NCA2';
+import ncp200 from './NCP200';
 import Start from './Start';
 import Content from './Content';
 import Result from './Result';
@@ -38,7 +39,7 @@ const Main = () => {
     }
 
     const onQuestion = (n) => {
-        const data = sel === '0' ? nca : sel === '1' ? nca2 : ''; 
+        const data = sel === '0' ? nca : sel === '1' ? nca2 : sel === '2' ? ncp200 : ''; 
         const randomData = getRandomItems(data, n);
         setDatas(randomData);
         setQuestion(n-1);
@@ -74,7 +75,7 @@ const Main = () => {
     return (
         <div className={styles.box}>
             <h1>{page >= 0 && '네이버클라우드플랫폼 CBT'}</h1>
-            <h1>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}</h1>
+            <h1>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}{sel === '2' && 'NCP200 문제은행'}</h1>
             {
                 page === -1 && <div>
                     <p>패스워드 입력 : <input type='password' value={pass} onChange={(e) => setPass(e.target.value)}/></p>
@@ -83,7 +84,7 @@ const Main = () => {
             }
             {
                 page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel} 
-                            nca={nca.length} nca2={nca2.length} ran={ran} onRan={onRan}/>
+                            nca={nca.length} nca2={nca2.length} ncp200={ncp200.length} ran={ran} onRan={onRan}/>
             }
             {
                 page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran} onWrong={onWrong}/>
