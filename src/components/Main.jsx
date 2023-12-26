@@ -78,7 +78,7 @@ const Main = () => {
     }
     return (
         <div className={styles.box}>
-            <h1  style={{color: mode && '#ffd6e1'}} onClick={()=>setMode(!mode)}>{page >= 0 && '네이버클라우드플랫폼 CBT'}</h1>
+            <h1  style={{color: mode && '#ffd6e1'}} onClick={()=>setMode(!mode)}>{page >= 0 && 'NC CBT'}</h1>
             <h1>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}{sel === '2' && 'NCP200 문제은행'}</h1>
             {
                 page === -1 && <div>
