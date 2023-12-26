@@ -16,6 +16,7 @@ const Main = () => {
     const [wrongData,setWrongData] = useState([])
     const [pass,setPass] = useState()
     const [ran,setRan] = useState(false)
+    const [mode,setMode] = useState(false)
 
     const onRan = () => {
         setRan(!ran)
@@ -77,7 +78,7 @@ const Main = () => {
     }
     return (
         <div className={styles.box}>
-            <h1>{page >= 0 && '네이버클라우드플랫폼 CBT'}</h1>
+            <h1  style={{color: mode && '#ffd6e1'}} onClick={()=>setMode(!mode)}>{page >= 0 && '네이버클라우드플랫폼 CBT'}</h1>
             <h1>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}{sel === '2' && 'NCP200 문제은행'}</h1>
             {
                 page === -1 && <div>
@@ -87,13 +88,14 @@ const Main = () => {
             }
             {
                 page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel} 
-                            nca={nca.length} nca2={nca2.length} ncp200={ncp200.length} ran={ran} onRan={onRan}/>
+                            nca={nca.length} nca2={nca2.length} ncp200={ncp200.length} ran={ran} onRan={onRan} mode={mode}/>
             }
             {
                 page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran} onWrong={onWrong}/>
             }
             {
-                page === 2 && <Result result={result} question={question} onReset={onReset} styles={styles} wrongNum={wrongData.length} onWrongStart={onWrongStart}/>
+                page === 2 && <Result result={result} question={question} onReset={onReset} styles={styles} 
+                            wrongNum={wrongData.length} onWrongStart={onWrongStart} mode={mode}/>
             }
         </div>
     );

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
 import bono from '../image/bono.jpg'
+import lupy from '../image/biglp.jpg'
 
 const Start = (props) => {
-    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ran,onRan} = props
+    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ran,onRan,mode} = props
 
     const [num,setNum] = useState(1)
    
@@ -41,7 +42,7 @@ const Start = (props) => {
             <button onClick={() => onStart()} className={styles.allBut}>시작</button>
             <br/>
             <br/>
-            <img src={bono} className={styles.bono} alt='bono'/>
+            <img src={mode ? lupy : bono} className={styles.bono} alt='bono'/>
         </div>
     );
 };
