@@ -36,7 +36,7 @@ const Start = (props) => {
             {sel === '-1' && <h3 style={{color:'red'}}>{error}</h3>}
             <h2>문제수를 선택해주세요 (1~60)</h2>
                 <h3>{num} 문제</h3>
-                <input type='range' min={1} max={60}  value={num} onChange={(e) => onNum(e)}/>
+                <input type='range' min={1} max={60} style={{width:'200px'}} value={num} onChange={(e) => onNum(e)}/>
                 <p>보기랜덤 <input type='checkbox' value={ran} onChange={() => onRan()}/></p>
             <button onClick={() => onStart()} className={styles.allBut}>시작</button>
             <br/>

@@ -40,7 +40,10 @@ const Main = () => {
 
     const onQuestion = (n) => {
         const data = sel === '0' ? nca : sel === '1' ? nca2 : sel === '2' ? ncp200 : ''; 
-        const randomData = getRandomItems(data, n);
+        let randomData = getRandomItems(data, n);
+        if(ran) {
+            randomData[0].answer.sort(() => 0.5 - Math.random())
+        }
         setDatas(randomData);
         setQuestion(n-1);
     }

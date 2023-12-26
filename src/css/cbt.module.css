@@ -21,8 +21,8 @@
 }
 .questioin {
     display: inline-block;
-    border: 2px solid black;
-    border-radius: 15px;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
     margin-bottom: 30px;
     padding: 20px;
     font-size: 22px;
@@ -42,6 +42,18 @@
 .bono{
     width: 500px;
     border-radius: 10px;
+}
+.anwdup {
+    color: gray;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.bottomDiv {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 300px;
 }
 @media (max-width: 800px) {
     .ansBut {
