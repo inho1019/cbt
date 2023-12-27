@@ -128,8 +128,8 @@ const nca = [
       {
         question: '네이버 클라우드 플랫폼의 NAT Gateway 서비스 설명 중 맞는 것은?',
         answer: [
-          { text: '지정된 Peer IP 접속 시 비공인 IP를 호출하면 NAT되어 하나의 공인 IP로 통신', type: false },
-          { text: '내부의 지정된 서버는 모든 통신이 NAT되어 하나의 공인 IP로 통신', type: true },
+          { text: '지정된 Peer IP 접속 시 비공인 IP를 호출하면 NAT되어 하나의 공인 IP로 통신', type: true },
+          { text: '내부의 지정된 서버는 모든 통신이 NAT되어 하나의 공인 IP로 통신', type: false },
           { text: '지정된 Peer IP 접속 시 NAT되어 하나의 사설 IP 통신', type: false },
           { text: '내부의 서버를 Peer IP로 설정하여 하나의 공인 IP로 한정됨', type: false },
         ],
