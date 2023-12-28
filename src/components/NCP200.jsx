@@ -54,15 +54,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'MC(Main Console) Dashboard 에서 기본적으로 보여지는 내용이 아닌 것은?',
-        answer: [
-            { text: 'Daily Event', type: false },
-            { text: '결제 정보', type: false },
-            { text: 'CPU Top 5', type: false },
-            { text: '내 서버 장애 내역', type: true },
-        ]
-    },
-    {
         question: 'MC(Main Console)에서 설정 불가능한 상품은 무엇인가? (모두 고르시오)',
         answer: [
             { text: 'Hybrid Cloud Hosting', type: false },
@@ -2311,15 +2302,6 @@ const ncp200 = [
             { text: '공인 IP는 실제 사용하지 않고 발급만 한 상태에선 요금이 부과되지 않는다.', type: true },
             { text: '외부 인터넷 통신을 필요로 할 때 사용한다.', type: false },
             { text: 'Public Subnet에 생성된 리소스에 부착할 수 있다.', type: false },
-        ]
-    },
-    {
-        question: 'MC(Main Console) Dashboard에서 기본적으로 보여지는 내용이 아닌 것은?',
-        answer: [
-            { text: 'Daily Event', type: false },
-            { text: '결제 정보', type: true },
-            { text: 'CPU Top 5', type: false },
-            { text: '내 서버 장애 내역', type: false },
         ]
     },
     {
