@@ -1224,15 +1224,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '내서버이미지에 대한 설명 중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '내 서버 이미지는 Storage 메뉴에서 Storage 단위로 이미지를 생성한다.', type: false },
-            { text: 'Classic 환경에서는 서버가 정지중인 상태에서만 생성 가능하다.', type: true },
-            { text: 'VPC 환경에서는 서버가 운영중인 상태에서도 생성 가능하다', type: false },
-            { text: '기존 서버 스펙과 다른 서버 스펙으로 서버를 만들 수 있다.', type: false },
-        ]
-    },
-    {
         question: '네이버클라우드플랫폼 루트 볼륨에 대한 설명으로 적절하지 않은 것을 고르시오',
         answer: [
             { text: 'HDD / SSD 두 가지 볼륨 타입을 제공한다.', type: false },
