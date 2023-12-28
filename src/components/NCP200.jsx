@@ -468,15 +468,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'NAS 볼륨에 대한 설명으로 적합한 것은?',
-        answer: [
-            { text: 'NAS 볼륨을 생성하면 NAS 전용 웹페이지 URL 이 생성되며, 로그인할 수 있는 ID/PW 가 생성된다', type: false },
-            { text: 'NAS 스냅샷 이미지는 용량, 기간 제한 없이 생성 가능하다', type: true },
-            { text: 'VM 에 NAS 를 마운트하기 위해서는 Private Subnet 생성 후 해당 VM(NAS 마운트 해야할 VM)에 추가 NIC 를 등록해야한다.', type: false },
-            { text: 'NAS 스냅샷은 NAS 볼륨 내 설정한 용량(%)만큼 생성되며, 초과 시 오래된 것부터 삭제 처리된다.', type: false },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼의 GPU 서버에 대한 설명으로 옳은 것을 고르시오',
         answer: [
             { text: '서버 한 대에 최대 12 장의 GPU 카드를 장착할 수 있다', type: false },
