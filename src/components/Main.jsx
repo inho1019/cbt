@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import nca from './NCA';
 import nca2 from './NCA2';
 import ncp200 from './NCP200';
+import ncp202 from './NCP202';
 import Start from './Start';
 import Content from './Content';
 import Result from './Result';
@@ -17,6 +18,7 @@ const Main = () => {
     const [pass,setPass] = useState()
     const [ran,setRan] = useState(false)
     const [mode,setMode] = useState(false)
+    const [max,setMax] = useState(1)
 
     const onRan = () => {
         setRan(!ran)
@@ -40,7 +42,7 @@ const Main = () => {
     }
 
     const onQuestion = (n) => {
-        const data = sel === '0' ? nca : sel === '1' ? nca2 : sel === '2' ? ncp200 : ''; 
+        const data = sel === '0' ? nca : sel === '1' ? nca2 : sel === '2' ? ncp200 : sel === '3' ? ncp202 : ''; 
         let randomData = getRandomItems(data, n);
         if(ran) {
             randomData[0].answer.sort(() => 0.5 - Math.random())
@@ -59,6 +61,7 @@ const Main = () => {
 
     const onSel = (n) => {
         setSel(n)
+        setMax(n === '0' ? nca.length : n === '1' ? nca2.length : n === '2' ? ncp200.length : n === '3' ? ncp202.length : 0)
     }
     
     const onReset = () => {
@@ -78,8 +81,8 @@ const Main = () => {
     }
     return (
         <div className={styles.box}>
-            <h1  style={{color: mode && '#ffd6e1'}} onClick={()=>setMode(!mode)}>{page >= 0 && 'NC CBT'}</h1>
-            <h1>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}{sel === '2' && 'NCP200 문제은행'}</h1>
+            <h1  style={{color: mode && '#ffd6e1'}} onClick={()=>setMode(!mode)}>{page >= 0 && '네클플 CBT'}</h1>
+            <h1>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}{sel === '2' && 'NCP200 문제은행'}{sel === '3' && 'NCP202 문제은행'}</h1>
             {
                 page === -1 && <div>
                     <p>패스워드 입력 : <input type='password' value={pass} onChange={(e) => setPass(e.target.value)}/></p>
@@ -88,7 +91,7 @@ const Main = () => {
             }
             {
                 page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel} 
-                            nca={nca.length} nca2={nca2.length} ncp200={ncp200.length} ran={ran} onRan={onRan} mode={mode}/>
+                            nca={nca.length} nca2={nca2.length} ncp200={ncp200.length} ncp202={ncp202.length} ran={ran} onRan={onRan} mode={mode} max={max}/>
             }
             {
                 page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran} onWrong={onWrong}/>
