@@ -20,7 +20,7 @@ const Start = (props) => {
 
     return (
         <div className={styles.box}>
-            <h2>시험 유형을 선택하세요</h2>
+            <h3>시험 유형을 선택하세요</h3>
             <select onChange={(e) => onSelect(e)} className={styles.sel}>
                 <option value='-1'>선택</option>
                 <option value='0'>NCA 문제은행({nca})</option>
@@ -30,8 +30,8 @@ const Start = (props) => {
             </select>
             {
                 sel !== '-1' && <div>
-                    <h2>문제수를 선택해주세요(1 - {max})</h2>
-                        <h3>{num}문제</h3>
+                    <h3>문제수를 선택해주세요(1 - {max})</h3>
+                        <h4>{num}문제</h4>
                         <input type='range' min={1} max={max} style={{width:'300px'}} value={num} onChange={(e) => setNum(e.target.value)}/>
                         <p style={{fontWeight:'bold'}}>보기랜덤 <input type='checkbox' value={ran} onChange={() => onRan()}/></p>
                     <button onClick={() => onStart()} className={styles.allBut}>시작</button>
