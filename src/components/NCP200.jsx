@@ -981,15 +981,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'NAS 에 스냅샷 생성을 설정할 경우 시스템 기본 생성 주기는 무엇인가?',
-        answer: [
-            { text: '매일 00:00', type: false },
-            { text: '매일 04:00', type: true },
-            { text: '매일 12:00', type: false },
-            { text: '매일 08:00', type: false },
-        ]
-    },
-    {
         question: 'Kubernetes 에서 정의하고 있는 가장 기본 단위는?',
         answer: [
             { text: 'Pod', type: true },
@@ -2356,15 +2347,6 @@ const ncp200 = [
             { text: 'Container registry는 object storage를 근간으로 한다.', type: false },
             { text: 'Container registry에 로그인하기 위해선 access key와 secret key에 대한 정보가 필요하다.', type: false },
             { text: 'Container registry는 컨테이너 이미지를 저장하고 관리하기 위한 서비스이다.', type: false },
-        ]
-    },
-    {
-        question: '리눅스에서 HTTPD 서버의 로그파일 위치는 어디인가? (단, 패키지로 설치시)',
-        answer: [
-            { text: '/var/log/', type: false },
-            { text: '/var/log/apache', type: false },
-            { text: '/var/log/httpd', type: false },
-            { text: '/var/www/httpd/log', type: true },
         ]
     },
     {
