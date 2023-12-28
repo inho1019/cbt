@@ -4,7 +4,7 @@ import bono from '../image/bono.jpg'
 import lupy from '../image/biglp.jpg'
 
 const Start = (props) => {
-    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ncp202,ran,onRan,mode,max} = props
+    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ncp202,ncp207,ran,onRan,mode,max} = props
 
     const [num,setNum] = useState(1)
 
@@ -27,6 +27,7 @@ const Start = (props) => {
                 <option value='1'>NCA 예상기출({nca2})</option>
                 <option value='2'>NCP200 문제은행({ncp200})</option>
                 <option value='3'>NCP202 문제은행({ncp202})</option>
+                <option value='4'>NCP207 문제은행({ncp207})</option>
             </select>
             {
                 sel !== '-1' && <div>

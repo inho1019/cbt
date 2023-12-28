@@ -69,7 +69,15 @@
 .pmBut:hover{
     background-color: lightgray;
 }
+.dataImg {
+    width: 750px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
 @media (max-width: 800px) {
+    .dataImg {
+        width: 90%;
+    }
     .ansBut {
         left: 7.5%;
         width: 85%;

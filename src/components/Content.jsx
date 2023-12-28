@@ -60,6 +60,7 @@ const Content = (props) => {
     return (
         <div className={styles.box}>
             <h2 style={{color:'yellowgreen'}}>{num+1} / {question+1}</h2>
+            {datas[num].img !== undefined && <div><img src={datas[num].img} className={styles.dataImg}/></div>}
             <div className={styles.questioin}>{datas[num].question}
             {datas[num].answer.filter(ans => ans.type).length > 1 && 
             <div className={styles.anwdup}>

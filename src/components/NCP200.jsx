@@ -774,15 +774,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 VPC 플랫폼에서 서버 생성 과정으로 올바른 순서는?',
-        answer: [
-            { text: '(1)->(3)->(4)->(2)', type: false },
-            { text: '(3)->(4)->(1)->(2)', type: false },
-            { text: '(3)->(1)->(4)->(2)', type: true },
-            { text: '(1)->(4)->(3)->(2)', type: false },
-        ]
-    },
-    {
         question: 'Micro 서버타입에 대한 설명 중 잘못된 것을 고르시오.',
         answer: [
             { text: '서버의 사양은 2vCPU, 1G RAM, 5GB HDD 이다.', type: true },
@@ -942,15 +933,6 @@ const ncp200 = [
             { text: '추가 작업 없이 CDN+의 커스텀 오리진으로 사용할 수 있다.', type: false },
             { text: '볼륨 사용량에 대한 모니터링이 가능하다.', type: true },
             { text: '스냅샷을 이용해서 동일한 데이터의 NAS 볼륨을 추가 생성 가능하다.', type: false },
-        ]
-    },
-    {
-        question: 'File system 의 데이터 저장 방식 중에서, 데이터 저장 공간의 비효율성이 존재하는 저장방식은?',
-        answer: [
-            { text: '링크방식', type: false },
-            { text: '인덱스방식', type: false },
-            { text: '연속할당 방식', type: false },
-            { text: '분산저장방식', type: true },
         ]
     },
     {
@@ -1456,15 +1438,6 @@ const ncp200 = [
             { text: 'Cloud Functions', type: true },
             { text: 'Serverless', type: false },
             { text: 'ActiveCode', type: false },
-        ]
-    },
-    {
-        question: '고객의 기존 인프라 환경과 네이버 클라우드 플랫폼을 전용선을 이용하여 사설',
-        answer: [
-            { text: 'Lease Line', type: false },
-            { text: 'Direct Connect', type: false },
-            { text: 'Active Connect', type: false },
-            { text: 'Cloud Connect', type: true },
         ]
     },
     {
@@ -2512,15 +2485,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '도커 이미지를 바탕으로 컨테이너를 생성하기 위한 명령어는?',
-        answer: [
-            { text: 'Docker push', type: false },
-            { text: 'Docker login', type: false },
-            { text: 'Docker build', type: true },
-            { text: 'Docker run', type: false },
-        ]
-    },
-    {
         question: 'Container Registry 상품에 대한 설명으로 틀린 것은?',
         answer: [
             { text: '도커 CLI를 이용하여 조작할 수 있다.', type: false },
@@ -2603,15 +2567,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '도커이미지를 바탕으로 도커를 생성하기 위한 명령어는?',
-        answer: [
-            { text: 'Docker push', type: false },
-            { text: 'Docker login', type: false },
-            { text: 'Docker build', type: true },
-            { text: 'Docker run', type: false },
-        ]
-    },
-    {
         question: '고객이 기존에 사용하던 오라클 라이센스를 BYOL 형태로 네이버클라우드플랫폼 서버로 이관하고자 한다. 이때 적합한 서버 타입은?',
         answer: [
             { text: 'High-memory server', type: false },
@@ -2645,15 +2600,6 @@ const ncp200 = [
             { text: 'NAVER Player', type: true },
             { text: 'Image Optimizer', type: false },
             { text: 'VOD Station', type: false },
-        ]
-    },
-    {
-        question: '다음 중 Kubernetes에 대한 설명 중 잘못된 것을 모두 고르시오.',
-        answer: [
-            { text: '사용자는 Kubernetes 클러스터 내 Master 서버에 접근이 가능하다.', type: false },
-            { text: 'Kubernetes Service 네이버클라우드플랫폼 NAS와 연동이 가능하다.', type: false },
-            { text: 'Kubernetes Service public subnet0|| 배치가 가능하다.', type: true },
-            { text: 'Kubernetes Ingress Application LoadBalancer 상품에 연동이 가능하다.', type: false },
         ]
     },
     {
