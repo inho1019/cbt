@@ -63,15 +63,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음의 설명이 지칭하는 용어는? "서비스로의 인프라를 의미하며 일반적으로 Computing, Networking, Storage 등의 IT 리소스를 서비스 형태로 사용하는 클라우드 컴퓨팅 유형의 한 종류"',
-        answer: [
-            { text: 'PaaS', type: false },
-            { text: 'IaaS', type: true },
-            { text: 'SaaS', type: false },
-            { text: 'FaaS', type: false },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼 VPC 환경에서 멀티존 이용이 가능한 상품은? (복수선택)',
         answer: [
             { text: 'Cloud DB for MySQL', type: true },
@@ -207,15 +198,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Block Storage 에 대한 설명으로 맞는 것은?',
-        answer: [
-            { text: 'HDD 타입의 경우 1GB 당 30 MAX IOPS 를 보장한다', type: false },
-            { text: 'HDD 타입의 경우 1GB 당 40 MAX IOPS 를 보장한다', type: false },
-            { text: 'SSD 타입의 경우 1GB 당 30 MAX IOPS 를 보장한다', type: false },
-            { text: 'SSD 타입의 경우 1GB 당 40 MAX IOPS 를 보장한다', type: true },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼 VPC 환경에서의 ACG 에 대한 설명으로 옳은 것을 모두 고르시오',
         answer: [
             { text: '접근 소스는 IP 로만 설정 가능하다', type: false },
@@ -288,15 +270,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'RAID 1(미러)에 대한 설명 중 맞는 것은?',
-        answer: [
-            { text: '단순볼륨에 비해 쓰기 속도가 뛰어나다', type: false },
-            { text: '단순볼륨에 비해 읽기 속도가 뛰어나다', type: true },
-            { text: '저장공간의 손실이 없다.', type: true },
-            { text: '패리티를 이용한 디스크 복구가 가능하다', type: false },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼의 서버에 대한 설명으로 잘못된 것을 고르시오',
         answer: [
             { text: '원하는 만큼 무한정으로 서버를 생성할 수 있다', type: true },
@@ -321,15 +294,6 @@ const ncp200 = [
             { text: 'VM 당 최대 12 개의 추가 볼륨을 attach 할 수 있다.', type: false },
             { text: 'VM 당 최대 14 개의 추가 볼륨을 attach 할 수 있다.', type: false },
             { text: 'VM 당 최대 15 개의 추가 볼륨을 attach 할 수 있다.', type: true },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼에서 생성한 Linux 서버에서 기본 스토리지의 Device 명은 무엇인가?',
-        answer: [
-            { text: '/dev/hdd1', type: false },
-            { text: '/dev/xvda', type: true },
-            { text: '/dev/sda', type: false },
-            { text: '/dev/xda', type: false },
         ]
     },
     {
@@ -549,15 +513,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Object Storage API 를 제공하는 리전이 아닌 것은?',
-        answer: [
-            { text: '미국 서부', type: false },
-            { text: '싱가포르', type: false },
-            { text: '독일', type: false },
-            { text: '홍콩', type: true },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼 쿠버네티스 워커 노드에 설치되지 않는 요소는 무엇인가?',
         answer: [
             { text: 'docker', type: false },
@@ -609,15 +564,6 @@ const ncp200 = [
             { text: '설치된 모든 패키지', type: false },
             { text: '서버 사양(스펙)', type: true },
             { text: '네트워크 인터페이스 속도', type: false },
-        ]
-    },
-    {
-        question: 'Container Registry 이용시 이미지를 업로드 하기 위한 docker 명령어는 무엇인 가?',
-        answer: [
-            { text: 'docker upload', type: false },
-            { text: 'docker put', type: false },
-            { text: 'docker move', type: false },
-            { text: 'docker push', type: true },
         ]
     },
     {
@@ -699,15 +645,6 @@ const ncp200 = [
             { text: 'Private Subnet', type: false },
             { text: 'Load Balancer', type: true },
             { text: 'NAT Gateway', type: false },
-        ]
-    },
-    {
-        question: 'NAS 볼륨의 데이터를 스냅샷 이미지 A 를 이용하여 복원했을 경우에 대한 설명으로 맞는 것을 고르시오.',
-        answer: [
-            { text: 'A 이후 생성된 스냅샷 이미지는 모두 삭제된다.', type: true },
-            { text: 'A 이전 생성된 스냅샷 이미지는 모두 삭제된다.', type: false },
-            { text: '모든 스냅샷 이미지가 삭제된다.', type: false },
-            { text: '복원 즉시 삭제할 이미지 선택 팝업창이 뜬다.', type: false },
         ]
     },
     {
@@ -882,30 +819,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '베어메탈 서버에 대한 설명중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '몇 가지 정해진 스펙 군에서 이용이 가능하다.', type: false },
-            { text: '제공되는 OS 로는 Oracle Linux 가 있다.', type: false },
-            { text: 'CPU 종류 및 코어수를 내가 원하는대로 커스터마이징 할 수 있다.', type: true },
-            { text: '디스크 구성은 RAID 1+0 및 RAID 5 로 할 수 있다.', type: false },
-        ]
-    },
-    {
         question: '다음 중 쿠버네티스의 Pod 에 대한 설명으로 틀린 것은?',
         answer: [
             { text: '쿠버네티스는 Container 를 직접 관리한다.', type: true },
             { text: '애플리케이션의 실행 단위이다.', type: false },
             { text: '하나의 Pod 에는 여러 개의 Container 가 구성될 수 있다.', type: false },
             { text: '쿠버네티스 객체 모델 중 만들고 배포할 수 있는 가장 작고 간단한 단위이다.', type: false },
-        ]
-    },
-    {
-        question: 'RAID 1+0 에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: '최소 디스크가 2 개 이상이어야 한다.', type: true },
-            { text: 'RAID1 으로 구성된 볼륨을 RAID0 으로 구성한다.', type: false },
-            { text: '저장공간의 손실이 50%이다.', type: false },
-            { text: '단순 볼륨에 비해 읽기 쓰기 속도가 뛰어나다.', type: false },
         ]
     },
     {
@@ -954,15 +873,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Block Storage 에 대한 설명으로 맞는 것은?',
-        answer: [
-            { text: '볼륨 detach 는 아직 제공하지 않는다. (향후 개선 예정)', type: false },
-            { text: '볼륨 detach 는 기본 스토리지(=root 볼륨)에 한해서 제공된다.', type: false },
-            { text: '볼륨 detach 기능은 현재 AI 를 통해서만 제공된다.', type: false },
-            { text: 'VM 상태에 따라 볼륨 detach 가 불가능할 수도 있다.', type: true },
-        ]
-    },
-    {
         question: '네이버클라우드플랫폼에서는 다양한 Media 상품을 제공합니다. 다음 중 제공되는 Media 상품이 아닌 것은?',
         answer: [
             { text: 'Video Player', type: false },
@@ -978,15 +888,6 @@ const ncp200 = [
             { text: '추가 스토리지를 붙여서 이미지를 생성할 수 있다.', type: false },
             { text: 'Script 버전관리가 가능하다', type: false },
             { text: '스크립트는 Javascript 언어로 작성한다', type: true },
-        ]
-    },
-    {
-        question: '네이버클라우드 플랫폼 오토스케일링에 대한 설명으로 잘못된 것을 모두 고르시오.',
-        answer: [
-            { text: '헬스체크 방식은 LoadBalancer 와 서버 방식을 제공한다.', type: false },
-            { text: '오토스케일링 기능을 사용할 수 있는 서버 타입 군으로 Micro 가 있다.', type: true },
-            { text: 'Cooldown 타임은 헬스체크를 진행하기 전 헬스체크의 유예기간을 지칭하는 말이다.', type: false },
-            { text: 'ASG 그룹에는 항상 최댓값 수만큼의 서버가 유지된다.', type: true },
         ]
     },
     {
@@ -1213,15 +1114,6 @@ const ncp200 = [
             { text: 'A 이전 생성된 스냅샷 이미지는 모두 삭제된다.', type: false },
             { text: '모든 스냅샷 이미지가 삭제된다.', type: false },
             { text: '복원 즉시 삭제할 이미지 선택 팝업창이 뜬다.', type: false },
-        ]
-    },
-    {
-        question: 'MC(Main Console)에서 설정 불가능한 상품은 무엇인가? (모두 고르시오)',
-        answer: [
-            { text: 'Hybrid Cloud Hosting', type: true },
-            { text: 'Papago NMT', type: false },
-            { text: 'Backup', type: true },
-            { text: 'Workplace', type: false },
         ]
     },
     {
@@ -1477,24 +1369,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 오토스케일링에 대한 설명으로 옳은 것을 고르시오.',
-        answer: [
-            { text: '네이버 클라우드 플랫폼의 모든 서버 타입에 대해서 오토 스케일링을 사용할 수 있다.', type: false },
-            { text: '오토스케일링을 통해 스케일 아웃되는 VM들은 네이버 클라우드 플랫폼의 Load Balancer 상품과 연동할 수 있다.', type: true },
-            { text: '오토스케일링에 스케일 인/아웃되는 이벤트에 대한 알람(SMS/Email) 기능을 제공하지 않는다.', type: false },
-            { text: '내 서버 이미지를 오토스케일링 베이스 이미지로 사용할 수 없다.', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼 VPC 환경에서의 내 서버 이미지에 대한 설명으로 옳은 것을 고르시오.',
-        answer: [
-            { text: '내서버이미지를 이용해서 생성한 서버의 사설 IP는 변하지 않는다.', type: false },
-            { text: '내서버이미지 사용에 있어 과금은 발생하지 않는다.', type: false },
-            { text: '내서버이미지는 생성한 리전 이외의 다른 리전으로 복제가 불가능하다.', type: false },
-            { text: '내서버이미지는 서버가 운영중인 상태에서도 생성 가능하다.', type: true },
-        ]
-    },
-    {
         question: '서버에 대한 설명 중 잘못된 것을 고르시오.',
         answer: [
             { text: '다양한 스펙의 상품군이 존재한다.', type: false },
@@ -1510,15 +1384,6 @@ const ncp200 = [
             { text: '부팅중 - 서버 생성이 완료되고 전원이 공급되어 부팅되는 단계', type: false },
             { text: '설정중 - 사용자가 서버 설정을 변경하여 변경된 내용이 반영되는 중', type: false },
             { text: '종료중 - 서버가 반납된 상태', type: true },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼 서버에 할당된 추가 스토리지를 detach 할 수 있을 때는?',
-        answer: [
-            { text: '네이버 클라우드 플랫폼은 볼륨 detach 기능은 제공하고 있지 않다.', type: false },
-            { text: '서버의 상태와 무관하게 추가 스토리지는 detach 할 수 있다.', type: false },
-            { text: '서버가 “운영 중” 상태라도 서버 내부에서 마운트(mount)만 되지 않았다면 추가 스토리지는 detach할 수 있다.', type: true },
-            { text: '서버 상태가 “정지” 상태라면 추가 스토리지는 detach 할 수 없다.', type: false },
         ]
     },
     {
@@ -1852,15 +1717,6 @@ const ncp200 = [
             { text: '100GB', type: true },
             { text: '150GB', type: false },
             { text: '200GB', type: false },
-        ]
-    },
-    {
-        question: '네이버클라우드플랫폼 VPC 환경에서의 내서버이미지에 대한 설명으로 옳은 것을 고르시오.',
-        answer: [
-            { text: '서버의 사설 IP는 변하지 않는다.', type: false },
-            { text: '내서버이미지를 이용해서 생성한 내서버이미지 사용에 있어 과금은 발생하지 않는다.', type: false },
-            { text: '내서버이미지는 생성한 리전 이외의 다른 리전으로 복제가 불가능하다.', type: true },
-            { text: '내서버이미지는 서버가 운영중인 상태에 서도 생성이 가능하다.', type: false },
         ]
     },
     {
