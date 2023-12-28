@@ -45,15 +45,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 네이버 클라우드 플랫폼에서 CLI 를 사용하기 위한 방법으로 올바른 것은?',
-        answer: [
-            { text: '서버에 CLI 패키지가 이미 내장되어 있다.', type: false },
-            { text: 'CLI 는 따로 제공되지 않는다.', type: false },
-            { text: 'CLI 참조서에서 CLI 파일을 다운로드하여 서버에 설치한다.', type: true },
-            { text: '고객센터를 통해 CI 이용을 신청한다.', type: false },
-        ]
-    },
-    {
         question: 'MC(Main Console)에서 설정 불가능한 상품은 무엇인가? (모두 고르시오)',
         answer: [
             { text: 'Hybrid Cloud Hosting', type: false },
@@ -519,15 +510,6 @@ const ncp200 = [
             { text: 'Backup', type: true },
             { text: 'Security Monitoring', type: true },
             { text: 'Cloud loT Core', type: false },
-        ]
-    },
-    {
-        question: '다음 상품 중 카테고리가 다른 상품은?',
-        answer: [
-            { text: 'GeoLocation', type: false },
-            { text: 'Chatbot', type: false },
-            { text: 'Cloud Outbound Mailer', type: false },
-            { text: 'Source Commit', type: true },
         ]
     },
     {
@@ -1107,15 +1089,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Kubernetes 에서 service 객체를 통해 만들어지는 로드밸런서 타입은?',
-        answer: [
-            { text: 'Network LB', type: true },
-            { text: 'Application LB', type: false },
-            { text: 'Classic LB', type: false },
-            { text: 'Network Proxy LB', type: false },
-        ]
-    },
-    {
         question: 'RAID 1+0 에 대한 설명 중 틀린 것은?',
         answer: [
             { text: '최소 디스크가 2 개 이상이어야 한다.', type: true },
@@ -1375,15 +1348,6 @@ const ncp200 = [
             { text: 'Web Service Monitoring System', type: true },
             { text: 'Real User Analytics', type: false },
             { text: 'Cloud Hadoop', type: false },
-        ]
-    },
-    {
-        question: '네이버클라우드플랫폼 AI 서비스에서 제공하지 않는 상품은?',
-        answer: [
-            { text: 'Clova OCR', type: false },
-            { text: 'Clova Image Recognition', type: true },
-            { text: 'Clova Voice', type: false },
-            { text: 'Clova Face Recognition', type: false },
         ]
     },
     {
@@ -1891,15 +1855,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 네이버 클라우드 플랫폼에서 CLI를 사용하기 위한 방법으로 올바른 것은?',
-        answer: [
-            { text: '서버에 CLI 패키지가 이미 내장되어 있다.', type: false },
-            { text: 'CLI는 따로 제공되지 않는다.', type: false },
-            { text: 'CLI 참조서에서 CLI 파일을 다운로드하여 서버에 설치한다.', type: true },
-            { text: '고객센터를 통해 CLI 이용을 신청한다.', type: false },
-        ]
-    },
-    {
         question: '다음 중 네이버 클라우드 플랫폼에서의 Live Migration에 대한 설명으로 올바른 것은?',
         answer: [
             { text: '일반 서버의 경우 호스트 서버 장애 시 Live Migration이 작동한다.', type: false },
@@ -2140,15 +2095,6 @@ const ncp200 = [
             { text: 'LoadBalancer', type: true },
             { text: 'NodePort', type: false },
             { text: 'ClusterPort', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼 쿠버네티스의 Ingress에 대한 설명으로 틀린 것은?',
-        answer: [
-            { text: '외부에서 오는 Traffic들을 클러스터 내부의 Service로 라우팅하기 위한 규칙의 집합이다.', type: false },
-            { text: 'Service 타입 지정은 Node port 혹은 로드밸런서 지정을 하여야 한다.', type: false },
-            { text: 'NCR은 호스트 기반 및 URL Path 기반 라우팅에 대한 규칙을 사용한다.', type: true },
-            { text: 'Ingress에 대한 설정은 네이버 클라우드 플랫폼 콘솔에서 설정한다.', type: false },
         ]
     },
     {
