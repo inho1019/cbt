@@ -31,7 +31,7 @@ const Start = (props) => {
             {
                 sel !== '-1' && <div>
                     <h3>문제수를 선택해주세요(1 - {max})</h3>
-                        <h4>{num}문제</h4>
+                        <h4 style={{color:'gray'}}>{num}문제</h4>
                         <input type='range' min={1} max={max} style={{width:'300px'}} value={num} onChange={(e) => setNum(e.target.value)}/>
                         <p style={{fontWeight:'bold'}}>보기랜덤 <input type='checkbox' value={ran} onChange={() => onRan()}/></p>
                     <button onClick={() => onStart()} className={styles.allBut}>시작</button>
