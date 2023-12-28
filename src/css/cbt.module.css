@@ -55,6 +55,20 @@
     padding: 0 20px;
     width: 300px;
 }
+.pmBut {
+    width: 35px;
+    height: 35px;
+    color: gray;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1.5px gray solid;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.pmBut:hover{
+    background-color: lightgray;
+}
 @media (max-width: 800px) {
     .ansBut {
         left: 7.5%;
