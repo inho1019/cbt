@@ -36,15 +36,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '대용량 데이터를 옮기고자 할 때 네트워크 전송이 아닌 이동하여 데이터를 이전하는 네이버클라우드플랫폼 상품은?',
-        answer: [
-            { text: 'Data Teleporter', type: true },
-            { text: 'Data Migration', type: false },
-            { text: 'Data Mover', type: false },
-            { text: 'Data Transfer', type: false },
-        ]
-    },
-    {
         question: 'MC(Main Console)에서 설정 불가능한 상품은 무엇인가? (모두 고르시오)',
         answer: [
             { text: 'Hybrid Cloud Hosting', type: false },
@@ -96,15 +87,6 @@ const ncp200 = [
             { text: 'e6', type: false },
             { text: '80', type: false },
             { text: '8e', type: true },
-        ]
-    },
-    {
-        question: '다음 중 네이버 클라우드 플랫폼에서 제공하는 Storage 상품이 아닌 것은? (복수 정답)',
-        answer: [
-            { text: 'NAS', type: false },
-            { text: 'Block Storage', type: false },
-            { text: 'SAN', type: true },
-            { text: 'DAS', type: true },
         ]
     },
     {
@@ -198,15 +180,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Linux 에서 LVM 을 구성을 하고자 한다. LVM 구성이 올바른 명령어 사용 순서는 무엇인가?',
-        answer: [
-            { text: 'pvcreate > fdisk > lvcreate > vgcreate', type: false },
-            { text: 'lvcreate > vgcreate > pvcreate > fdisk', type: false },
-            { text: 'fdisk > pvcreate > vgcreate > lvcreate', type: true },
-            { text: 'pvcreate > lvcreate > fdisk > vgcreate', type: false },
-        ]
-    },
-    {
         question: '서버에 대한 설명 중 잘못된 것을 고르시오.',
         answer: [
             { text: '다양한 스펙의 상품군이 존재한다.', type: false },
@@ -216,30 +189,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '김초록은 네이버 클라우드 플랫폼 위에서 매일 밤 12 시에 간단한 배치 작업을 돌려야 한다. 가장 비용 효율적인 방법은 무엇인가?',
-        answer: [
-            { text: 'Standard 타입 서버를 생성하여 배치 작업을 돌린다', type: false },
-            { text: 'High CPU 타입 서버를 생성하여 배치 작업을 돌린다', type: false },
-            { text: 'Cloud Functions 를 이용하여 배치 작업을 돌린다', type: true },
-            { text: 'BareMetal 서버를 생성하여 배치 작업을 돌린다', type: false },
-        ]
-    },
-    {
         question: 'MC(Main Console)상에 보여지는 서버의 호스트네임을 변경하기 위한 가장 좋은 방법은?',
         answer: [
             { text: '콘솔에서 서버 이름 변경을 선택하여 호스트명을 변경한다.', type: true },
             { text: '/etc/sysconfig/network 파일을 수정한다', type: false },
             { text: '/etc/sysconfig/hostname 을 수정한다', type: false },
             { text: '한번 생성된 서버의 이름은 변경할 수 없다', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼의 Container Registry 에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: 'Private Endpoint 구성이 가능하다', type: false },
-            { text: '도커 레지스트리 HTTPS API V3 를 지원한다', type: true },
-            { text: 'Object Storage 를 저장소로 사용한다.', type: false },
-            { text: '컨테이너 취약점 분석 기능을 제공한다.', type: false },
         ]
     },
     {
@@ -315,15 +270,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Linux 에서 추가 디스크 용량을 데이터 유실 없이 증설하고자 한다. 추가 디스크의 용량을 증설한 후 어떤 명령어를 사용하여야 하는가?',
-        answer: [
-            { text: 'fdisk', type: false },
-            { text: 'growpart', type: true },
-            { text: 'lvm', type: false },
-            { text: 'mkdisk', type: false },
-        ]
-    },
-    {
         question: '리눅스에서 HTTPD 서버의 로그파일 위치는 어디인가? (단, 패키지로 설치시)',
         answer: [
             { text: '/var/log/', type: false },
@@ -357,15 +303,6 @@ const ncp200 = [
             { text: '서버를 정지한 후엔 서버 스펙 변경이 가능하다', type: false },
             { text: '디스크는 SSD 타입과 HDD 타입을 제공한다', type: false },
             { text: '네이버 클라우드 플랫폼 안의 다른 상품들과 연계하여 사용이 가능하다', type: false },
-        ]
-    },
-    {
-        question: '서로 다른 용량으로 구성된 디스크로 RAID 를 구성할 경우 디스크에서 제공되는 모든 용량을 사용하기 위해 구성 가능한 RAID 레벨은?',
-        answer: [
-            { text: 'RAID 0', type: true },
-            { text: 'RAID 1', type: false },
-            { text: 'RAID 5', type: false },
-            { text: 'RAID 1+0', type: false },
         ]
     },
     {
@@ -513,24 +450,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '해외 사용자의 경우 도메인에 접속하는 IP 를 보고 해당 국가에 인접한 리전의 서버로 접속을 시키고자 할 때 사용 가능한 상품은?',
-        answer: [
-            { text: 'GCDN', type: false },
-            { text: 'Global Route Manager', type: true },
-            { text: 'GIS', type: false },
-            { text: 'Load Balancer', type: false },
-        ]
-    },
-    {
-        question: '대용량 데이터를 옮기고자 할 때 네트워크 전송이 아닌 이동식 스토리지를 이용하여 데이터를 이전하는 네이버클라우드플랫폼 상품은?',
-        answer: [
-            { text: 'Data Teleporter', type: true },
-            { text: 'Data Migration', type: false },
-            { text: 'Data Mover', type: false },
-            { text: 'Data Transfer', type: false },
-        ]
-    },
-    {
         question: '다음 중 네이버 클라우드 플랫폼에서 CLI 를 사용하기 위한 방법으로 올바른 것은?',
         answer: [
             { text: '서버에 C 패키지가 이미 내장되어 있다.', type: false },
@@ -630,24 +549,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼 쿠버네티스 마스터 노드에 설치되지 않는 요소는 무엇인가?',
-        answer: [
-            { text: 'etcd', type: false },
-            { text: 'apiserver', type: false },
-            { text: 'scheduler', type: false },
-            { text: 'kubelet', type: true },
-        ]
-    },
-    {
-        question: '네이버클라우드플랫폼의 추가 스토리지에 대한 설명 중 옳은 것을 모두 고르시오',
-        answer: [
-            { text: '최소 10GB 에서 최대 1TB 까지 생성 가능하다', type: false },
-            { text: '최대 15 개까지 추가할 수 있다', type: true },
-            { text: '생성된 스토리지는 용량 증설이 가능하다', type: true },
-            { text: '스냅샷을 바탕으로 추가 스토리지 생성이 가능하다', type: true },
-        ]
-    },
-    {
         question: 'Object Storage API 를 제공하는 리전이 아닌 것은?',
         answer: [
             { text: '미국 서부', type: false },
@@ -690,24 +591,6 @@ const ncp200 = [
             { text: 'lvcreate > vgcreate > pvcreate > fdisk', type: false },
             { text: 'fdisk > pvcreate > vgcreate > lvcreate', type: true },
             { text: 'pvcreate > lvcreate > fdisk > vgcreate', type: false },
-        ]
-    },
-    {
-        question: 'Linux 에서 LVM 을 구성하고자 합니다. Fdisk 에서 LVM 용 파티션을 구성하려고 하는데 LVM 의 파티션 번호는 무엇 인가요??',
-        answer: [
-            { text: '83', type: false },
-            { text: 'e6', type: false },
-            { text: '80', type: false },
-            { text: '8e', type: true },
-        ]
-    },
-    {
-        question: '다음 보기 중 NAVER CLOUD PLATFORM NAS 상품에서 사용 가능한 CLI 명령어를 모두 고르시오?',
-        answer: [
-            { text: 'createNasVolumelnstance', type: true },
-            { text: 'getNasVolumelnstancelist', type: true },
-            { text: 'changeNasVolumeSize', type: true },
-            { text: 'removeNasVolumeAccessControl', type: false },
         ]
     },
     {
@@ -771,24 +654,6 @@ const ncp200 = [
             { text: '/var/log/apache', type: false },
             { text: '/var/log/httpd', type: true },
             { text: '/var/www/httpd/log', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼의 Container Registry 에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: 'Private Endpoint 구성이 가능하다.', type: false },
-            { text: '도커 레지스트리 HTTPS API V3 를 지원한다.', type: true },
-            { text: 'Object Storage 를 저장소로 사용한다.', type: false },
-            { text: '컨테이너 취약점 분석 기능을 제공한다', type: false },
-        ]
-    },
-    {
-        question: '다음 서버 타입 중 Live Migration 이 지원되지 않는 서버 타입은 무엇인지 고르시오',
-        answer: [
-            { text: 'Standard', type: false },
-            { text: 'High CPU', type: false },
-            { text: 'High Memory', type: false },
-            { text: 'Bare Metal', type: true },
         ]
     },
     {
@@ -882,39 +747,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 VPC 플랫폼에서 내 서버 이미지를 생성할 있는 서버의 상태를 모두 고르시오',
-        answer: [
-            { text: '운영중', type: true },
-            { text: '정지', type: true },
-            { text: '시작중', type: false },
-            { text: '부팅중', type: false },
-        ]
-    },
-    {
-        question: 'NAS 볼륨 스냅샷에 대한 설명으로 맞는 것을 모두 고르시오.',
-        answer: [
-            { text: 'NAS 볼륨 가용량 안에서 생성된다.', type: true },
-            { text: '추가 작업 없이 CDN+의 커스텀 오리진으로 사용할 수 있다.', type: false },
-            { text: '볼륨 사용량에 대한 모니터링이 가능하다.', type: true },
-            { text: '스냅샷을 이용해서 동일한 데이터의 NAS 볼륨을 추가 생성 가능하다.', type: false },
-        ]
-    },
-    {
         question: '서로 다른 용량으로 구성된 디스크로 RAID 를 구성할 경우 디스크에서 제공되는 모든 용량을 사용하기 위해 구성 가능한 RAID 레벨은?',
         answer: [
             { text: 'RAID 0', type: true },
             { text: 'RAID 1', type: false },
             { text: 'RAID 5', type: false },
             { text: 'RAID 1+0', type: false },
-        ]
-    },
-    {
-        question: 'NAS 볼륨 용량 증설 단위는?',
-        answer: [
-            { text: '50GB', type: false },
-            { text: '100GB', type: true },
-            { text: '150GB', type: false },
-            { text: '200GB', type: false },
         ]
     },
     {
@@ -954,39 +792,12 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Kubernetes 에서 정의하고 있는 가장 기본 단위는?',
-        answer: [
-            { text: 'Pod', type: true },
-            { text: 'Deployment', type: false },
-            { text: 'Ingress', type: false },
-            { text: 'Service', type: false },
-        ]
-    },
-    {
-        question: '여러 개의 하드 디스크에 일부 중복된 데이터를 나눠서 저장하는 기술을 칭하는 단어로 옳은 것은?',
-        answer: [
-            { text: 'RAAD', type: false },
-            { text: 'AIDE', type: false },
-            { text: 'RAID', type: true },
-            { text: 'AIDR', type: false },
-        ]
-    },
-    {
         question: '외부에서 네이버클라우드플랫폼 서버에 원격 접속할 수 있는 방법으로 잘못된 것을 고르시오.',
         answer: [
             { text: 'Classic 환경에서는 포트 포워딩 설정을 통해서 접속할 수 있다.', type: false },
             { text: '서버 생성 시 자동 할당되는 퍼블릭 도메인을 이용해서 접속할 수 있다.', type: true },
             { text: 'SSL VPN 을 이용해서 접속할 수 있다.', type: false },
             { text: '공인 IP 를 서버에 할당해서 접속할 수 있다.', type: false },
-        ]
-    },
-    {
-        question: '네이버클라우드플랫폼 서비스 중에 서버를 확장성 있게 구성하거나 관리할 필요 없이 비즈니스 로직 코드로 서비스를 구성할 수 있는 상품은?',
-        answer: [
-            { text: 'Lambda', type: false },
-            { text: 'Cloud Functions', type: true },
-            { text: 'Serverless', type: false },
-            { text: 'ActiveCode', type: false },
         ]
     },
     {
@@ -1095,15 +906,6 @@ const ncp200 = [
             { text: 'RAID1 으로 구성된 볼륨을 RAID0 으로 구성한다.', type: false },
             { text: '저장공간의 손실이 50%이다.', type: false },
             { text: '단순 볼륨에 비해 읽기 쓰기 속도가 뛰어나다.', type: false },
-        ]
-    },
-    {
-        question: '김초록씨는 클라우드 상에서 효과적으로 데이터를 저장하고자 한다. 자주 접근하는 데이터는 Object Storage 에, 아카이빙 용도의 데이터는 Archive Storage 에 보관해야 한다. 각각의 보기에 맞는 단어가 순차적으로 들어간 보기를 고르세요',
-        answer: [
-            { text: 'Object Storage, Block Storage', type: false },
-            { text: 'Archive Storage, Object Storage', type: false },
-            { text: 'Object Storage, Archive Storage', type: true },
-            { text: 'Archive Storage, NAS', type: false },
         ]
     },
     {
@@ -1278,15 +1080,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '내 서버 이미지를 통해 윈도우 서버를 새로 생성할 경우 100 을 동작시켜 000 를 변경해야 합니다. 각 000 에 맞는 단어가 순차적으로 들어간 보기를 고르세요.',
-        answer: [
-            { text: 'Sysprp, sid', type: false },
-            { text: 'Sysprep, uuid', type: true },
-            { text: 'Uuidgen, uuid', type: false },
-            { text: 'Uuidchg, uuid', type: false },
-        ]
-    },
-    {
         question: '리눅스 서버에 추가 스토리지가 10GB 였는데 이를 20GB 로 용량을 증설한 경우 기존 스토리지에 있는 데이터를 삭제하지 않고 볼륨을 확장하는 패키지는 무엇인가?',
         answer: [
             { text: 'LVM', type: false },
@@ -1315,30 +1108,12 @@ const ncp200 = [
     },
     //여기부터
     {
-        question: '다음중 네이버 클라우드 플랫폼(MC)에 없는 상품 카테고리는?',
-        answer: [
-            { text: 'Media', type: false },
-            { text: 'Game', type: false },
-            { text: 'Hybrid & Private Cloud', type: false },
-            { text: 'Market Place', type: true },
-        ]
-    },
-    {
         question: '현재 네이버 클라우드 플랫폼의 리전으로 제공되지 않는 지역은?',
         answer: [
             { text: '미국 서부', type: false },
             { text: '미국 동부', type: true },
             { text: '홍콩', type: false },
             { text: '싱가폴', type: false },
-        ]
-    },
-    {
-        question: '다음 상품중 카테고리가 다른 상품은?',
-        answer: [
-            { text: 'GeoLocation', type: false },
-            { text: 'Chatbot', type: false },
-            { text: 'Cloud Outbound Mailer', type: false },
-            { text: 'SourceCommit', type: true },
         ]
     },
     {
@@ -1369,15 +1144,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '국내 서비스로 한국 대상으로 대용량 파일 다운로드를 하고자 한다. 이 때 현재 사용가능한 적절한 상품은?',
-        answer: [
-            { text: 'CDN', type: false },
-            { text: 'CDN+', type: true },
-            { text: 'GCDN', type: false },
-            { text: 'GRM', type: false },
-        ]
-    },
-    {
         question: '현재 네이버 클라우드 플랫폼에서 멀티존을 제공하고 있는 리전은?',
         answer: [
             { text: '일본', type: false },
@@ -1405,30 +1171,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '유사 서버 생성시 기존 서버의 설정 내용이 반영되는 항목은?',
-        answer: [
-            { text: 'ACG 정보', type: true },
-            { text: '추가 스토리지', type: false },
-            { text: 'Init Script', type: false },
-            { text: '모니터링 설정', type: false },
-        ]
-    },
-    {
         question: 'Object Storage API를 제공하는 리전이 아닌 것은?',
         answer: [
             { text: '미국 서부', type: false },
             { text: '싱가포르', type: false },
             { text: '독일', type: false },
             { text: '홍콩', type: true },
-        ]
-    },
-    {
-        question: '유사 서버 생성시 기존 서버의 설정 내용이 반영되지 않는 항목은?',
-        answer: [
-            { text: 'VPC', type: false },
-            { text: 'Init Script', type: true },
-            { text: 'ACG', type: false },
-            { text: '서버타입', type: false },
         ]
     },
     {
@@ -1474,15 +1222,6 @@ const ncp200 = [
             { text: 'Papago NMT', type: false },
             { text: 'Backup', type: true },
             { text: 'Workplace', type: false },
-        ]
-    },
-    {
-        question: '리눅스 서버에 추가 스토리지가 10GB 였는데 이를 20GB로 용량을 증설한 경우 기존 스토리지에 있는 데이터를 삭제하지 않고 볼륨을 확장하는 패키지는 무엇인가?',
-        answer: [
-            { text: 'LVM', type: false },
-            { text: 'Spanned Volume', type: false },
-            { text: 'fdisk', type: false },
-            { text: 'growpart', type: true },
         ]
     },
     {
@@ -1540,15 +1279,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '서로 다른 용량으로 구성된 디스크로 RAID를 구성할 경우 디스크에서 제공되는 모든 용량을 사용하기 위해 구성 가능한 RAID 레벨은?',
-        answer: [
-            { text: 'RAID 0', type: true },
-            { text: 'RAID 1', type: false },
-            { text: 'RAID 5', type: false },
-            { text: 'RAID 1+0', type: false },
-        ]
-    },
-    {
         question: 'MC(Main Console) 상에 보여지는 서버의 호스트 네임을 변경하기 위한 가장 좋은 방법은?',
         answer: [
             { text: '콘솔에서 서버 이름 변경을 선택하여 호스트명을 변경한다.', type: true },
@@ -1591,15 +1321,6 @@ const ncp200 = [
             { text: '기본 스토리지(=root 볼륨)가 SSD 타입일 경우 추가 스토리지도 HDD만 할당 가능하다.', type: false },
             { text: '기본 스토리지(=root 볼륨)가 HDD 타입일 경우 추가 스토리지는 SSD만 할당 가능하다.', type: false },
             { text: '기본 스토리지(=root 볼륨)의 디스크 타입과 무관하게 추가 스토리지는 HDD/SSD 모든 타입 볼륨 할당 가능하다.', type: true },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼의 스냅샷 이미지에 대한 설명으로 옳은 것을 고르시오.',
-        answer: [
-            { text: '신규 서버를 생성할 수 있다.', type: false },
-            { text: '신규 볼륨을 생성할 수 있다.', type: true },
-            { text: '스냅샷 이미지는 사용에 있어 과금은 발생하지 않는다.', type: false },
-            { text: '네이버 클라우드 플랫폼에서는 스냅샷 이미지를 export 하는 기능을 제공한다.', type: false },
         ]
     },
     {
@@ -1774,15 +1495,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 VPC 환경에서의 ACG에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: '서버 NIC에 매핑된다.', type: false },
-            { text: 'Inbound/Outbound 룰 설정 모두 가능하다.', type: false },
-            { text: '허용/거부 룰 설정이 모두 가능하다.', type: true },
-            { text: '서버 생성 시 필수적으로 매핑해야 하는 요소이다.', type: false },
-        ]
-    },
-    {
         question: '서버에 대한 설명 중 잘못된 것을 고르시오.',
         answer: [
             { text: '다양한 스펙의 상품군이 존재한다.', type: false },
@@ -1900,15 +1612,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Linux에서 LVM을 구성하고자 합니다. Fdisk에서 LVM용 파티션을 구성하려고 하는데 LVM의 파티션 번호는 무엇인가요?',
-        answer: [
-            { text: '83', type: false },
-            { text: 'e6', type: false },
-            { text: '80', type: false },
-            { text: '8e', type: true },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼 쿠버네티스 워커 노드에 설치되지 않는 요소는 무엇인가?',
         answer: [
             { text: 'docker', type: false },
@@ -1924,15 +1627,6 @@ const ncp200 = [
             { text: '장애시에 복구가 가능하다.', type: false },
             { text: '다양한 접근 경로를 제공한다.', type: false },
             { text: '파일단위로 저장 및 복제한다.', type: true },
-        ]
-    },
-    {
-        question: '다음 중 CLI를 사용하여 Kubernetes service를 제어할 수 있도록 설치해야 하는 것은?',
-        answer: [
-            { text: 'calico', type: false },
-            { text: 'kubectl', type: true },
-            { text: 'ncloud cli', type: false },
-            { text: 'kubelet', type: false },
         ]
     },
     {
@@ -1954,15 +1648,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'RAID 0(스트라이프)에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: '단순볼륨에 비해 쓰기 속도가 뛰어나다.', type: false },
-            { text: '단순볼륨에 비해 읽기 속도가 뛰어나다.', type: false },
-            { text: '단순 볼륨에 비해 데이터 안정성이 높다.', type: true },
-            { text: '저장공간의 손실이 없다.', type: false },
-        ]
-    },
-    {
         question: 'Archive Storage에 대한 설명으로 맞는 것은?',
         answer: [
             { text: '3rd party 툴 없이도 다수의 vm에 마운트하여 사용할 수 있다.', type: false },
@@ -1972,30 +1657,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 네이버 클라우드 플랫폼 쿠버네티스 마스터 노드에 설치되지 않는 요소는 무엇인가?',
-        answer: [
-            { text: 'etcd', type: false },
-            { text: 'apiserver', type: false },
-            { text: 'scheduler', type: false },
-            { text: 'kubelet', type: true },
-        ]
-    },
-    {
         question: 'VPC 환경의 Standard 서버타입 중 지원하지 않는 서버 스펙은?',
         answer: [
             { text: '2vCPU 8G RAM', type: false },
             { text: '4vCPU 16G RAM', type: false },
             { text: '8vCPU 32G RAM', type: false },
             { text: '12vCPU 64G RAM', type: true },
-        ]
-    },
-    {
-        question: '다음 중 쿠버네티스의 Pod에 대한 설명으로 틀린 것은?',
-        answer: [
-            { text: '쿠버네티스는 Container를 직접 관리한다.', type: true },
-            { text: '애플리케이션의 실행 단위이다.', type: false },
-            { text: '하나의 Pod에는 여러 개의 Container가 구성될 수 있다.', type: false },
-            { text: '쿠버네티스 객체 모델 중 만들고 배포할 수 있는 가장 작고 간단한 단위이다.', type: false },
         ]
     },
     {
@@ -2023,15 +1690,6 @@ const ncp200 = [
             { text: 'growpart', type: true },
             { text: 'lvm', type: false },
             { text: 'mkdisk', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼 VPC 환경에서의 ACG에 대한 설명으로 옳은 것을 모두 고르시오.',
-        answer: [
-            { text: '접근 소스는 IP로만 설정 가능하다.', type: false },
-            { text: 'In/Outbound에 대한 ACG를 설정을 할 수 있다.', type: true },
-            { text: '한 대의 서버에는 한 개의 ACG 매핑만이 가능하다.', type: false },
-            { text: 'ACG는 서버에 할당된 이후에도 언제든 룰 수정이 가능하다.', type: true },
         ]
     },
     {
@@ -2116,15 +1774,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 VPC 플랫폼에서 내 서버 이미지를 생성할 수 있는 서버의 상태를 모두 고르시오.',
-        answer: [
-            { text: '운영중', type: true },
-            { text: '정지', type: true },
-            { text: '시작중', type: false },
-            { text: '부팅중', type: false },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼에서 생성한 Linux 서버에서 기본 스토리지의 Device 명은 무엇인가?',
         answer: [
             { text: '/dev/hdd1', type: false },
@@ -2152,39 +1801,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 도커이미지를 생성하기 위한 Description file을 의미하는 것은?',
-        answer: [
-            { text: 'Dockerfile', type: true },
-            { text: 'Container file', type: false },
-            { text: 'Base file', type: false },
-            { text: 'Description file', type: false },
-        ]
-    },
-    {
         question: 'NAS에 스냅샷 생성을 설정할 경우 시스템 기본 생성 주기는 무엇인가?',
         answer: [
             { text: '매일 00:00', type: true },
             { text: '매일 04:00', type: false },
             { text: '매일 12:00', type: false },
             { text: '매일 08:00', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼의 서버에 대한 설명으로 잘못된 것을 고르시오.',
-        answer: [
-            { text: '원하는 만큼 무한정으로 서버를 생성할 수 있다.', type: true },
-            { text: '변경이 가능하다.', type: false },
-            { text: '제공한 다.', type: false },
-            { text: '서버를 정지한 후엔 서버 스펙 디스크는 SSD 타입과 HDD 타입을 네이버 클라우드 플랫폼 안의 다른 상품들과 연계하여 사용이 가능하다.', type: false },
-        ]
-    },
-    {
-        question: '김초록씨는 약 80TB의 데이터를 온프레미스 환경에서 네이버 클라우드 플랫폼으로 옮겨야 한다. 다음 중 가장 빠르고 안전한 방법은?',
-        answer: [
-            { text: 'Archive Storage 상품을 사용한다.', type: false },
-            { text: '인터넷을 통해 전송한다.', type: false },
-            { text: 'Data Teleporter 상품을 사용한다.', type: true },
-            { text: 'Backup 상품을 사용한다.', type: false },
         ]
     },
     {
@@ -2257,15 +1879,6 @@ const ncp200 = [
             { text: '동적디스크 할당', type: false },
             { text: 'LVM', type: true },
             { text: 'span volume', type: false },
-        ]
-    },
-    {
-        question: '다음 중 네이버 클라우드 플랫폼에서 제공하는 Storage 상품이 아닌 것은? (복수 정답)',
-        answer: [
-            { text: 'NAS', type: false },
-            { text: 'Block Storage', type: false },
-            { text: 'SAN', type: true },
-            { text: 'DAS', type: true },
         ]
     },
     {
