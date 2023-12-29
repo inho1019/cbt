@@ -171,15 +171,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VOD Station에서 Subtitle Output format은 무엇인가?',
-        answer: [
-          { text: 'VTT', type: true },
-          { text: 'SRT', type: false },
-          { text: 'TIML', type: false },
-          { text: 'CAP', type: false },
-        ],
-      },
-      {
         question: '네이버 클라우드 플랫폼의 VPC환경에서 서버 NIC 하나에 적용할 수 있는 ACG의 개수는?',
         answer: [
           { text: '2개', type: false },
@@ -231,15 +222,6 @@ const ncp202 = [
           { text: 'Post', type: false },
           { text: 'Get', type: false },
           { text: 'URL', type: false },
-        ],
-      },
-      {
-        question: '네이버클라우드 CDN+에 대한 설명으로 잘못된 것을 고르시오',
-        answer: [
-          { text: '오리진으로 네이버 클라우드 플랫폼의 Object Storage만 사용할 수 있다', type: true },
-          { text: '국내 서비스에 최적화된 CDN 상품이다', type: false },
-          { text: '개인 소장 도메인을 CDN 서비스 도메인으로 사용할 수 있다.', type: false },
-          { text: 'CDN 도메인을 HTTPS로 사용하기 위해서는 오리진에서도 HTTPS를 지원해야 한다.', type: false },
         ],
       },
       {
@@ -432,15 +414,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Cloud DB for MySQL 설정 시 옳지 않은 것은?',
-        answer: [
-          { text: 'MySQL의 기본 포트 번호(3306)를 사용하는 것은 보안상 취약할 수 있으므로 변경해서 사용하는 것을 권장합니다', type: false },
-          { text: 'Cloud DB for MySQL 상품에서 DB 서버를 생성하기 위해서는 최초 1회 CLA 상품 사용 동의를 하셔야만 합니다', type: false },
-          { text: 'DB 백업 파일 보관 기간을 최소 1일에서 최대 30일까지 선택할 수 있습니다', type: false },
-          { text: '백업 파일에 대한 별도의 요금은 부과되지 않습니다', type: true },
-        ],
-      },
-      {
         question: '다음 중, CLA와 연계된 서비스는?',
         answer: [
           { text: 'Object Storage', type: true },
@@ -558,15 +531,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Live Station 상품에서는 다른 플랫폼에 동시 송출을 할 수 있는 기능이 제공됩니 다. 이 때 해당 기능을 부르는 명칭은 무엇인가요?',
-        answer: [
-          { text: 'Re-Stream', type: true },
-          { text: 'Re-Play', type: false },
-          { text: 'Re-Wind', type: false },
-          { text: 'Re-Watch', type: false },
-        ],
-      },
-      {
         question: 'VOD 트랜스코더에서 Job 생성시 Job 상태에 대한 설명으로 올바르지 않은 것은?',
         answer: [
           { text: 'Fail: 정상적으로 Job이 수행되지 않음', type: false },
@@ -582,15 +546,6 @@ const ncp202 = [
           { text: 'VPC에 의존적이다.', type: false },
           { text: 'White List 방식의 방화벽이다.', type: false },
           { text: 'Inbound에 대해서만 룰 적용이 가능하다.', type: true },
-        ],
-      },
-      {
-        question: 'VOD Station에서 Subtitle Output format은 무엇인가?',
-        answer: [
-          { text: 'VTT', type: true },
-          { text: 'SRT', type: false },
-          { text: 'TIME', type: false },
-          { text: 'CAP', type: false },
         ],
       },
       {
@@ -720,30 +675,12 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, Cloud Activity Tracer에서 수집된 로그에서 확인할 수 있는 정보가 아닌 것은?',
-        answer: [
-          { text: '작업내역', type: false },
-          { text: '작업상태', type: true },
-          { text: '계정유형', type: false },
-          { text: '접속내역', type: false },
-        ],
-      },
-      {
         question: '다음 Cloud Log Analytics 상품에 대한 설명으로 틀린 것은?',
         answer: [
           { text: '데이터는 최대 200GB 까지 저장 가능하다.', type: true },
           { text: '로그는 Object Storage로 내보낼 수 있다.', type: false },
           { text: '이용하기 위해선 서버에 Agent 설치가 필요하다.', type: false },
           { text: '대시보드를 통해 다양한 데이터를 실시간으로 확인할 수 있다.', type: false },
-        ],
-      },
-      {
-        question: '다음 중 VPC 플랫폼 기반 Cloud Hadoop 상품의 특징으로 올바른 설명은?',
-        answer: [
-          { text: '컴퓨팅 노드와 스토리지 노드가 분리되어 제공된다.', type: true },
-          { text: '기본 저장소로 NAS Storage가 제공된다.', type: false },
-          { text: '고가용성은 지원되지 않는다', type: false },
-          { text: '작업자노드는 최대 4대까지 생성 가능하다.', type: false },
         ],
       },
       {
@@ -954,15 +891,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼의 VPC 환경에서 ACG 룰이 적용되는 장치는 무엇인가요?',
-        answer: [
-          { text: '서버', type: false },
-          { text: '서버 NIC', type: true },
-          { text: 'IP', type: false },
-          { text: 'Subnet', type: false },
-        ],
-      },
-      {
         question: 'Certificate Manager와 연동이 가능한 서비스를 모두 고르시오.',
         answer: [
           { text: 'Load-balancer', type: true },
@@ -1152,24 +1080,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음중 UDP로만 제공되는 서비스는 무엇인가?',
-        answer: [
-          { text: 'DNS 서비스', type: false },
-          { text: '넷 바이오스 서비스', type: false },
-          { text: 'NTP 서비스', type: true },
-          { text: 'RPC 서비스', type: false },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼의 로드밸런서에 대한 설명으로 옳은 것을 고르시오',
-        answer: [
-          { text: '환경에는 총 두 가지 종류의 로드밸런서가 존재한다.', type: true },
-          { text: 'VPC 환경에서는 로드밸런서 생성시 멀티존 생성이 필수적이다.', type: false },
-          { text: '서비스할 프로토콜의 종류에 따라 Application/Network 타입으로 갈라진다.', type: false },
-          { text: '세션 유지 기능이 필요한 경우, Network 로드밸런서를 사용해야한다.', type: false },
-        ],
-      },
-      {
         question: '이미지 옵티마이저에서 리사이즈 및 크롭 옵션이 아닌 것은?',
         answer: [
           { text: 'w', type: false },
@@ -1323,15 +1233,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중 네이버 클라우드 플랫폼에서 제공하는 Analytics 상품이 아닌 것은?',
-        answer: [
-          { text: 'Elasticsearch Service', type: false },
-          { text: 'Cloud Data Streaming Service', type: false },
-          { text: 'Cloud Platform Analytics', type: true },
-          { text: 'Data Analytics Service', type: false },
-        ],
-      },
-      {
         question: '다음중 Cloud DB for MySQL 상품 특징이 아닌 것은?',
         answer: [
           { text: 'Cloud DB 상품은 고가용성 지원을 설정할 경우, Active master DB와 Standby master DB, 총 2대의 서버가 기본 생성된다.', type: false },
@@ -1365,15 +1266,6 @@ const ncp202 = [
           { text: '최대 4대까지 복제 슬레이브 DB 확장이 가능하며 읽기 부하 분산이 가능합니다.', type: false },
           { text: '장애 또는 이벤트 발생시 사용자의 메일과 SMS로 빠르게 장애 현황을 알려드립니다.', type: true },
           { text: '기본 10GB 데이터 스토리지를 제공하며, 10GB 단위로 3TB까지 자동으로 용량이 증가합니다.', type: false },
-        ],
-      },
-      {
-        question: '서비스 페이지 (PC 또는 웹)에 접속하는 실 사용자 데이터를 수집하여 국가, 브라우저, Device 별로 웹 페이지 속도와 PV Count 분석해주는 네이버클라우드 플랫폼 서비스는 무엇인지 고르시오.',
-        answer: [
-          { text: 'ELSA', type: false },
-          { text: 'RUA', type: true },
-          { text: 'CLA', type: false },
-          { text: 'WMS', type: false },
         ],
       },
       {
@@ -1422,15 +1314,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼 VPC 플랫폼의 네트워크 환경에 대한 설명으로 옳은 것을 모두 고르시오',
-        answer: [
-          { text: '서버 당 할당할 수 있는 공인 IP의 최대 갯수는 2개이다.', type: false },
-          { text: 'Private Subnet을 이용해서 외부와 단절된 사설 네트워크를 생성할 수 있다.', type: true },
-          { text: 'Private Subnet에서 외부 인터넷으로 연결이 필요한 경우, Internet Gateway를 생성한 후 연동해야 한다.', type: false },
-          { text: 'Network Interface Secondary IP 기능을 이용하면 HA 솔루션 등에 활용이 가능하다.', type: true },
-        ],
-      },
-      {
         question: '다음 네이버클라우드 플랫폼 VPC 환경에서의 로드밸런서 상품에 대한 설명 중 틀린것은?',
         answer: [
           { text: 'Target Group은 하나 이상의 등록된 대상에 요청을 분배하는데 사용됩니다.', type: false },
@@ -1476,30 +1359,12 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Cloud DB for MySQL에서 각 DB 서버들의 역할을 설명한 것중 옳지 않은 것은?',
-        answer: [
-          { text: 'Master: 각 DB 서비스의 Master DB 역할을 수행중인 DB Server 입니다.', type: false },
-          { text: 'Standby Master : 고가용성을 선택할 경우 Master DB 장애 시 생성되며 자동으로 Master로 변경됩니다.', type: true },
-          { text: 'Stand Alone : 고가용성을 선택하지 않을 경우 Stand Alone 으로 1대만 생성되며, 장애 시 자동 복구 또는 백업을 지원하지 않습니다. 가급적 개발 DB로 사용을 권장합니다.', type: false },
-          { text: 'Recovery : 백업으로부터 복구할 경우 Recovery 역할로 생성되며, 데이터 복구를 위해 읽기 전용으로 제공됩니다. Recovery 역할인 DB 서버로 다시 서비스 하고자 할 경우 “신규 DB 서비스 생성"을 통해 서비스 가능한 새로운 DB로 변경할 수 있습니다.', type: false },
-        ],
-      },
-      {
         question: 'Cloud DB for MySQL 으로의 접근 방식에 대한 설명을 잘못된 것은?',
         answer: [
           { text: '포트포워딩을 이용하여 접근', type: true },
           { text: '네이버클라우드 플랫폼 VM에서 Private 도메인 이용하여 접근', type: false },
           { text: 'SSL VPN을 이용하여 접근', type: false },
           { text: 'Public 도메인을 이용하여 접근', type: false },
-        ],
-      },
-      {
-        question: '다음중 Cloud DB for MySQL 상품 특징이 아닌 것은?',
-        answer: [
-          { text: 'Cloud DB 상품은 고가용성 지원을 설정할 경우, Active master DB와 Standby master DB, 총 2대의 서버가 기본 생성된다.', type: false },
-          { text: '슬레이브 DB는 데이터베이스의 읽기부하 분산을 위해 생성하는 복제 DB로 한 대 단위로 생성된다.', type: false },
-          { text: '기본 제공되는 100GB의 디스크는 운영체제를 위한 디스크로 추가 증설이 가능하고, 이용 요금에 포함되지 않음', type: true },
-          { text: 'DB 데이터를 저장하기 위한 데이터 스토리지는 별도로 사용량에 따른 시간 요금으로 과금', type: false },
         ],
       },
       {
@@ -1584,15 +1449,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼 Live Station에 대한 설명으로 잘못된 것을 고르시오.',
-        answer: [
-          { text: 'Thumbnail 기능을 제공한다.', type: false },
-          { text: 'CDN+ (국내 전용) 상품과의 연동만을 지원한다.', type: false },
-          { text: '채널 유지 비용은 발생하지 않는다.', type: true },
-          { text: '라이브 영상을 네이버클라우드 플랫폼 Object Storage에 저장할 수 있다.', type: false },
-        ],
-      },
-      {
         question: '다음 중, WMS에서 입력한 로그를 포함하는 모든 로그를 필터링하고 싶을 때 선택하는 필터링 옵션은?',
         answer: [
           { text: 'url', type: false },
@@ -1665,48 +1521,12 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VPC 내에 Public Subnet에 위치시킬 수 없는 Resource는 무엇인가?',
-        answer: [
-          { text: 'Cloud DB for MySQL', type: false },
-          { text: '베어메탈 서버', type: false },
-          { text: 'GPU 서버', type: false },
-          { text: 'Kubernetes Service', type: true },
-        ],
-      },
-      {
-        question: '다음 중 TCP 프로토콜을 이용하는 서비스가 아닌 것을 고르시오.',
-        answer: [
-          { text: 'SSH', type: false },
-          { text: 'FTP', type: false },
-          { text: 'NTP', type: true },
-          { text: 'RDP', type: false },
-        ],
-      },
-      {
-        question: '다음 중 네이버 클라우드 플랫폼의 Analytics 상품에 해당되지 않는 것은?',
-        answer: [
-          { text: 'Cloud Data Streaming Service', type: false },
-          { text: 'Cloud Search', type: false },
-          { text: 'Real User Analytics', type: false },
-          { text: 'CAPTCHA', type: true },
-        ],
-      },
-      {
         question: 'Cloud DB for MySQL 설정시 옳지 않은 것은?',
         answer: [
           { text: 'MySQL의 기본 포트 번호 (3306) 를 사용하는 것은 보안상 취약할 수 있으므로 변경해서 사용하는 것을 권장합니다', type: false },
           { text: 'Cloud DB for MySQL 상품에서 DB 서버를 생성하기 위해서는 최초 1회 CLA 상품 사용 동의를 하셔야만 합니다.', type: false },
           { text: 'DB 백업 파일 보관 기간을 최소 1일에서 최대 30일까지 선택할 수 있습니다.', type: false },
           { text: '백업파일에 대한 별도의 요금은 부과되지 않습니다', type: true },
-        ],
-      },
-      {
-        question: 'Live Station에서 Output Protocol이 아닌 것은 무엇인가?',
-        answer: [
-          { text: 'HLS', type: false },
-          { text: 'MPEG-DASH', type: false },
-          { text: 'RTMP', type: false },
-          { text: 'RTSP', type: true },
         ],
       },
       {
@@ -1836,15 +1656,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Live Station에서 Output Protocol 이 아닌 것은 무엇인가?',
-        answer: [
-          { text: 'HLS', type: false },
-          { text: 'MPEG-DASH', type: false },
-          { text: 'RTMP', type: false },
-          { text: 'RTSP', type: true },
-        ],
-      },
-      {
         question: '네이버 클라우드 플랫폼 GRM에 대한 설명으로 잘못된 것을 고르시오',
         answer: [
           { text: 'IP 도메인 리소스에 대한 분기가 가능하다', type: false },
@@ -1872,30 +1683,12 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 네 개의 상품 중 세 개의 상품은 네이버 클라우드 플랫폼의 네트워크망과 외부 망간의 통신을 필요로 할 때 사용됩니다. 나머지 이질적인 상품 하나는 무엇인가요?',
-        answer: [
-          { text: 'Cloud Connect', type: false },
-          { text: 'Cloud Insight', type: true },
-          { text: 'IPSEC VPN', type: false },
-          { text: 'SSL VPN', type: false },
-        ],
-      },
-      {
         question: 'Image Optimizer 상품에 대한 설명으로 틀린 것은?',
         answer: [
           { text: 'Cloud Log Analytics 상품과의 연동이 필수이다', type: false },
           { text: '변환 Rule 의 경우 실제 적용되기 까지 약간의 시간이 소요된다.', type: false },
           { text: '변환 Rule 은 엑셀파일을 통해 다량으로 불러 올 수 있다.', type: false },
           { text: '변환된 이미지 미리보기 기능은 제공되지 않는다.', type: true },
-        ],
-      },
-      {
-        question: '별도의 설정 없이 클라이언트의 IP를 확인할 수 있는 Load Balancer는 무엇인 가?',
-        answer: [
-          { text: 'Classic Load Balancer', type: false },
-          { text: 'Network Load Balancer', type: true },
-          { text: 'Network Proxy Load Balancer', type: false },
-          { text: 'Application Load Balancer', type: false },
         ],
       },
       {
@@ -2106,30 +1899,12 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VPC 생성시 생성 가능한 IP 주소 범위가 아닌 것은 무엇인가?',
-        answer: [
-          { text: '1 0.0.0.0/8', type: false },
-          { text: '127.0.0.0/8', type: true },
-          { text: '172.16.0.0/12', type: false },
-          { text: '192.168.0.0/16', type: false },
-        ],
-      },
-      {
         question: '다음 중, 로드밸런서에 SSL 인증서를 추가하기 위해 연동해야 하는 서비스는?',
         answer: [
           { text: 'SSL Manager', type: false },
           { text: 'Certificate Manager', type: true },
           { text: 'SSL Offload', type: false },
           { text: 'Global certificate', type: false },
-        ],
-      },
-      {
-        question: '다음 중 VPC 플랫폼 기반 Cloud Hadoop 상품의 특징으로 올바른 설명은?',
-        answer: [
-          { text: '컴퓨팅 노드와 스토리지 노드가 분리되어 제공된다', type: true },
-          { text: '기본 저장소로 NAS Storage가 제공된다', type: false },
-          { text: '고가용성은 지원되지 않는다', type: false },
-          { text: '작업자노드는 최대 4 대까지 생성 가능하다', type: false },
         ],
       },
       {
@@ -2184,15 +1959,6 @@ const ncp202 = [
           { text: 'File Requests: 업로드한 구성요소들의 목록', type: false },
           { text: 'Scenario: 테스트 시나리오 내용', type: true },
           { text: 'Today Event: 테스트 URL에서 금일 발생한 이벤트 수', type: false },
-        ],
-      },
-      {
-        question: 'VPC 생성시 생성 가능한 IP 주소 범위가 아닌 것은 무엇인가?',
-        answer: [
-          { text: '10.0.0.0/8', type: false },
-          { text: '127.0.0.0/8', type: true },
-          { text: '172.16.0.0/12', type: false },
-          { text: '192.168.0.0/16', type: false },
         ],
       },
       {
@@ -2355,15 +2121,6 @@ const ncp202 = [
           { text: 'Hbasse', type: false },
           { text: 'mahout', type: true },
           { text: 'Zepplin Notebook', type: false },
-        ],
-      },
-      {
-        question: '다음 중, Cloud Activity Tracer에서 수집된 로그에서 확인할 수 있는 정보가 아닌 것은?',
-        answer: [
-          { text: '작업내역', type: false },
-          { text: '작업상태', type: false },
-          { text: '계정유형', type: false },
-          { text: '접속 디바이스', type: true },
         ],
       },
       {
