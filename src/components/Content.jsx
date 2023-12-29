@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Content = (props) => {
     const {question,datas,onPage,onResult,styles,ran,onWrong} = props
@@ -56,10 +56,31 @@ const Content = (props) => {
     const onDup = (idx) => {
         setDup(dup.filter(item => item !== idx))
     }
+
+    const [timer,setTimer] = useState(question)
+    const [count, setCount] = useState(59);
+
+    useEffect(() => {
+      const id = setInterval(() => {
+        setCount((count) => count - 1);
+      }, 1000);
+
+      if(count === -1) {
+            if(timer === 0) {
+                clearInterval(id);
+                setCount(0)
+            } else {
+                setTimer(timer-1)
+                setCount(59)
+            }
+      }
+      return () => clearInterval(id);
+    },[count])
     
     return (
         <div className={styles.box}>
-            <h2 style={{color:'yellowgreen'}}>{num+1} / {question+1}</h2>
+            <h2 style={{color:'yellowgreen',width:'100px',display:'inline-block',marginBottom:'6px'}}>{num+1} / {question+1}</h2>
+            <h3 className={styles.timer}>{timer.toString().padStart(2, '0')}:{count.toString().padStart(2, '0')}</h3>
             {datas[num].img !== undefined && <div><img src={datas[num].img} className={styles.dataImg} alt='questionImg'/></div>}
             <div className={styles.questioin}>{datas[num].question}
             {datas[num].answer.filter(ans => ans.type).length > 1 && 

@@ -8,7 +8,7 @@
 	font-family: 'EASTARJET-Medium';
 }
 .box {
-    margin: 30px auto;
+    margin: 0 auto;
     text-align: center;
 }
 .ansBut {
@@ -75,6 +75,12 @@
     border-radius: 20px;
     margin-bottom: 20px;
 }
+.timer {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 700px;
+    text-align: right;
+}
 @media (max-width: 800px) {
     .dataImg {
         width: 90%;
@@ -89,5 +95,8 @@
     }
     .bono{
         width: 70%;
+    }
+    .timer {
+        width: 90%;
     }
 }

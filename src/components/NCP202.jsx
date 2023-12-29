@@ -306,15 +306,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음의 설명이 지칭하는 용어는? “CDN 캐시서버(엣지서버)에서 캐싱된 데이터를 지우는 기능”',
-        answer: [
-          { text: 'HIT', type: false },
-          { text: 'Streaming', type: false },
-          { text: 'Purge', type: true },
-          { text: 'Cache expiry', type: false },
-        ],
-      },
-      {
         question: 'Video Player에서 설정 가능한 기능이 아닌 것은 무엇인가?',
         answer: [
           { text: '재생 속도 조절', type: false },
@@ -609,15 +600,6 @@ const ncp202 = [
           { text: '도메인 리소스에 대한 헬스체크 설정이 가능하다.', type: true },
           { text: '헬스체크에 대한 로그는 제공하지 않는다.', type: false },
           { text: 'GRM 리소스 타입은 동일하게 설정해야 한다.(IP와 도메인을 같이 GRM에 바인드할 수 없다.)', type: false },
-        ],
-      },
-      {
-        question: '이미지 옵티마이저에서 다음과 같은 귀리 스트링이 의미하는 것이 아닌것은?',
-        answer: [
-          { text: '리사이즈 & 크롭', type: true },
-          { text: '가로의 크기는 512', type: false },
-          { text: '워터마크 삽입', type: false },
-          { text: '우측 상단을 기준 가로 11 픽셀, 세로 10픽셀 이동하여 워터마크를 찍음', type: false },
         ],
       },
       {
@@ -1332,15 +1314,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '이미지 옵티마이저에서 다음과 같은 쿼리스트링이 의미하는 것이 아닌 것은?',
-        answer: [
-          { text: '리사이즈 & 크롭', type: true },
-          { text: '가로크기는 512', type: false },
-          { text: '워터마크 삽입', type: false },
-          { text: '우측 상단을 기준 가로 11픽셀, 세로 10픽셀 이동하여 워터마크를 찍음', type: false },
-        ],
-      },
-      {
         question: 'VDN Transcoder에 대한 설명 중 틀린 것은?',
         answer: [
           { text: 'VOD Transcoder는 CDN과 연계가 가능하다.', type: false },
@@ -1791,15 +1764,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중 네이버 클라우드 플랫폼 VPC 환경에서의 Cloud DB for Redis 상품에 대한 설명 중 틀린 내용은?',
-        answer: [
-          { text: 'CPU는 기본 4core로 제공된다.', type: false },
-          { text: 'Cluster 기능이 제공된다.', type: false },
-          { text: '자동 Fail-Over 기능이 제공된다.', type: false },
-          { text: 'Stand는 최대 20개까지 구성 가능하다.', type: true },
-        ],
-      },
-      {
         question: 'Cloud DB for MySQL 으로의 접근 방식에 대한 설명을 잘못된 것은?',
         answer: [
           { text: '포트포워딩을 이용하여 접근', type: true },
@@ -1824,15 +1788,6 @@ const ncp202 = [
           { text: 'Network Traffic Monitoring', type: false },
           { text: 'Web service Monitoring System(WMS)', type: false },
           { text: 'Real User Analytics(RUA)', type: true },
-        ],
-      },
-      {
-        question: 'Cloud DB for Redis 상품에서 제공되는 CPU core 개수는?',
-        answer: [
-          { text: '1core', type: false },
-          { text: '2core', type: false },
-          { text: '3core', type: true },
-          { text: '4core', type: false },
         ],
       },
       {
@@ -2313,30 +2268,12 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음의 설명이 지칭하는 용어는? “CDN 캐시 서버 엣지서버 에서 케싱된 데이터를 지우는 기능”',
-        answer: [
-          { text: 'HIT', type: false },
-          { text: 'Streaming', type: false },
-          { text: 'Purge', type: true },
-          { text: 'Cache Expiry', type: false },
-        ],
-      },
-      {
         question: 'Video Player에서 설정 가능한 기능이 아닌 것은 무엇인가?',
         answer: [
           { text: '재생 속도 조절', type: false },
           { text: '브라우저 최소화시 자동 정지', type: false },
           { text: '자막 지원', type: false },
           { text: '영상 다운로드', type: true },
-        ],
-      },
-      {
-        question: 'CDN 서비스에서 캐 싱된 콘텐츠가 원본 서버에 변경되었는지 여부를 확인하는 주기를 지정하는 것은',
-        answer: [
-          { text: 'referrer', type: false },
-          { text: 'Secure Token', type: false },
-          { text: 'Purge', type: false },
-          { text: 'Caching Expiry', type: true },
         ],
       },
       {
