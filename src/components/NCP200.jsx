@@ -153,15 +153,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'VPC 환경/Classic 2 세대 서버의 Standard 서버 스펙 중 생성 가능한 서버 스펙은 무엇인가요?',
-        answer: [
-            { text: 'vCPU 2 개, RAM 8GB', type: true },
-            { text: 'vCPU 2 개, RAM 4GB', type: false },
-            { text: 'vCPU 2 개, RAM 16GB', type: false },
-            { text: 'vCPU 4 개, RAM 4GB', type: false },
-        ]
-    },
-    {
         question: '다음 중 분산 파일 시스템인 것은 무엇인가?',
         answer: [
             { text: 'EXT3', type: false },
@@ -234,39 +225,12 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Archive Storage 에 대한 설명으로 맞는 것은?',
-        answer: [
-            { text: '자주 read 가 일어나는 데이터 저장에 최적합한 스토리지이다.', type: false },
-            { text: '데이터 최소 보관 기간은 90 일로 설정되어 있다.', type: false },
-            { text: 'Swift API 를 활용해서 데이터 관리가 가능하다', type: true },
-            { text: 'Object Storage 와의 연동을 통해서 데이터에 대한 라이프 사이클 관리가 불가능하다', type: false },
-        ]
-    },
-    {
-        question: 'Object Storage 에 대한 설명으로 옳은 것은?',
-        answer: [
-            { text: 'OpenStack Swift API 를 사용해 데이터를 관리할 수 있다', type: false },
-            { text: '데이터 저장 공간은 초기 40TB 이며, 특정 양식을 통해 증설할 수 있다.', type: false },
-            { text: '라이프사이클 기능을 통해 데이터를 Archive Storage 로 데이터 이관이 가능하다', type: true },
-            { text: '콘솔을 이용해서 업로드 할 수 있는 최대 오브젝트 크기는 2G 이다.', type: false },
-        ]
-    },
-    {
         question: '리눅스에서 HTTPD 서버의 로그파일 위치는 어디인가? (단, 패키지로 설치시)',
         answer: [
             { text: '/var/log/', type: false },
             { text: '/var/log/apache', type: false },
             { text: '/var/log/httpd', type: true },
             { text: '/var/www/httpd/log/', type: false },
-        ]
-    },
-    {
-        question: '추가 디스크의 용량을 기존 10GB 에서 20GB 로 크기 변경을 하였습니다. 이 때 파티션 볼륨 할당 정보 (10GB/20GB)를 확인할 수 있는 Linux 명령어는 무엇인가요?',
-        answer: [
-            { text: 'df', type: true },
-            { text: 'mkfs', type: false },
-            { text: 'lsblk', type: false },
-            { text: 'ls', type: false },
         ]
     },
     {
@@ -306,39 +270,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 리눅스 서버의 기본 OS 용량은?',
-        answer: [
-            { text: '50GB', type: true },
-            { text: '100GB', type: false },
-            { text: '150GB', type: false },
-            { text: '200GB', type: false },
-        ]
-    },
-    {
-        question: 'Block Storage 에 대한 설명으로 맞는 것은?',
-        answer: [
-            { text: '기본 스토리지(=root 볼륨)가 HDD 타입일 경우 추가 스토리지도 HDD 만 할당 가능하다', type: false },
-            { text: '기본 스토리지(=root 볼륨)가 SSD 타입일 경우 추가 스토리지도 HDD 만 할당 가능하다', type: false },
-            { text: '기본 스토리지(=root 볼륨)가 HDD 타입일 경우 추가 스토리지는 SSD 만 할당 가능하다', type: false },
-            { text: '기본 스토리지(=root 볼륨)가 디스크 타입과 무관하게 추가 스토리지는 HDD/SSD 모든 타입 볼륨 할당 가능하다', type: true },
-        ]
-    },
-    {
         question: 'Linux 에서 NAS 를 마운트 할 때 사용하는 옵션은 무엇인가?',
         answer: [
             { text: 'mount -t nas', type: false },
             { text: 'mount -t ext4', type: false },
             { text: 'mount -t nfs', type: true },
             { text: 'mount -t net', type: false },
-        ]
-    },
-    {
-        question: '다음 중 부팅 디스크가 HDD 일 경우, 추가할 수 있는 block storage 의 종류는?',
-        answer: [
-            { text: 'HDD 만 가능', type: false },
-            { text: 'SSD 만 가능', type: false },
-            { text: 'HDD, SSD 모두 가능', type: true },
-            { text: 'NAS', type: false },
         ]
     },
     {
@@ -357,15 +294,6 @@ const ncp200 = [
             { text: '정지', type: true },
             { text: '시작중', type: false },
             { text: '부팅중', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼의 GPU 서버에 대한 설명으로 옳은 것을 고르시오',
-        answer: [
-            { text: '서버 한 대에 최대 12 장의 GPU 카드를 장착할 수 있다', type: false },
-            { text: 'GPU Core 단위로 할당 가능하다', type: false },
-            { text: 'PCI Pass Through 방식으로 제공한다', type: true },
-            { text: 'Tesla P100 을 제공한다', type: false },
         ]
     },
     {
@@ -504,24 +432,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '베어메탈 서버에 대한 설명 중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '디스크는 RAID 1+0. RAD 5 중 선택할 수 있다.', type: false },
-            { text: '내 서버 이미지를 사용할 수 없다.', type: false },
-            { text: 'Ubuntu OS 는 제공하고 있지 않다.', type: true },
-            { text: 'Windows 2012 OS 가 제공되고 있다.', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼 쿠버네티스 워커 노드에 설치되지 않는 요소는 무엇인가?',
-        answer: [
-            { text: 'docker', type: false },
-            { text: 'kublet', type: false },
-            { text: 'controller-manager', type: true },
-            { text: 'kube-proxy', type: false },
-        ]
-    },
-    {
         question: '다음 중 네이버 클라우드 플랫폼에서 제공하는 Storage 상품이 아닌 것은? (복수 정답)',
         answer: [
             { text: 'NAS', type: false },
@@ -546,15 +456,6 @@ const ncp200 = [
             { text: 'lvcreate > vgcreate > pvcreate > fdisk', type: false },
             { text: 'fdisk > pvcreate > vgcreate > lvcreate', type: true },
             { text: 'pvcreate > lvcreate > fdisk > vgcreate', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼 VPC 환경에서 멀티존 이용이 가능한 상품은? (복수선택)',
-        answer: [
-            { text: 'Cloud DB for MySQL', type: true },
-            { text: 'Load Balancer', type: true },
-            { text: 'Server', type: false },
-            { text: 'Cloud Hadoop', type: true },
         ]
     },
     {
@@ -621,15 +522,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'VPC 화경의 Standard 서버타입 중 지원하지 않는 서버 스펙은?',
-        answer: [
-            { text: '2vCPU 8G RAM', type: false },
-            { text: '4vCPU 16G RAM', type: false },
-            { text: '8vCPU 32G RAM', type: false },
-            { text: '12vCPU 64G RAM', type: true },
-        ]
-    },
-    {
         question: '공인 IP 에 대한 설명 중 틀린 것은?',
         answer: [
             { text: '서버 1 대당 1 개의 공인 IP 만 할당이 가능하다', type: false },
@@ -657,30 +549,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼의 GPU 서버에 대한 설명으로 옳은 것을 고르시오.',
-        answer: [
-            { text: '서버 한 대에 최대 12 장의 GPU 카드를 장착할 수 있다.', type: false },
-            { text: 'GPU Core 단위로 할당 가능하다.', type: false },
-            { text: 'PCI Pass Through 방식으로 제공한다.', type: true },
-            { text: 'Tesla P100 을 제공한다.', type: false },
-        ]
-    },
-    {
         question: '다음 중 리눅스 서버의 기본 OS 용량은?',
         answer: [
             { text: '50GB', type: true },
             { text: '100GB', type: false },
             { text: '150GB', type: false },
             { text: '200GB', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼 VPC 환경에서 제공되는 GPU 서버의 특징으로 틀린 것은?',
-        answer: [
-            { text: 'NVIDIA T4, V100 이용이 가능하다.', type: false },
-            { text: '서버 1 대당 꽃을 수 있는 T4 의 최대 개수는 2 개이다.', type: false },
-            { text: '서버 1 대당 꽃을 수 있는 V100 의 최대 개수는 4 개이다.', type: false },
-            { text: 'Grid 기술을 사용할 수 있다.', type: true },
         ]
     },
     {
@@ -720,15 +594,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 부팅 디스크가 HDD 일 경우, 추가할 수 있는 block storage 의 종류는?',
-        answer: [
-            { text: 'HDD 만 가능', type: false },
-            { text: 'SSD 만 가능', type: false },
-            { text: 'HDD, SSD 모두 가능', type: true },
-            { text: 'NAS', type: false },
-        ]
-    },
-    {
         question: '외부에서 네이버클라우드플랫폼 서버에 원격 접속할 수 있는 방법으로 잘못된 것을 고르시오.',
         answer: [
             { text: 'Classic 환경에서는 포트 포워딩 설정을 통해서 접속할 수 있다.', type: false },
@@ -738,30 +603,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼 MC(Main Console)에 대한 설명으로 잘못된 것은?',
-        answer: [
-            { text: '상품 별 상세 사용 가이드 문서를 제공한다.', type: false },
-            { text: '모바일 콘솔은 제공하지 않는다.', type: true },
-            { text: '사용 중인 상품 이용 내역을 확인할 있다.', type: false },
-            { text: '자주 사용하는 상품을 고정할 수 있다.', type: false },
-        ]
-    },
-    {
         question: '다음 중 Kubernetes 에 대한 설명 중 잘못된 것을 모두 고르시오.',
         answer: [
             { text: '사용자는 Kubernetes 클러스터 내 Master 서버에 접근이 가능하다.', type: true },
             { text: 'Kubernetes Service 는 네이버 클라우드 플랫폼 NAS 와 연동이 가능하다.', type: false },
             { text: 'kubernetes service 는 public subnet 에 배치가 가능하다.', type: true },
             { text: 'Kubernetes Ingress 를 Application LoadBalancer 상품에 연동이 가능하다.', type: false },
-        ]
-    },
-    {
-        question: '다음 VPC 환경에서의 Kubernetes Service 상품에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: '클러스터 형태로 Kubernetes Service 를 제공한다.', type: false },
-            { text: '최대 노드 생성 개수는 20 개이다.', type: true },
-            { text: 'Private Subnet 에만 생성이 가능하다.', type: false },
-            { text: 'Init Script 적용이 가능하다.', type: false },
         ]
     },
     {
@@ -882,15 +729,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '서버이미지 빌더에 대한 설명중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '내부적으로 Packer 를 사용하다.', type: false },
-            { text: '추가 스토리지를 붙여서 이미지를 생성할 수 있다.', type: false },
-            { text: 'Script 버전관리가 가능하다', type: false },
-            { text: '스크립트는 Javascript 언어로 작성한다', type: true },
-        ]
-    },
-    {
         question: '파일시스템중 파일의 시작위치와 크기를 가지고 데이터를 저장하는 방식으로 고전 적인 파일시스템 구조이며 단순하지만 데이터 공간에 대한 낭비가 심한 파일시스템 방식은 무엇인가?',
         answer: [
             { text: '연속 할당 방식', type: true },
@@ -951,15 +789,6 @@ const ncp200 = [
             { text: 'VDS', type: false },
             { text: 'Bare metal', type: true },
             { text: 'High-memory', type: true },
-        ]
-    },
-    {
-        question: '다음 중 리눅스에서 여러 개의 스토리지를 하나의 논리적인 볼륨 그룹으로 구성할 수 있는 것은?',
-        answer: [
-            { text: 'nfs-utils', type: false },
-            { text: '동적디스크 할당', type: false },
-            { text: 'LVM', type: true },
-            { text: 'span volume', type: false },
         ]
     },
     {
@@ -1168,15 +997,6 @@ const ncp200 = [
             { text: 'IaaS', type: true },
             { text: 'SaaS', type: false },
             { text: 'FaaS', type: false },
-        ]
-    },
-    {
-        question: 'MC(Main Console) 상에 보여지는 서버의 호스트 네임을 변경하기 위한 가장 좋은 방법은?',
-        answer: [
-            { text: '콘솔에서 서버 이름 변경을 선택하여 호스트명을 변경한다.', type: true },
-            { text: '/etc/sysconfig/network 파일을 수정한다.', type: false },
-            { text: '/etc/sysconfig/hostname을 수정한다.', type: false },
-            { text: '한 번 생성된 서버의 이름은 변경할 수 없다.', type: false },
         ]
     },
     {
@@ -1429,15 +1249,6 @@ const ncp200 = [
             { text: '서버 1대당 꽂을 수 있는 T4의 최대 개수는 2개이다.', type: false },
             { text: '서버 1대당 꽂을 수 있는 V100의 최대 개수는 4개이다.', type: false },
             { text: 'Grid 기술을 사용할 수 있다.', type: true },
-        ]
-    },
-    {
-        question: '다음 중 네이버 클라우드 플랫폼에서의 Live Migration에 대한 설명으로 올바른 것은?',
-        answer: [
-            { text: '일반 서버의 경우 호스트 서버 장애 시 Live Migration이 작동한다.', type: false },
-            { text: 'BareMetal 서버의 경우 시간이 조금 걸리지만 Live Migration이 가능하다.', type: true },
-            { text: 'Live Migration이란 서버가 죽지 않고 호스트서버가 변경되는 것을 뜻한다.', type: false },
-            { text: 'Live Migration 기능을 활성화하기 위해 서는 서비스 신청이 필요하다.', type: false },
         ]
     },
     {
@@ -1810,15 +1621,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Micro 서버 타입에 대한 설명 중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '서버의 사양은 2vCPU, 1G RAM, 50GB HDD 이다.', type: true },
-            { text: 'Classic 환경에서만 이용이 가능하다.', type: false },
-            { text: 'Windows OS는 지원하지 않는다.', type: false },
-            { text: '디스크 추가를 할 수 없다.', type: false },
-        ]
-    },
-    {
         question: '1PB는 몇 GB 인가?',
         answer: [
             { text: '1000GB', type: false },
@@ -1861,16 +1663,6 @@ const ncp200 = [
             { text: '제공되는 OS로는 Oracle Linux가 있다.', type: false },
             { text: 'CPU 종류 및 코어수를 내가 원하는대로 커스터마이징 할 수 있다.', type: true },
             { text: '디스크 구성은 RAID 1+0 및 RAID 5로 할 수 있다.', type: false },
-        ]
-    },
-    //여기2
-    {
-        question: '리눅스 서버의 기본 OS 용량은?',
-        answer: [
-            { text: '50GB', type: true },
-            { text: '100GB', type: false },
-            { text: '150GB', type: false },
-            { text: '200GB', type: false },
         ]
     },
     {
