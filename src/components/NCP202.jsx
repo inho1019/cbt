@@ -306,15 +306,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, Cloud DB for MS-SQL의 재시작 기능과 관련하여 잘못된 것은?',
-        answer: [
-          { text: '재시작을 실행하면 2가지 옵션(Without Fail-over, With Fail-over)가 제공된다', type: false },
-          { text: '재부팅 예약이 가능하다', type: true },
-          { text: 'With Fail-over의 경우, 서비스 다운타임이 짧으며, 사용자가 설정한 SSMS 내용이 그대로 유지된다', type: false },
-          { text: 'Without Fail-over 옵션 선택시, 서비스 다운 타임이 몇 분 이상 걸릴 수 있다', type: false },
-        ],
-      },
-      {
         question: '다음 중 VPC 플랫폼 기반 Cloud Hadoop 상품의 특징으로 올바른 설명은?',
         answer: [
           { text: '컴퓨팅 노드와 스토리지 노드가 분리되어 제공된다', type: true },
@@ -612,15 +603,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Live Station에서 원본 영상을 별도 파일로 Storage 에 저장하여 보관할 수 있으며, 현재 라이브중인 영상을 최대 여섯 시간전까지 되돌려 볼 수 있는 기능을 사용하기 위해 설정해줘야 하는 옵션은?',
-        answer: [
-          { text: '즉시 녹화 설정', type: false },
-          { text: 'Recording', type: false },
-          { text: 'Stream', type: false },
-          { text: 'DVR 설정', type: true },
-        ],
-      },
-      {
         question: '다음 중, 네이버클라우드 플랫폼의 로드밸런서 생성시 기본적으로 적용되는 분배 알고리즘은?',
         answer: [
           { text: 'Least-connection', type: false },
@@ -735,15 +717,6 @@ const ncp202 = [
           { text: 'VPC Peering', type: false },
           { text: 'Internet gateway', type: false },
           { text: 'Network ACL', type: false },
-        ],
-      },
-      {
-        question: 'Cloud DB for MS-SQL 대한 설명 중 틀린 것을 고르시오',
-        answer: [
-          { text: 'Cloud DB for MSSQL 상품의 경우, Standard type과 High-memory 타입을 선택할 수 있다.', type: false },
-          { text: '데이터스토리지는 기본 10GB가 자동 할당된다. 10GB단위로 2TB까지 자동 증가한다.', type: true },
-          { text: 'Cloud DB for MSSQL 상품은 Standard 타입에서 High-memory 타입으로 스펙업이 가능하다.', type: false },
-          { text: 'Cloud DB for MSSQL 상품은 Standalone으로 생성 시, 서버가 1대만 생성된다.', type: false },
         ],
       },
       {
@@ -1314,15 +1287,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, Cloud DB for MS-SQL의 재시작 기능과 관련하여 잘못된 것은?',
-        answer: [
-          { text: '재시작을 실행하면 2가지 옵션(Without Fail-over, With Fail-over)가 제공된다.', type: false },
-          { text: '재부팅 예약이 가능하다', type: false },
-          { text: 'With Fail-over의 경우, 서비스 다운타임이 짧으며, 사용자가 설정한 SSMS 내용이 그대로 유지된다.', type: false },
-          { text: 'Without Fail-over 옵션 선택 시, 서비스 다운 타임이 몇 분 이상 걸릴 수 있다.', type: true },
-        ],
-      },
-      {
         question: '다음 중, 네이버클라우드플랫폼 Cloud DB for MS-SQL의 Config group에 대한 설명 중 잘못된 것을 (모두) 고르시오',
         answer: [
           { text: 'Cloud DB 서비스에 적용 가능한 Config group을 생성, 변경, 삭제할 수 있다.', type: false },
@@ -1437,15 +1401,6 @@ const ncp202 = [
           { text: 'PostgreSQL', type: false },
           { text: 'Cloud DB for MySQL', type: false },
           { text: 'MariaDB', type: false },
-        ],
-      },
-      {
-        question: 'Cloud DB for MySQL의 백업 기능에 대해 잘못 설명한 것은?',
-        answer: [
-          { text: '백업 파일은 별도 데이터 스토리지에 저장됩니다.', type: false },
-          { text: '사용자가 백업 시간을 설정할 수 없으므로, 임의의 시간에 백업이 시작됩니다.', type: false },
-          { text: '백업 완료 시점 기준의 데이터로 복구가 가능합니다.', type: false },
-          { text: 'Stand Alone 서버도 DB 백업 및 복구 기능이 사용 가능합니다.', type: true },
         ],
       },
       {
@@ -2016,15 +1971,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, Cloud DB for MS SQL 대한 설명 중 틀린 것을 고르시오',
-        answer: [
-          { text: 'Cloud DB for MSSQL 상품의 경우, Standard type 과 High memory 타입을 선택할 수 있습니다', type: false },
-          { text: '데이터스토리지는 기본 10GB 가 자동 할당 되며, 10GB 단위로 2TB 까지 자동 증가합니다.', type: false },
-          { text: 'Cloud DB for MSSQL 상품은 Standard 타입에서 High memory 타입으로 스펙 업이 가능합니다', type: true },
-          { text: 'Cloud DB for MSSQL 상품은 Standalone 으로 생성 시, 서버가 1 대만 생성됩니다.', type: false },
-        ],
-      },
-      {
         question: '다음 중, WMS에서 입력한 로그를 포함하고 있는 모든 로그를 필터링 하고 싶을 때 선택하는 필터링 옵션은?',
         answer: [
           { text: 'url', type: false },
@@ -2220,15 +2166,6 @@ const ncp202 = [
           { text: '네이버 클라우드 플랫폼에서 제공되는 특정 템플릿 로그에 한해 수집이 가능하다', type: true },
           { text: 'Custom Log 기능을 통해 사용자가 원하는 로그를 지정하여 수집할 수 있다.', type: false },
           { text: '고객의 데이터는 논리적으로 분리된 개별 저장소에 2 개 이상의 복제본으로 분산 저장된다', type: false },
-        ],
-      },
-      {
-        question: '다음 중 Sub Account 상품에 대한 설명으로 올바르지 않은 것은?',
-        answer: [
-          { text: '다수의 사용자가 동일한 인프라를 이용해야 할 때 사용한다', type: false },
-          { text: '서브계정은 스스로 API Key 발급이 불가능하다', type: false },
-          { text: '2차 인증 설정이 가능하다', type: false },
-          { text: '비밀번호 만료일 설정이 가능하다', type: true },
         ],
       },
       {
