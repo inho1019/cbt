@@ -225,15 +225,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '외부에서 네이버클라우드플랫폼 서버에 원격 접속할 수 있는 방법으로 잘못된 것을 고르시오',
-        answer: [
-            { text: 'Classic 환경에서는 포트 포워딩 설정을 통해서 접속할 수 있다', type: false },
-            { text: '서버 생성시 자동할당되는 퍼블릭 도메인을 이용해서 접속할 수 있다.', type: true },
-            { text: 'SSL VPN 을 이용해서 접속할 수 있다.', type: false },
-            { text: '공인 IP 를 서버에 할당해서 접속할 수 있다.', type: false },
-        ]
-    },
-    {
         question: '다음 중 VPC 플랫폼에서 내 서버 이미지를 생성할 수 있는 서버의 상태를 모두 고르시오',
         answer: [
             { text: '운영중', type: true },
@@ -378,15 +369,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Linux 에서 LVM 구성을 하고자 한다. LVM 구성시 올바른 명령어 사용 순서는 무엇 인가?',
-        answer: [
-            { text: 'pvcreate > fdisk > lvcreate > vgcreate', type: false },
-            { text: 'lvcreate > vgcreate > pvcreate > fdisk', type: false },
-            { text: 'fdisk > pvcreate > vgcreate > lvcreate', type: true },
-            { text: 'pvcreate > lvcreate > fdisk > vgcreate', type: false },
-        ]
-    },
-    {
         question: '서버 상세보기에서 확인 가능한 내용은?',
         answer: [
             { text: '관리자 패스워드', type: false },
@@ -429,15 +411,6 @@ const ncp200 = [
             { text: '/var/log/apache', type: false },
             { text: '/var/log/httpd', type: true },
             { text: '/var/www/httpd/log', type: false },
-        ]
-    },
-    {
-        question: '스냅샷에 대한 설명으로 옳은 것을 모두 고르시오.',
-        answer: [
-            { text: '스냅샷 이미지를 NCP 내 타 계정과 공유하여 사용할 수 있다.', type: false },
-            { text: '스냅샷 이미지를 타 리전에 복사하여 사용할 수 있다.', type: true },
-            { text: 'VPC 환경에서는 중분 스냅샷을을 생성할 수 있다.', type: false },
-            { text: '운영중인 서버에 마운트 된 볼륨도 스냅샷 생성이 가능하다.', type: true },
         ]
     },
     {
@@ -519,15 +492,6 @@ const ncp200 = [
             { text: 'Kubernetes Service 는 네이버 클라우드 플랫폼 NAS 와 연동이 가능하다.', type: false },
             { text: 'kubernetes service 는 public subnet 에 배치가 가능하다.', type: true },
             { text: 'Kubernetes Ingress 를 Application LoadBalancer 상품에 연동이 가능하다.', type: false },
-        ]
-    },
-    {
-        question: '다음 중 네이버 클라우드 플랫폼 Kubernetes service 상품에 대한 설명으로 틀린 것은?',
-        answer: [
-            { text: 'Container Registry 상품과 연동이 가능하다.', type: false },
-            { text: 'VPC 플랫폼에서는 워커노드를 최대 50 대까지 생성 가능', type: false },
-            { text: 'Classic 플랫폼에서는 워커노드를 최대 10 대까지 생성 가능', type: false },
-            { text: 'Master Node 에 접근하기 위해서는 pein key 가 필요하다.', type: true },
         ]
     },
     {
@@ -835,15 +799,6 @@ const ncp200 = [
             { text: 'Global Route Manager', type: true },
             { text: 'GIS', type: false },
             { text: 'Load Balancer', type: false },
-        ]
-    },
-    {
-        question: 'RAID 1(미러)에 대한 설명 중 맞는 것은?',
-        answer: [
-            { text: '단순 볼륨에 비해 쓰기 속도가 뛰어나다.', type: false },
-            { text: '단순 볼륨에 비해 읽기 속도가 뛰어나다.', type: true },
-            { text: '저장공간의 손실이 없다.', type: false },
-            { text: '패리티를 이용한 디스크 복구가 가능하다', type: false },
         ]
     },
     {
