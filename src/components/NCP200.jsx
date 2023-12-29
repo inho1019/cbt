@@ -522,15 +522,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '외부에서 네이버클라우드플랫폼 서버에 원격 접속할 수 있는 방법으로 잘못된 것을 고르시오.',
-        answer: [
-            { text: 'Classic 환경에서는 포트 포워딩 설정을 통해서 접속할 수 있다.', type: false },
-            { text: '서버 생성 시 자동 할당되는 퍼블릭 도메인을 이용해서 접속할 수 있다.', type: true },
-            { text: 'SSL VPN 을 이용해서 접속할 수 있다.', type: false },
-            { text: '공인 IP 를 서버에 할당해서 접속할 수 있다.', type: false },
-        ]
-    },
-    {
         question: '다음 중 Kubernetes 에 대한 설명 중 잘못된 것을 모두 고르시오.',
         answer: [
             { text: '사용자는 Kubernetes 클러스터 내 Master 서버에 접근이 가능하다.', type: true },
