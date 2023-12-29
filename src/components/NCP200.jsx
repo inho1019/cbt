@@ -441,15 +441,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼의 서버 이미지 빌더에 대한 설명으로 틀린 것을 고르시오.',
-        answer: [
-            { text: '서버 이미지 생성에 사용되는 Packet 용 스크립트를 생성하고 관리하도록 도와주는 상품이다.', type: false },
-            { text: '이미지 생성 시 추가 볼륨에 대한 스토리지 설정은 할 수 없다.', type: true },
-            { text: '오픈소스인 Packer 를 활용해서 구현된 것이다.', type: false },
-            { text: '템플릿에 대한 버전 관리 기능을 제공한다.', type: false },
-        ]
-    },
-    {
         question: '스냅샷에 대한 설명으로 옳은 것을 모두 고르시오.',
         answer: [
             { text: '스냅샷 이미지를 NCP 내 타 계정과 공유하여 사용할 수 있다.', type: false },
@@ -1591,15 +1582,6 @@ const ncp200 = [
             { text: '100Mbps', type: false },
             { text: '500Mbps', type: false },
             { text: '10Gbps', type: false },
-        ]
-    },
-    {
-        question: '네이버 클라우드 플랫폼에서는 다양한 Media 상품을 제공합니다. 다음 중 제공되는 Media 상품이 아닌 것은?',
-        answer: [
-            { text: 'Video Player', type: false },
-            { text: 'NAVER Player', type: true },
-            { text: 'Image Optimizer', type: false },
-            { text: 'VOD Station', type: false },
         ]
     },
     {
