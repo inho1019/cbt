@@ -79,7 +79,7 @@ const Content = (props) => {
             }
       }
       return () => clearInterval(id);
-    },[count])
+    },[count, timer, timeUp])
     
     const onEnd = () => {
         setEnd(!end)
