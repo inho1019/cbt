@@ -27,15 +27,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 상품중 카테고리가 다른 상품은?',
-        answer: [
-            { text: 'Effective Log Search & Analytics', type: false },
-            { text: 'Web Service Monitoring System.', type: true },
-            { text: 'Real User Analytics', type: false },
-            { text: 'Cloud Hadoop', type: false },
-        ]
-    },
-    {
         question: 'MC(Main Console)에서 설정 불가능한 상품은 무엇인가? (모두 고르시오)',
         answer: [
             { text: 'Hybrid Cloud Hosting', type: false },
@@ -78,15 +69,6 @@ const ncp200 = [
             { text: 'e6', type: false },
             { text: '80', type: false },
             { text: '8e', type: true },
-        ]
-    },
-    {
-        question: '다음 보기 중 전가상화에 대한 설명으로 맞는 것을 고르시오',
-        answer: [
-            { text: '하이퍼바이저 타입 2 의 한 종류이다.', type: false },
-            { text: '하이퍼콜이라는 특수 시스템콜을 이용해서 VM 을 관리하는 방식을 말한다.', type: false },
-            { text: '하이퍼바이저 위 구동할 수 있는 게스트 OS 종류에 제약이 없다.', type: true },
-            { text: '초기에는 리눅스 등의 오픈 소스 OS 만 게스트 OS 로 사용할 수 있었다.', type: false },
         ]
     },
     {
@@ -162,15 +144,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '서버에 대한 설명 중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '다양한 스펙의 상품군이 존재한다.', type: false },
-            { text: 'VDS 는 홍콩에는 제공하고 있지 않다.', type: false },
-            { text: 'Comapact/Standard/High Memory 서버는 모든 리전에서 사용 가능하다 (홍콩에서 High Memory 불가)', type: true },
-            { text: 'Micro 서버는 Classic 환경에서 사용이 가능하다', type: false },
-        ]
-    },
-    {
         question: 'MC(Main Console)상에 보여지는 서버의 호스트네임을 변경하기 위한 가장 좋은 방법은?',
         answer: [
             { text: '콘솔에서 서버 이름 변경을 선택하여 호스트명을 변경한다.', type: true },
@@ -222,15 +195,6 @@ const ncp200 = [
             { text: '단순볼륨에 비해 읽기 속도가 뛰어나다', type: false },
             { text: '단순볼륨에 비해 데이터 안정성이 높다', type: true },
             { text: '저장공간의 손실이 없다', type: false },
-        ]
-    },
-    {
-        question: '리눅스에서 HTTPD 서버의 로그파일 위치는 어디인가? (단, 패키지로 설치시)',
-        answer: [
-            { text: '/var/log/', type: false },
-            { text: '/var/log/apache', type: false },
-            { text: '/var/log/httpd', type: true },
-            { text: '/var/www/httpd/log/', type: false },
         ]
     },
     {
@@ -294,15 +258,6 @@ const ncp200 = [
             { text: '정지', type: true },
             { text: '시작중', type: false },
             { text: '부팅중', type: false },
-        ]
-    },
-    {
-        question: '다음 서버 상품에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: 'Micro 타입의 서버는 이용이 불가능하다', type: true },
-            { text: 'Classic 과 VPC 환경에 있는 서버들 간의 사설망 통신은 불가능하다', type: false },
-            { text: '그래픽 카드 사용이 필요할 땐 GPU 서버를 이용하면 된다', type: false },
-            { text: '도커 이미지를 보관할 수 있는 상품으로 Container Bucket 이 존재한다.', type: false },
         ]
     },
     {
@@ -420,15 +375,6 @@ const ncp200 = [
             { text: '장애시에 복구가 가능하다.', type: false },
             { text: '다양한 접근 경로를 제공한다.', type: false },
             { text: '파일단위로 저장 및 복제한다.', type: true },
-        ]
-    },
-    {
-        question: '다음 중 블록 스토리지의 디스크 타입 변경을 위한 액션으로 적절한 보기는?',
-        answer: [
-            { text: '스토리지 디스크 타입을 바로 변경', type: false },
-            { text: '스냅샷을 생성 후, 스토리지를 생성하며 디스크 타입을 변경', type: false },
-            { text: '서버를 정지시킨 후 스토리지를 부착시킨 후 스냅샷 생성, 스토리지를 생성하며 디스크 타입을 변경', type: true },
-            { text: '불가능하다.', type: false },
         ]
     },
     {
@@ -621,24 +567,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼 VPC 플랫폼의 서버 상품에 대한 내용으로 올바른 것을 모두 고르시오 (복수정답)',
-        answer: [
-            { text: '서버에 추가 스토리지는 최대 15 까지 장착 가능하다.', type: true },
-            { text: '서버에는 1 개의 Network Interface 만 장착 가능하다.', type: false },
-            { text: '서버의 관리자 계정 패스워드를 알기 위해서는 pem key 가 필요하다.', type: true },
-            { text: '1 개의 Network Interface 에는 여러 IP 를 부착할 수 없다.', type: false },
-        ]
-    },
-    {
-        question: '다음 중 네이버 클라우드 플랫폼 서버 상품에서 사용 불가능한 OS 항목은?',
-        answer: [
-            { text: 'Centos', type: false },
-            { text: 'Fedora', type: true },
-            { text: 'Windows', type: false },
-            { text: 'Ubuntu', type: false },
-        ]
-    },
-    {
         question: '스냅샷에 대한 설명으로 옳은 것은?',
         answer: [
             { text: '스냅샷 기능을 이용해서 현재와 동일한 데이터의 서버를 만들 수 있다.', type: false },
@@ -654,15 +582,6 @@ const ncp200 = [
             { text: '단순볼륨에 비해 읽기 속도가 뛰어나다', type: true },
             { text: '저장공간의 손실이 없다.', type: false },
             { text: '패리티를 이용한 디스크 복구가 가능하다.', type: false },
-        ]
-    },
-    {
-        question: 'VPC 환경/Classic 2 세대 서버의 High Memory 서버 스펙 중 생성 가능한 서버 스펙은 무엇인가요?',
-        answer: [
-            { text: 'VCPU 4 개, RAM 8GB', type: false },
-            { text: 'VCPU 8 개, RAM 8GB', type: false },
-            { text: 'VCPU 2 개, RAM 8GB', type: false },
-            { text: 'VCPU 16 개, RAM 128GB', type: true },
         ]
     },
     {
@@ -756,15 +675,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버클라우드플랫폼 서버에 대한 설명으로 잘못된 것을 고르시오.',
-        answer: [
-            { text: '인증키 분실 시 인증키 변경 기능을 제공한다.', type: true },
-            { text: '공인 IP 는 서버 당 두 개까지 할당가능하다.', type: false },
-            { text: '리눅스 서버의 경우, 초기 접속 ID 는 root 이다.', type: false },
-            { text: '서버 최초 접속 시 초기 패스워드는 인증키를 이용해서 확인할 수 있다.', type: false },
-        ]
-    },
-    {
         question: '네이버클라우드플랫폼 서버에 할당된 추가 스토리지를 detach 할 수 있을 때는?',
         answer: [
             { text: '네이버 클라우드 플랫폼은 볼륨 detach 기능은 제공하고 있지 않다.', type: false },
@@ -844,15 +754,6 @@ const ncp200 = [
             { text: '미국 동부', type: true },
             { text: '홍콩', type: false },
             { text: '싱가폴', type: false },
-        ]
-    },
-    {
-        question: '다음 상품중 카테고리가 다른 상품은?',
-        answer: [
-            { text: 'Effective Log Search & Analytics', type: false },
-            { text: 'Web Service Monitoring System', type: true },
-            { text: 'Real User Analytics', type: false },
-            { text: 'Cloud Hadoop', type: false },
         ]
     },
     {
@@ -1198,15 +1099,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '서버 상태값에 대한 설명이 옳지 않은 것을 고르시오.',
-        answer: [
-            { text: '생성중 - 서버 이미지로부터 서버를 만들어내는 단계', type: false },
-            { text: '부팅중 - 서버 생성이 완료되고 전원이 공급되어 부팅되는 단계', type: false },
-            { text: '설정중 - 사용자가 서버 설정을 변경하여 변경된 내용이 반영되는 중', type: false },
-            { text: '종료중 - 서버가 반납된 상태', type: true },
-        ]
-    },
-    {
         question: '다음 서버 타입 중 Live Migration이 지원되지 않는 서버 타입은 무엇인지 고르시오.',
         answer: [
             { text: 'Standard', type: false },
@@ -1414,15 +1306,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '내서버이미지에 대한 설명 중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '내 서버 이미지는 Storage 메뉴에서 Storage 단위로 이미지를 생성한다.', type: true },
-            { text: 'Classic 환경에서는 서버가 정지중인 상태에서만 생성 가능하다.', type: false },
-            { text: 'VPC 환경에서는 서버가 운영중인 상태에서도 생성 가능하다.', type: false },
-            { text: '기존 서버 스펙과 다른 서버 스펙으로 서버를 만들 수 있다.', type: false },
-        ]
-    },
-    {
         question: '쿠버네티스 Service Type에서 가상 머신에 할당된 공인 혹은 사설 IP로 접근하기 위한 Service Type은 무엇인가?',
         answer: [
             { text: 'Cluster IP', type: false },
@@ -1578,10 +1461,10 @@ const ncp200 = [
     {
         question: 'Kubernetes에서 service 객체를 통해 만들어지는 로드밸런서 타입은?',
         answer: [
-            { text: 'Network LB', type: false },
+            { text: 'Network LB', type: true },
             { text: 'Application LB', type: false },
             { text: 'Classic LB', type: false },
-            { text: 'Network Proxy LB', type: true },
+            { text: 'Network Proxy LB', type: false },
         ]
     },
     {
@@ -1600,15 +1483,6 @@ const ncp200 = [
             { text: 'mkfs', type: false },
             { text: 'lsblk', type: true },
             { text: 'ls', type: false },
-        ]
-    },
-    {
-        question: '다음 중 블록 스토리지의 디스크 타입 변경을 위한 액션으로 적절한 보기는?',
-        answer: [
-            { text: '스토리지 디스크 타입을 바로 변경', type: false },
-            { text: '스냅샷을 생성 후, 스토리지를 생성하며 디스크 타입을 변경', type: true },
-            { text: '서버를 정지시킨 후 스토리지를 부착시킨 후 스냅샷 생성, 스토리지를 생성하며 디스크 타입을 변경', type: false },
-            { text: '불가능하다.', type: false },
         ]
     },
     {
