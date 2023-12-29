@@ -180,15 +180,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Micro 서버타입에 대한 설명 중 잘못된 것을 고르시오',
-        answer: [
-            { text: '서버 사양은 2vCPU, 1G RAM, 50GB HDD 이다', type: true },
-            { text: 'Classic 환경에서만 이용이 가능하다', type: false },
-            { text: 'Windows OS 는 지원하지 않는다', type: false },
-            { text: '디스크 추가를 할 수 없다', type: false },
-        ]
-    },
-    {
         question: 'RAID 0(스트라이프)에 대한 설명 중 틀린 것은?',
         answer: [
             { text: '단순볼륨에 비해 쓰기 속도가 뛰어나다', type: false },
