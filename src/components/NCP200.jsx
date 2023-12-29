@@ -1045,15 +1045,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼 추가 스토리지에 대한 설명으로 적절하지 않는 것을 고르시오',
-        answer: [
-            { text: 'HDD/SSD 두 가지 볼륨을 제공한다', type: false },
-            { text: '추가 스토리지에 대한 detach 기능을 제공한다.', type: false },
-            { text: '추가 스토리지 용량에 대한 업사이징(확대) 기능을 제공한다.', type: false },
-            { text: '추가 스토리지 용량에 대한 다운사이징(축소) 기능을 제공한다.', type: true },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼의 GPU 서버에 대한 설명으로 옳은 것을 고르시오.',
         answer: [
             { text: '서버 한 대에 최대 12장의 GPU 카드를 작성할 수 있다.', type: false },
