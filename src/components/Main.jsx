@@ -75,7 +75,8 @@ const Main = () => {
         setResult(0)
         setSel('-1')
         setWrongData([])
-        setRan(false)
+        setRan(false) 
+        setTimeUp(false) 
     }
 
     const onWrongStart =() => {

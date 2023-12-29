@@ -117,15 +117,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중 포트 번호와 서비스가 잘못 연결된 것을 고르시고',
-        answer: [
-          { text: 'SSH - 22', type: false },
-          { text: 'Telnet - 23', type: false },
-          { text: 'DNS - 53', type: false },
-          { text: 'IMAP - 93', type: true },
-        ],
-      },
-      {
         question: 'DSR 기능이 적용되어 보다 빠르고 효율적인 서비스를 구성할 수 있는 Load Balancer는 무엇인가?',
         answer: [
           { text: 'Classic Load Balancer', type: false },
@@ -348,15 +339,6 @@ const ncp202 = [
           { text: '기본 저장소로 NAS Storage가 제공된다', type: false },
           { text: '고가용성은 지원되지 않는다', type: false },
           { text: '작업자노드는 최대 4대까지 생성 가능하다', type: false },
-        ],
-      },
-      {
-        question: '다음 Cloud DB for Redis 상품에 대한 설명으로 올바른 것은?',
-        answer: [
-          { text: '최근 8주 이내의 모니터링 지표를 확인할 수 있다', type: false },
-          { text: 'OS Dashboard는 지원되지 않는다', type: false },
-          { text: '백업 기능을 이용하기 위해서는 상품 이용 신청서를 작성해야 한다', type: false },
-          { text: '백업은 매일 1번씩 진행되며, 최대 7일까지 보관이 가능하다', type: true },
         ],
       },
       {
@@ -585,15 +567,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'IP 헤더에서 TTL은 몇 Bit가 할당되어 있는가?',
-        answer: [
-          { text: '4', type: false },
-          { text: '6', type: false },
-          { text: '8', type: true },
-          { text: '10', type: false },
-        ],
-      },
-      {
         question: '네이버 클라우드 플랫폼 GRM에 대한 설명으로 잘못된 것을 고르시오.',
         answer: [
           { text: 'IP, 도메인 리소스에 대한 분기가 가능하다', type: false },
@@ -644,7 +617,7 @@ const ncp202 = [
           { text: '서버에 연결되어있는 맵핑 정보를 변경할 수 있다.', type: false },
           { text: 'VPC에 의존적이다.', type: false },
           { text: 'White List 방식의 방화벽이다.', type: false },
-          { text: 'Inbound 에 대해서만 룰 적용이 가능하다.', type: true },
+          { text: 'Inbound에 대해서만 룰 적용이 가능하다.', type: true },
         ],
       },
       {
@@ -657,39 +630,12 @@ const ncp202 = [
         ],
       },
       {
-        question: 'GRM IP 리소스 타입의 헬스 체크 Interval로 설정할 수 없는 것을 고르시오.',
-        answer: [
-          { text: '30', type: false },
-          { text: '60', type: false },
-          { text: '120', type: true },
-          { text: '180', type: false },
-        ],
-      },
-      {
-        question: '다음 중 포트번호와 프로토콜이 잘못 짝지어진 것은?',
-        answer: [
-          { text: '22 – SSH', type: false },
-          { text: '23 – FTP', type: true },
-          { text: '53 – DNS', type: false },
-          { text: '143 - imap', type: false },
-        ],
-      },
-      {
         question: '다음 중 Live station에 대한 설명 중 옳은 것을 모두 고르시오',
         answer: [
           { text: 'Output Protocol 은 기본 HLS & DASH 프로토콜로 지정된다.', type: true },
           { text: 'Live Station 은 반드시 CDN 과 함께 사용한다.', type: true },
           { text: 'Custom 화질을 지정할 수 있는 기능은 추후 제공될 예정이다.', type: true },
           { text: '채널이 생성 중인 상태는 ‘준비’ 상태로 콘솔에 표기된다.', type: false },
-        ],
-      },
-      {
-        question: '다음 중 포트번호와 서비스가 잘못 연결된 것을 고르시오.',
-        answer: [
-          { text: 'SSH – 22', type: false },
-          { text: 'Telnet – 23', type: false },
-          { text: 'DNS – 53', type: false },
-          { text: 'IMAP - 93', type: true },
         ],
       },
       {
@@ -801,15 +747,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'HTTP 2.0 기능을 지원하는 Load Balancer는 무엇인가?!',
-        answer: [
-          { text: 'Classic Load Balancer', type: false },
-          { text: 'Network Load Balancer', type: false },
-          { text: 'Netowk Proxy Load Balancer', type: false },
-          { text: 'Application Load Balancer', type: true },
-        ],
-      },
-      {
         question: '이미지 옵티마이저에서 섬네일 생성 규칙을 만드는 방법은?',
         answer: [
           { text: 'Query String', type: true },
@@ -834,15 +771,6 @@ const ncp202 = [
           { text: 'VPC Peering', type: false },
           { text: 'Internet gateway', type: false },
           { text: 'Network ACL', type: false },
-        ],
-      },
-      {
-        question: 'HA 솔루션 등에 활용하기 위한 보조 IP 기능을 제공해주는 상품 이름은?',
-        answer: [
-          { text: 'Network Interface - Secondary IP', type: true },
-          { text: 'Network Interface - HA IP', type: false },
-          { text: 'Server - Secondary IP', type: false },
-          { text: 'Server - HP IP', type: false },
         ],
       },
       {
@@ -897,15 +825,6 @@ const ncp202 = [
           { text: 'Sub Account의 Access Key 관리', type: false },
           { text: 'Object Storage 버킷 권한', type: false },
           { text: 'ACG 포트 관리', type: false },
-        ],
-      },
-      {
-        question: '다음 중, Sub Account에 대한 설명 중 옳지 않은 것은?',
-        answer: [
-          { text: 'sub account 대시보드에서 서브 계정 수, 그룹 수, 정책 수를 확인할 수 있다.', type: false },
-          { text: '서브 계정의 정보를 수정 및 삭제는 가능하나 일시정지 기능은 제공되고 있지 않다.', type: true },
-          { text: '다수의 서브 계정에 동일한 정책이 반영되도록 그룹 기능을 제공한다.', type: false },
-          { text: '서브 계정들이 이용할 수 있는 권한들을 묶어 정책으로 제공한다.', type: false },
         ],
       },
       {
@@ -1077,15 +996,6 @@ const ncp202 = [
           { text: '네이버 서비스에서 안정성이 검증된 버전을 제공합니다.', type: false },
           { text: '기본 10GB 데이터 스토리지를 제공하며, 10GB 단위로 6TB까지 자동으로 용량이 증가합니다.', type: false },
           { text: '마스터DB가 스탠바이 DB로 Fail-over 할 때 DNS방식으로 이동화를 제공함으로써, 어플리케이션의 변경이 필요합니다.', type: true },
-        ],
-      },
-      {
-        question: '다음 중, WMS에서 측정 가능한 국가가 아닌 곳은?',
-        answer: [
-          { text: '가나', type: true },
-          { text: '미국', type: false },
-          { text: '싱가폴', type: false },
-          { text: '일본', type: false },
         ],
       },
       {
@@ -1341,15 +1251,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'IP 헤더에서 TTL은 몇 Bit가 할당되어 있는가?',
-        answer: [
-          { text: '4', type: false },
-          { text: '6', type: false },
-          { text: '8', type: true },
-          { text: '10', type: false },
-        ],
-      },
-      {
         question: '이미지 옵티마이저에서 리사이즈 및 크롭 옵션이 아닌 것은?',
         answer: [
           { text: 'w', type: false },
@@ -1494,24 +1395,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, Sub Account에 대한 설명 중 옳지 않은 것은?',
-        answer: [
-          { text: 'Sub account 대시보드에서 서브 계정 수 그룹 수, 정책 수를 확인할 수 있다.', type: false },
-          { text: '서브 계정의 정보를 수정 및 삭제는 가능하나 일시정지 기능은 제공되고 있지 않다', type: false },
-          { text: '다수의 서브 계정에 동일한 정책이 반영되도록 그룹 기능을 제공한다', type: false },
-          { text: '서브 계정들이 이용할 수 있는 권한을 묶어 정책으로 제공한다.', type: true },
-        ],
-      },
-      {
-        question: 'Cloud DB for MySQL 생성 시 자동 생성되는 항목을 모두 고르시오',
-        answer: [
-          { text: 'Private Domain', type: true },
-          { text: 'ACG', type: true },
-          { text: 'Public Domain', type: false },
-          { text: 'Event Alarm', type: false },
-        ],
-      },
-      {
         question: '다음 중, 네이버클라우드플랫폼 Cloud DB for MS-SQL의 Config group에 대한 설명 중 잘못된 것을 (모두) 고르시오',
         answer: [
           { text: 'Cloud DB 서비스에 적용 가능한 Config group을 생성, 변경, 삭제할 수 있다.', type: false },
@@ -1572,15 +1455,6 @@ const ncp202 = [
           { text: 'Slow Query', type: false },
           { text: 'Replication', type: false },
           { text: 'Backup', type: true },
-        ],
-      },
-      {
-        question: 'Cloud DB for MSSQL에 대한 스토리지에 대한 설명으로 맞는 것은?',
-        answer: [
-          { text: '운영체제를 위한 기본 디스크는 50GB가 기본 제공됩니다.', type: false },
-          { text: '운영체제가 설치되는 기본 디스크는 용량 변경 불가능합니다.', type: true },
-          { text: '최초 DB 생성 시 HDD로만 생성이 가능합니다.', type: false },
-          { text: '데이터를 저장하기 위한 스토리지 증가 시 50GB 단위로 과금됩니다.', type: false },
         ],
       },
       {
@@ -1662,15 +1536,6 @@ const ncp202 = [
           { text: 'Application 로드 밸런서는 Proxy 타입이다.', type: false },
           { text: '부하처리 성능에 따라 Small/Medium/ Large 중 선택할 수 있다.', type: false },
           { text: '성능은 최대 10만 CPS까지 지원한다', type: true },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼의 VPC 환경에서 ACG에 대한 설명으로 틀린 것은 무엇인가요?',
-        answer: [
-          { text: '서버에 연결되어 있는 맵핑 정보를 변경할 수 있다.', type: false },
-          { text: 'VPC에 의존적이다.', type: false },
-          { text: 'Write List 방식의 방화벽이다.', type: false },
-          { text: 'Inbound에 대해서만 룰 적용이 가능하다.', type: true },
         ],
       },
       {
@@ -1833,15 +1698,6 @@ const ncp202 = [
           { text: 'Codec H.265만 지원한다.', type: true },
           { text: 'Thumbnail을 자동 생성한다.', type: false },
           { text: 'Output File Storage2 Object Storage에 저장할 수 있다.', type: false },
-        ],
-      },
-      {
-        question: 'VOD 트랜스코더에서 Job 생성시 Job 상태에 대한 설명으로 올바르지 않은 것은?',
-        answer: [
-          { text: 'Fail : 정상적으로 Job이 수행되지 않음', type: false },
-          { text: 'Progressing : Job 수행 중', type: false },
-          { text: 'Submitted: Job 수행 완료', type: true },
-          { text: 'Cancel: Submitted 상태였던 Job 수행 취소', type: false },
         ],
       },
       {
@@ -2079,15 +1935,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '타 계정과 VPC Peering시 필요한 정보가 아닌 것은 무엇인가?',
-        answer: [
-          { text: '로그인 ID', type: false },
-          { text: 'VPC ID', type: false },
-          { text: 'VPC 명', type: false },
-          { text: 'VPC 네트웍 주소', type: true },
-        ],
-      },
-      {
         question: '다음 중 Real User Analytics 상품에 대한 설명으로 틀린 것은?',
         answer: [
           { text: '대시보드를 통해 최근 300분 이내 발생한 정보 확인이 가능하다.', type: true },
@@ -2142,15 +1989,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VPC 플랫폼 로드밸런서에서 지원하는 프로토 골의 연결 관계가 잘못 짝지어진 것은 무엇인가?',
-        answer: [
-          { text: 'TCP - Network Load Balancer', type: false },
-          { text: 'Proxy TCP - Network Proxy Load Balancer', type: false },
-          { text: 'HTTP - Network Load Balancer', type: true },
-          { text: 'HTTPS - Application Load Balancer', type: false },
-        ],
-      },
-      {
         question: 'Live Station에서 Output Protocol 이 아닌 것은 무엇인가?',
         answer: [
           { text: 'HLS', type: false },
@@ -2166,24 +2004,6 @@ const ncp202 = [
           { text: '도메인 리소스에 대한 헬스체크 설정이 가능하다', type: true },
           { text: '헬스체크에 대한 로그는 제공하지 않는다.', type: false },
           { text: 'GRM 리소스 타입은 동일하게 설정해야 한다. (IP 와 도메인을 같이 GRM에 바인드할 수 없다.)', type: false },
-        ],
-      },
-      {
-        question: '다음 중 CDN 서비스에서 콘텐츠에 대한 접근 을 제한할 수 있는 것을 모두 고르시오.',
-        answer: [
-          { text: 'Ignore Query String', type: false },
-          { text: 'referrer Domain', type: true },
-          { text: 'BYPASS', type: false },
-          { text: 'Secure-Token', type: true },
-        ],
-      },
-      {
-        question: 'VOD Transcoder에 대한 설명 중 틀린 것은?',
-        answer: [
-          { text: 'preset 은 1-5 까지 설정 가능하다', type: false },
-          { text: 'Codec 은 H.264만 지원한다.', type: true },
-          { text: 'Thumbnail 올 자동 생성한다.', type: false },
-          { text: 'Output File Storage 와 Object Storage에 저장할 수 있다', type: false },
         ],
       },
       {
@@ -2211,24 +2031,6 @@ const ncp202 = [
           { text: 'Cloud Insight', type: true },
           { text: 'IPSEC VPN', type: false },
           { text: 'SSL VPN', type: false },
-        ],
-      },
-      {
-        question: '다음 중 로드밸런서의 Target group 에 대한 설명 중 옳은 것을 모두 고르시오',
-        answer: [
-          { text: '한 대의 서버는 하나의 Target group 에만 속 할 수 있다', type: false },
-          { text: '하나의 Target group 온 하나의 로드밸런서에 만 할당이 가능하다.', type: true },
-          { text: '로드밸런서 생성 후 Target group 을 수정할 수 있다', type: true },
-          { text: 'Target Group 온 Zone 과 Subnet 에 상관없이 동일 VPC 내 모든 대상 (서버를 등록할 수 있습니다', type: true },
-        ],
-      },
-      {
-        question: 'Certificate Manager 와 연동이 가능한 서비스를 모두 고르시오.',
-        answer: [
-          { text: 'Load-balancer', type: true },
-          { text: 'CDN', type: true },
-          { text: 'Global Route Manager', type: false },
-          { text: 'VPC', type: false },
         ],
       },
       {
@@ -2556,15 +2358,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Cloud DB for MySQL 설명으로 틀린 것은?',
-        answer: [
-          { text: 'DB 서버의 기본 생성 대수는 고가용성 선택 여부에 따라 달라진다', type: false },
-          { text: '고가용성 선택 시 기본 2 대의 DB 서버가 생성된다', type: false },
-          { text: 'Standby Master DB는 평상 시에는 동기화 작업 외에 다른 용도로 사용 불가하다', type: true },
-          { text: 'DB 서버의 스펙의 변경 시, 마스터 데이터베이스의 스펙만 변경된다.', type: false },
-        ],
-      },
-      {
         question: '다음 중 Cloud Log Analytics 상품에 대한 설명으로 틀린 것은?',
         answer: [
           { text: '시스템의 로그를 수집하고 분석할 수 있도록 도와주는 상품이다', type: false },
@@ -2589,15 +2382,6 @@ const ncp202 = [
           { text: 'Cloud Advisor', type: true },
           { text: 'Cloud Tip', type: false },
           { text: 'Cloud Analysis', type: false },
-        ],
-      },
-      {
-        question: '다음 Cloud DB for Redis 상품에 대한 설명으로 올바른 것은?',
-        answer: [
-          { text: '최근 8 주 이내의 모니터링 지표를 확인할 수 있다.', type: false },
-          { text: 'OS Dashboard는 지원되지 않는다', type: false },
-          { text: '백업 기능을 이용하기 위해서는 상품 이용 신청서를 작성해야 한다', type: false },
-          { text: '백업은 매일 1 번씩 진행되며 최대 7 일까지 보관이 가능하다', type: true },
         ],
       },
       {
@@ -2673,15 +2457,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VPC 환경에서의 Network Interface에 대한 설명으로 틀린 것은?',
-        answer: [
-          { text: '서버 생성 시 최대 3 개의 Network Interface 생성이 가능하다', type: true },
-          { text: '각 NIC에는 Secondary IP를 부여할 수 있다', type: false },
-          { text: '하나의 NIC에는 최대 3 개의 Secondary IP를 추가할 수 있다', type: false },
-          { text: '실제 Secondary IP 활성화를 위해선 network script를 일부 수정해야 한다', type: false },
-        ],
-      },
-      {
         question: 'VOD Station에서 Subtitle Output format은 무엇인가?',
         answer: [
           { text: 'VTT', type: true },
@@ -2697,15 +2472,6 @@ const ncp202 = [
           { text: 'MP4', type: true },
           { text: 'MOV', type: false },
           { text: 'WMV', type: false },
-        ],
-      },
-      {
-        question: 'HTTP 2.0 기능을 지원하는 Load Balancer는 무엇인가?',
-        answer: [
-          { text: 'Classic Load Balancer', type: false },
-          { text: 'Network Load Balancer', type: false },
-          { text: 'Network Proxy Load Balancer', type: false },
-          { text: 'Application Load Balancer', type: true },
         ],
       },
       {
