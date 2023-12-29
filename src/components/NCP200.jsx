@@ -153,15 +153,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'VPC 플랫폼 상의 Kubernetes Service 에서는 최대 몇 대의 워커노드 생성이 가능한가?',
-        answer: [
-            { text: '10 대', type: false },
-            { text: '30 대', type: false },
-            { text: '50 대', type: true },
-            { text: '100 대', type: false },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼 VPC 환경에서의 ACG 에 대한 설명으로 옳은 것을 모두 고르시오',
         answer: [
             { text: '접근 소스는 IP 로만 설정 가능하다', type: false },
@@ -216,30 +207,12 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Linux 에서 NAS 를 마운트 할 때 사용하는 옵션은 무엇인가?',
-        answer: [
-            { text: 'mount -t nas', type: false },
-            { text: 'mount -t ext4', type: false },
-            { text: 'mount -t nfs', type: true },
-            { text: 'mount -t net', type: false },
-        ]
-    },
-    {
         question: '다음 중 VPC 플랫폼에서 내 서버 이미지를 생성할 수 있는 서버의 상태를 모두 고르시오',
         answer: [
             { text: '운영중', type: true },
             { text: '정지', type: true },
             { text: '시작중', type: false },
             { text: '부팅중', type: false },
-        ]
-    },
-    {
-        question: 'NAS 스토리지에 대한 설명 중 맞는 것은?',
-        answer: [
-            { text: 'NAS 를 생성시 기본적으로 스냅샷이 활성화된다.', type: false },
-            { text: 'NAS 볼륨의 최대 용량은 10TB 이다.', type: true },
-            { text: 'NAS 를 사용하기 위해서는 ACG 에서 NAS 와의 포트를 열어주어야 한다.', type: false },
-            { text: 'NAS 용량을 늘이거나 줄일 때의 단위는 50GB 이다.', type: false },
         ]
     },
     {
@@ -342,15 +315,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'Object Storage 가 일반적인 분산파일시스템과 다른점은 무엇인가?',
-        answer: [
-            { text: '저장 용량에 한계가 없다.', type: false },
-            { text: '장애시에 복구가 가능하다.', type: false },
-            { text: '다양한 접근 경로를 제공한다.', type: false },
-            { text: '파일단위로 저장 및 복제한다.', type: true },
-        ]
-    },
-    {
         question: '다음 중 네이버 클라우드 플랫폼에서 제공하는 Storage 상품이 아닌 것은? (복수 정답)',
         answer: [
             { text: 'NAS', type: false },
@@ -414,30 +378,12 @@ const ncp200 = [
         ]
     },
     {
-        question: '공인 IP 에 대한 설명 중 틀린 것은?',
-        answer: [
-            { text: '서버 1 대당 1 개의 공인 IP 만 할당이 가능하다', type: false },
-            { text: '공인 IP 는 실제 사용하지 않고 발급만 한 상태에선 요금이 부과되지 않는다.', type: true },
-            { text: '외부 인터넷 통신을 필요로 할 때 사용한다.', type: false },
-            { text: 'Public Subnet 에 생성된 리소스에 부착할 수 있다.', type: false },
-        ]
-    },
-    {
         question: '네이버클라우드플랫폼 VPC 환경 기준, Zone 에 종속적인 상품이 아닌것을 고르시오',
         answer: [
             { text: 'Public Subnet', type: false },
             { text: 'Private Subnet', type: false },
             { text: 'Load Balancer', type: true },
             { text: 'NAT Gateway', type: false },
-        ]
-    },
-    {
-        question: 'API 를 이용하여 Object Storage 로 파일을 업로드하려 한다. 이 때 단일 파일의 최대 크기는 얼마인가?',
-        answer: [
-            { text: '1TB', type: false },
-            { text: '2TB', type: false },
-            { text: '5TB', type: false },
-            { text: '10TB', type: true },
         ]
     },
     {
@@ -660,7 +606,7 @@ const ncp200 = [
         question: '네이버클라우드플랫폼 VPC 환경의 서버에 대한 설명으로 잘못된 것을 고르시오.',
         answer: [
             { text: '서버 생성 시 반납 보호 설정으로 삭제를 방지할 수 있다.', type: false },
-            { text: '서버 생성 시 선택한 서브넷 대역 안에서 원하는 사설 IP 를 선택할 수 있다...', type: false },
+            { text: '서버 생성 시 선택한 서브넷 대역 안에서 원하는 사설 IP 를 선택할 수 있다.', type: false },
             { text: '서버 생성 시 한번에 다량의 서버를 만들 수 있다.', type: false },
             { text: '한 번 생성된 VM 의 ACG 그룹 변경은 불가능하다.', type: true },
         ]
@@ -1009,15 +955,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼 VPC 환경에서 서버의 네트워크 환경 특성에 대한 설명 중 잘못된 것을 고르시오.',
-        answer: [
-            { text: '한 대의 서버에는 최대 3개의 네트워크 인터페이스를 장착할 수 있다.', type: false },
-            { text: '한 대의 서버에는 각기 다른 서브넷 대역의 IP를 여러개 받을 수 없다.', type: true },
-            { text: '서버의 사설망 대역은 RFC1918 표준 대역을 따른다.', type: false },
-            { text: '각기 다른 VPC에 속해있는 서버들도 VPC Peering을 통해 서로 통신할 수 있다.', type: false },
-        ]
-    },
-    {
         question: 'RAID 1+0에 대한 설명 중 틀린것은?',
         answer: [
             { text: '최소 디스크가 2개 이상이어야 한다.', type: true },
@@ -1330,15 +1267,6 @@ const ncp200 = [
             { text: 'Container registry는 object storage를 근간으로 한다.', type: false },
             { text: 'Container registry에 로그인하기 위해선 access key와 secret key에 대한 정보가 필요하다.', type: false },
             { text: 'Container registry는 컨테이너 이미지를 저장하고 관리하기 위한 서비스이다.', type: false },
-        ]
-    },
-    {
-        question: '네이버클라우드플랫폼 루트 볼륨에 대한 설명으로 적절하지 않은 것을 고르시오.(복수정답)',
-        answer: [
-            { text: 'HDD/SSD 두 가지 볼륨 타입을 루트볼륨에 대한 제공한다.', type: false },
-            { text: '리사이징(다운사이징) 기능을 제공한다.', type: true },
-            { text: '서버 OS가 윈도우의 경우 100G의 루트 볼륨을 선택할 수 있다.', type: false },
-            { text: '서버 OS가 리눅스일 경우 루트 볼륨은 50G만 제공하고 있다.', type: true },
         ]
     },
     {
