@@ -54,15 +54,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '이더넷에서 MTU의 최대 사이즈는 몇 바이트인가?',
-        answer: [
-          { text: '256', type: false },
-          { text: '1024', type: false },
-          { text: '1500', type: true },
-          { text: '64000', type: false },
-        ],
-      },
-      {
         question: '네이버 클라우드 플랫폼의 로드밸런서에 대한 설명으로 옳은 것을 고르시오',
         answer: [
           { text: 'Classic 환경에는 총 두 가지 종류의 로드밸런서가 존재한다.', type: false },
@@ -252,15 +243,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'IP 주소에 해당하는 MAC Address를 얻기 위한 프로토콜은?',
-        answer: [
-          { text: 'ARP', type: true },
-          { text: 'TCP', type: false },
-          { text: 'NTP', type: false },
-          { text: 'FTP', type: false },
-        ],
-      },
-      {
         question: '네이버 클라우드 플랫폼 로드밸런서에서 제공하는 밸런싱 매소드 중 다음이 지칭하는 것을 고르시오. “정적 해쉬 테이블에 있는 소스 IP를 찾아 실제 서버의 풀로 요청을 배분하는 방식”',
         answer: [
           { text: 'Round-Robin', type: false },
@@ -411,15 +393,6 @@ const ncp202 = [
           { text: '운영체제가 설치되는 기본 디스크는 용량 변경 불가능합니다', type: true },
           { text: '최초 DB 생성 시 HDD로만 생성이 가능합니다', type: false },
           { text: '데이터를 저장하기 위한 스토리지 증가시 50GB 단위로 과급됩니다', type: false },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼 Hadoop Cluster에 포함되지 않은 컴포넌트는 무엇인가요?',
-        answer: [
-          { text: 'Zookeeper', type: false },
-          { text: 'Hbase', type: false },
-          { text: 'Impala', type: true },
-          { text: 'Zepplin Notebook', type: false },
         ],
       },
       {
@@ -729,15 +702,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼 로드밸런서에서 제공하는 밸런싱 매소드 중 다음이 지칭하는 것을 고르시오. "정적 해쉬 테이블에 있는 소스 IP를 찾아 실제 서버의 풀로 요청을 배분하는 방식"',
-        answer: [
-          { text: 'Round-Robin', type: false },
-          { text: 'Weighted', type: false },
-          { text: 'Least-Connection', type: false },
-          { text: 'Source IP hash', type: true },
-        ],
-      },
-      {
         question: 'VPC 내에 Public Subnet에 위치시킬 수 없는 Resource는 무엇인가?',
         answer: [
           { text: 'Cloud DB for MySQL', type: false },
@@ -834,15 +798,6 @@ const ncp202 = [
           { text: '기본 제공되는 Config group은 변경 및 삭제할 수 없다.', type: false },
           { text: '삭제하려는 Config group이 적용된 서버가 있더라도 삭제가 가능하다', type: true },
           { text: 'Principal DB와 Mirror DB에 서로 다른 Config Group 값에 적용 가능하다.', type: true },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼 Hadoop cluster에 포함되지 않은 컴포넌트는 무엇인가요?',
-        answer: [
-          { text: 'Zookeeper', type: false },
-          { text: 'Hbase', type: false },
-          { text: 'Impala', type: true },
-          { text: 'Zepplin Notebook', type: false },
         ],
       },
       {
@@ -1047,15 +1002,15 @@ const ncp202 = [
         question: '210.118.23.45/28 IP 주소의 IP 대역은?',
         answer: [
           { text: '210.118.23.1 - 210.118.23.62', type: false },
-          { text: '210.118.23.1- 210.118.23.254', type: false },
-          { text: '210.118.20.1- 210.118.23.254', type: false },
-          { text: '210.118.23.32-210.118.23.47', type: true },
+          { text: '210.118.23.1 - 210.118.23.254', type: false },
+          { text: '210.118.20.1 - 210.118.23.254', type: false },
+          { text: '210.118.23.32 - 210.118.23.47', type: true },
         ],
       },
       {
         question: 'D Class IP 주소의 주소 대역은?',
         answer: [
-          { text: '0.0.0.0 -127.255.255.255', type: false },
+          { text: '0.0.0.0 - 127.255.255.255', type: false },
           { text: '128.0.0.0 - 191.255.255.255', type: false },
           { text: '224.0.0.0 - 239.255.255.255', type: true },
           { text: '240.0.0.0 - 255.255.255.255', type: false },
@@ -1206,15 +1161,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'D Class IP 주소의 대역은?',
-        answer: [
-          { text: '0.0.0.0 - 127.255.255.255', type: false },
-          { text: '128.0.0.0 - 191.255.255.255', type: false },
-          { text: '224.0.0.0 - 239.255.255.255', type: true },
-          { text: '240.0.0.0 - 255.255.255.255', type: false },
-        ],
-      },
-      {
         question: '이미지 옵티마이저에서 만들어진 섬네일을 호출하는 URL의 구성요소가 아닌 것은?',
         answer: [
           { text: 'CDN 도메인', type: false },
@@ -1332,30 +1278,12 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼의 로드밸런서에서 제공되지 않는 로드 분배 알고리즘은 무엇인가?',
-        answer: [
-          { text: 'Round Robin', type: false },
-          { text: 'Weighted Round Robin', type: true },
-          { text: 'Least Connection', type: false },
-          { text: 'Source IP Hash', type: false },
-        ],
-      },
-      {
         question: 'OSI 7 Layer의 2계층에 해당하는 네트워크 장비는?',
         answer: [
           { text: '라우터', type: false },
           { text: '로드밸런서', type: false },
           { text: '스위치', type: true },
           { text: '방화벽', type: false },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼 로드밸런서에서 제공하는 밸런싱 매소드 중 다음이 지칭하는 것을 고르시오. "정적 해쉬 테이블에 있는 소스 IP를 찾아 실제 서버 풀로 요청을 배분하는 방식"',
-        answer: [
-          { text: 'Round-Robin', type: false },
-          { text: 'Weighted', type: false },
-          { text: 'Least-Connection', type: false },
-          { text: 'Source IP hash', type: true },
         ],
       },
       {
@@ -1566,15 +1494,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'IP 주소에 해당되는 MAC Address를 얻기 위한 프로토콜은?',
-        answer: [
-          { text: 'ARP', type: true },
-          { text: 'TCP', type: false },
-          { text: 'NTP', type: false },
-          { text: 'FTP', type: false },
-        ],
-      },
-      {
         question: '다음 중 HA 솔루션 등에 활용하기 위한 보조 IP 기능을 제공해주는 상품이름은?',
         answer: [
           { text: 'Network Interface - Secondary IP', type: true },
@@ -1599,15 +1518,6 @@ const ncp202 = [
           { text: 'DB Server 삭제', type: false },
           { text: 'DB Server 일시 정지 기능', type: true },
           { text: 'Monitoring', type: false },
-        ],
-      },
-      {
-        question: '다음 중, Cloud DB for MS-SQL 대한 설명 중 틀린 것을 고르시오',
-        answer: [
-          { text: 'Cloud DB for MSSQL 상품의 경우, Standard type과 High-memory 타입을 선택할 수 있습니다', type: false },
-          { text: '데이터 스토리지는 기본 10GB가 자동 할당되며, 10GB 단위로 2TB까지 자동 증가합니다', type: false },
-          { text: 'Cloud DB for MSSQL Standard 타입에서 High-memory 타입으로 스펙업이 가능합니다.', type: true },
-          { text: 'Cloud DB for MSSQL 상품은 Standalone으로 생성 시, 서버가 1대만 생성됩니다.', type: false },
         ],
       },
       {
@@ -1863,15 +1773,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'CDN+에 요청된 Log에서 얻을 수 있는 정보를 모두 고르시오.',
-        answer: [
-          { text: '접속한 서버 IP', type: true },
-          { text: 'Client가 요청한 URI', type: true },
-          { text: '응답 코드 (2xx, 3xx, 4xx 등)', type: true },
-          { text: 'Cache HivMiss 정보 (TCP_HIT.TCP_MISS 등)', type: true },
-        ],
-      },
-      {
         question: 'Live Station에서 Input Protocol은 무엇인가?',
         answer: [
           { text: 'HLS', type: false },
@@ -1971,15 +1872,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '이더넷에서 MTU 의 최대사이즈는 몇 바이트인 가?',
-        answer: [
-          { text: '256', type: false },
-          { text: '1024', type: false },
-          { text: '1500', type: true },
-          { text: '64000', type: false },
-        ],
-      },
-      {
         question: 'Live Station 상품에서는 다른 플랫폼에 동시 송출을 할 수 있는 기능이 제공됩니다. 이 때 해당 기능을 부르는 명칭은 무엇인가요?',
         answer: [
           { text: 'Re-stream', type: true },
@@ -2067,15 +1959,6 @@ const ncp202 = [
           { text: '브라우저 최소화시 자동 정지', type: false },
           { text: '자막 지원', type: false },
           { text: '영상 다운로드', type: true },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼 로드밸런서에서 제하는 밸런싱 매소드 중 다음이 지칭하는 것을 고르시오. 정적 해쉬 테이블에 있는 소스 IP를 찾아 실제 서버의 풀로 요청을 배분하는 방식',
-        answer: [
-          { text: 'Round Robin', type: false },
-          { text: 'Weighted', type: false },
-          { text: 'Least Connection', type: false },
-          { text: 'Source IP hash', type: true },
         ],
       },
       {
@@ -2214,15 +2097,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중 네이버 클라우드 플랫폼의 DB 서버의 특징으로 올바르지 않은 것은',
-        answer: [
-          { text: '설치형 DB 의 경우 클릭 한번으로 HA 구성이 가능하다', type: true },
-          { text: 'CDB for MySQL 은 스토리지 용량이 최대 6TB 까지 자동 증설된다', type: false },
-          { text: 'CDB for MSSQL 의 경우 스토리지 용량이 최대 2TB 까지 자동 증설된다', type: false },
-          { text: 'CDB 상품은 자체 백업 기능을 제공한다.', type: false },
-        ],
-      },
-      {
         question: '서브 계정들이 작업한 내역을 볼 수 있는 서비스는?',
         answer: [
           { text: 'Cloud Activity Tracer', type: true },
@@ -2319,24 +2193,6 @@ const ncp202 = [
           { text: 'OS Dashboard는 지원되지 않는다', type: false },
           { text: '백업 기능을 이용하기 위해서는 상품 이용 신청서를 작성해야 한다', type: false },
           { text: '백업은 매일 1 번씩 진행되며, 최대 7일까지 보관이 가능하다', type: true },
-        ],
-      },
-      {
-        question: '다음 중 WMS 상품에 대한 내용으로 올바른 것은?',
-        answer: [
-          { text: '알람 기능은 제공되지 않는다', type: false },
-          { text: '웨일 브라우저 기반의 테스트만 가능하다', type: true },
-          { text: '여러 국가에서의 웹 서비스 응답 속도를 확인할 수 있다', type: false },
-          { text: '모니터링은 초 단위로 가능하다', type: false },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼 A Cluster에 포함되지 않은 컴포넌트는 무엇인가요?',
-        answer: [
-          { text: 'HDFS', type: false },
-          { text: 'PRESTO', type: false },
-          { text: 'TAJO', type: true },
-          { text: 'RAMGER', type: false },
         ],
       },
       {
