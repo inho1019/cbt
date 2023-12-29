@@ -567,15 +567,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 다른 VM 으로부터의 간섭현상을 줄일 수 있는 서버 타입을 모두 고르시오',
-        answer: [
-            { text: 'High CPU', type: true },
-            { text: 'VDS', type: false },
-            { text: 'Bare metal', type: true },
-            { text: 'High-memory', type: true },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼의 스냅샷 이미지에 대한 설명으로 옳은 것을 고르시오.',
         answer: [
             { text: '신규 서버를 생성할 수 있다.', type: false },

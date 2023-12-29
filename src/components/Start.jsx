@@ -4,7 +4,7 @@ import bono from '../image/bono.jpg'
 import lupy from '../image/biglp.jpg'
 
 const Start = (props) => {
-    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ncp202,ncp207,ran,onRan,mode,max} = props
+    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ncp202,ncp207,ran,onRan,mode,max,onTimeUp,timeUp} = props
 
     const [num,setNum] = useState(1)
 
@@ -39,7 +39,10 @@ const Start = (props) => {
                             setNum(parseInt(num) % 10 !== 0 ? parseInt(num)+(10-(parseInt(num)%10)) : parseInt(num)+10)}
                             disabled={num >= max}>+10</button></h4>
                         <input type='range' min={1} max={max} style={{width:'300px'}} value={num} onChange={(e) => setNum(e.target.value)}/>
-                        <p style={{fontWeight:'bold'}}>보기랜덤 <input type='checkbox' value={ran} onChange={() => onRan()}/></p>
+                        <div className={styles.selSection}>
+                            <p style={{fontWeight:'bold'}}>보기랜덤 <input type='checkbox' value={ran} onChange={() => onRan()}/></p>
+                            <p style={{fontWeight:'bold'}}>타임어택 <input type='checkbox' value={timeUp} onChange={() => onTimeUp()}/></p>
+                        </div>
                     <button onClick={() => onStart()} className={styles.allBut}>시작</button>
                 </div>
             }

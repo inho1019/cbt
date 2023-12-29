@@ -20,6 +20,11 @@ const Main = () => {
     const [ran,setRan] = useState(false)
     const [mode,setMode] = useState(false)
     const [max,setMax] = useState(1)
+    const [timeUp,setTimeUp] = useState(false)
+
+    const onTimeUp = () => {
+        setTimeUp(!timeUp)
+    }
 
     const onRan = () => {
         setRan(!ran)
@@ -93,10 +98,11 @@ const Main = () => {
             {
                 page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel} 
                             nca={nca.length} nca2={nca2.length} ncp200={ncp200.length} ncp202={ncp202.length} ncp207={ncp207.length}
-                            ran={ran} onRan={onRan} mode={mode} max={max}/>
+                            ran={ran} onRan={onRan} mode={mode} max={max} onTimeUp={onTimeUp}/>
             }
             {
-                page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran} onWrong={onWrong}/>
+                page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran} 
+                            onWrong={onWrong} mode={mode} timeUp={timeUp ? 9 : 59}/>
             }
             {
                 page === 2 && <Result result={result} question={question} onReset={onReset} styles={styles} 

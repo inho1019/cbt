@@ -1755,15 +1755,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'NCP 모범 사례에 따라 리소스를 프로비저닝하는데 도움이 되도록 실시간 지침을 제공하는 management 상품은?',
-        answer: [
-          { text: 'Organization', type: true },
-          { text: 'Cloud Resource Management', type: false },
-          { text: 'NAVER Cloud Advisor', type: false },
-          { text: 'Cloud Advisor', type: false },
-        ],
-      },
-      {
         question: 'Cloud DB for MySQL 으로의 접근 방식에 대한 설명을 잘못된 것은?',
         answer: [
           { text: '포트포워딩을 이용하여 접근', type: true },
@@ -2391,15 +2382,6 @@ const ncp202 = [
           { text: 'Log Search 항목에서는 로그 수집 정보를 그래프로 확인할 수 있다', type: false },
           { text: '실시간으로 발생하는 로그를 수집할 수 있다', type: false },
           { text: '수집된 데이터는 60 일 후 삭제 된다.', type: true },
-        ],
-      },
-      {
-        question: 'NCP 모범 사례에 따라 리소스를 프로비저닝 하는 데 도움이 되도록 실시간 지침을 제공하는 management 상품은?',
-        answer: [
-          { text: 'Organization', type: true },
-          { text: 'Cloud Resource Management', type: false },
-          { text: 'NAVER Cloud Advisor', type: false },
-          { text: 'Cloud Advisor', type: false },
         ],
       },
       {

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import sleep1 from '../image/sleep1.jpg'
+import sleep2 from '../image/sleep2.jpg'
 
 const Content = (props) => {
-    const {question,datas,onPage,onResult,styles,ran,onWrong} = props
+    const {question,datas,onPage,onResult,styles,ran,onWrong,mode,timeUp} = props
     
     const [num,setNum] = useState(0)
     const [dup,setDup] = useState([])
@@ -58,7 +60,8 @@ const Content = (props) => {
     }
 
     const [timer,setTimer] = useState(question)
-    const [count, setCount] = useState(59);
+    const [count, setCount] = useState(timeUp);
+    const [end,setEnd] = useState(false)
 
     useEffect(() => {
       const id = setInterval(() => {
@@ -68,15 +71,21 @@ const Content = (props) => {
       if(count === -1) {
             if(timer === 0) {
                 clearInterval(id);
+                setEnd(true)
                 setCount(0)
             } else {
                 setTimer(timer-1)
-                setCount(59)
+                setCount(timeUp)
             }
       }
       return () => clearInterval(id);
     },[count])
     
+    const onEnd = () => {
+        setEnd(!end)
+        setCount(timeUp)
+    }
+
     return (
         <div className={styles.box}>
             <h2 style={{color:'yellowgreen',width:'100px',display:'inline-block',marginBottom:'6px'}}>{num+1} / {question+1}</h2>
@@ -105,6 +114,10 @@ const Content = (props) => {
                     <button className={styles.allBut} style={{float:'right'}} onClick={()=>onNext()}>다음</button>
                 </div>
             }
+        { end && <div>
+            <div className={styles.bg} onClick={() => onEnd()}></div>
+            <img src={mode ? sleep2 : sleep1} alt='melong' className={styles.endImage}/>
+        </div>}
         </div>
     );
 };
