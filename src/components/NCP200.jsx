@@ -225,15 +225,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '네이버 클라우드 플랫폼에서 서버를 생성하면 기본 네트워크 링크의 속도는 어떻게 되는가?',
-        answer: [
-            { text: '1Gbps', type: true },
-            { text: '100Mbps', type: false },
-            { text: '500Mbps', type: false },
-            { text: '10Gbps', type: false },
-        ]
-    },
-    {
         question: 'Linux 에서 NAS 를 마운트 할 때 사용하는 옵션은 무엇인가?',
         answer: [
             { text: 'mount -t nas', type: false },
@@ -1072,15 +1063,6 @@ const ncp200 = [
         ]
     },
     {
-        question: 'NAS 스토리지를 생성할 때 최소 용량은 얼마인가?',
-        answer: [
-            { text: '100GB', type: false },
-            { text: '500GB', type: true },
-            { text: '1TB', type: false },
-            { text: '5TB', type: false },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼의 GPU 서버에 대한 설명으로 옳은 것을 고르시오.',
         answer: [
             { text: '서버 한 대에 최대 12장의 GPU 카드를 작성할 수 있다.', type: false },
@@ -1123,15 +1105,6 @@ const ncp200 = [
             { text: 'RAID1으로 구성된 볼륨을 RAID으로 구성한다.', type: false },
             { text: '저장공간의 손실이 50%이다.', type: false },
             { text: '단순 볼륨에 비해 읽기, 쓰기 속도가 뛰어나다.', type: false },
-        ]
-    },
-    {
-        question: '다음 중 상품 신청을 위해 상품 이용 신청서를 작성해야 하는 상품을 고르시오. (복수정답)',
-        answer: [
-            { text: 'Cloud Advisor', type: true },
-            { text: 'Backup', type: false },
-            { text: 'Security Monitoring', type: false },
-            { text: 'Cloud IoT Core', type: true },
         ]
     },
     {
