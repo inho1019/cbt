@@ -1926,15 +1926,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VPC 환경에서 Cloud DB 상품을 이용할 시 갖는 특징으로 올바르지 않은 것은?',
-        answer: [
-          { text: '멀티 존 기능이 지원된다', type: true },
-          { text: '멀티 리전 기능이 제공된다', type: false },
-          { text: 'Private Subnet에 생성 시 Public 도메인 생성이 불가능하다', type: false },
-          { text: 'ACG가 자동으로 생성된다', type: false },
-        ],
-      },
-      {
         question: '다음 중 Cloud Log Analytics 상품에 대한 설명으로 틀린 것은?',
         answer: [
           { text: '시스템의 로그를 수집하고 분석할 수 있도록 도와주는 상품이다', type: false },
@@ -1950,15 +1941,6 @@ const ncp202 = [
           { text: 'Cloud Advisor', type: true },
           { text: 'Cloud Tip', type: false },
           { text: 'Cloud Analysis', type: false },
-        ],
-      },
-      {
-        question: '다음 WMS Monitoring 지표와 관련된 단어들 중, 올바른 뜻풀이가 아닌 것은?',
-        answer: [
-          { text: 'Load Time: 웹페이지를 로딩하는데 걸리는 시간', type: false },
-          { text: 'File Requests: 업로드한 구성요소들의 목록', type: false },
-          { text: 'Scenario: 테스트 시나리오 내용', type: true },
-          { text: 'Today Event: 테스트 URL에서 금일 발생한 이벤트 수', type: false },
         ],
       },
       {
