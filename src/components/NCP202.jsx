@@ -1107,15 +1107,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, Cloud DB for MS-SQL에서 수행가능한 작업이 아닌 것은?',
-        answer: [
-          { text: '재시작 가능', type: false },
-          { text: 'DB Server 삭제', type: false },
-          { text: 'DB Server 일시 정지 기능', type: true },
-          { text: 'Monitoring', type: false },
-        ],
-      },
-      {
         question: 'Cloud DB for MySQL 으로의 접근 방식에 대한 설명을 잘못된 것은?',
         answer: [
           { text: '포트포워딩을 이용하여 접근', type: true },
@@ -1437,15 +1428,6 @@ const ncp202 = [
           { text: 'urlprefix', type: true },
           { text: 'js', type: false },
           { text: 'Jsprefix', type: false },
-        ],
-      },
-      {
-        question: '다음 중, Cloud DB for MS SQL에서 수행 가능한 작업이 아닌 것은',
-        answer: [
-          { text: '재시작 기능', type: false },
-          { text: 'DB Server 삭제', type: false },
-          { text: 'DB Server 일시 정지 기능', type: true },
-          { text: 'Monitoring', type: false },
         ],
       },
       {
