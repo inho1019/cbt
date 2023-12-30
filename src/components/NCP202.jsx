@@ -1026,15 +1026,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버클라우드플랫폼 Cloud DB for MySQL에서 DB 및 User 생성에 대해 옳은 것은?',
-        answer: [
-          { text: '쿼리를 통해 DB 및 User 생성이 가능하다', type: false },
-          { text: '쿼리를 통해 DB 생성만 가능하다', type: false },
-          { text: '쿼리를 통해 User 생성만 가능하다', type: false },
-          { text: '쿼리를 통해 DB와 USER를 생성하는 것은 불가능하며, 콘솔을 통해 기능을 제공하고 있다.', type: true },
-        ],
-      },
-      {
         question: '다음 중, 네이버클라우드플랫폼 VPC 환경에서의 Cloud Insight에 대한 설명 중 옳지 않은 것은?',
         answer: [
           { text: '상품들의 성능 지표를 통합 관리하고, 장애 발생 시 담당자에게 장애 정보를 신속히 전달할 수 있는 모니터링 서비스', type: false },
