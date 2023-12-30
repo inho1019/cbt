@@ -27,15 +27,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'L7 헬스 체크 기능을 지원하지 않는 로드밸런서 타입은 무엇인가?',
-        answer: [
-          { text: 'Classic Load Balancer', type: false },
-          { text: 'Network Load Balancer', type: true },
-          { text: 'Network Proxy Load Balancer', type: true },
-          { text: 'Application Load Balancer', type: false },
-        ],
-      },
-      {
         question: 'Application Load Balancer 에서 URL 기반으로 분기하기 위한 조건은 무엇인가?',
         answer: [
           { text: 'Host Header', type: false },
@@ -105,15 +96,6 @@ const ncp202 = [
           { text: '변환 Rule의 경우 실제 적용되기까지 약간의 시간이 소요된다', type: false },
           { text: '변환 Rule은 엑셀 파일을 통해 다량으로 불러올 수 있다', type: false },
           { text: '변환된 이미지 미리보기 기능은 제공되지 않는다', type: true },
-        ],
-      },
-      {
-        question: 'DSR 기능이 적용되어 보다 빠르고 효율적인 서비스를 구성할 수 있는 Load Balancer는 무엇인가?',
-        answer: [
-          { text: 'Classic Load Balancer', type: false },
-          { text: 'Network Load Balancer', type: true },
-          { text: 'Network Proxy Load Balancer', type: false },
-          { text: 'Application Load Balancer', type: false },
         ],
       },
       {
@@ -276,15 +258,6 @@ const ncp202 = [
           { text: '쿼리를 통해 DB 생성만 가능하다', type: false },
           { text: '쿼리를 통해 User 생성만 가능하다', type: false },
           { text: '쿼리를 통해 DB와 User를 생성하는 것은 불가능하며, 콘솔을 통해 기능을 제공하고 있다', type: true },
-        ],
-      },
-      {
-        question: '다음 중 Cloud Advisor 상품의 리포트 기능에서 제공하지 않는 점검 항목은?',
-        answer: [
-          { text: 'NAS 스토리지 ACL 관리', type: true },
-          { text: 'Sub Account 의 Access Key 관리', type: false },
-          { text: 'Object Storage 버킷 권한', type: false },
-          { text: 'ACG 포트 관리', type: false },
         ],
       },
       {
@@ -522,15 +495,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VOD Transcoder에 대한 설명 중 틀린 것은?',
-        answer: [
-          { text: 'VOD Transcoder는 CDN과 연계가 가능하다', type: true },
-          { text: 'Input은 Object Storage를 사용할 수 있다', type: false },
-          { text: '썸네일 설정시 각 output당 10개의 썸네일이 추출된다.', type: false },
-          { text: 'Output 경로는 File Storage와 Object Storage에 설정할 수 있다.', type: false },
-        ],
-      },
-      {
         question: 'VOD 트랜스코더에서 Job 생성시 Job 상태에 대한 설명으로 올바르지 않은 것은?',
         answer: [
           { text: 'Fail: 정상적으로 Job이 수행되지 않음', type: false },
@@ -546,15 +510,6 @@ const ncp202 = [
           { text: 'VPC에 의존적이다.', type: false },
           { text: 'White List 방식의 방화벽이다.', type: false },
           { text: 'Inbound에 대해서만 룰 적용이 가능하다.', type: true },
-        ],
-      },
-      {
-        question: '다음 중 Live station에 대한 설명 중 옳은 것을 모두 고르시오',
-        answer: [
-          { text: 'Output Protocol 은 기본 HLS & DASH 프로토콜로 지정된다.', type: true },
-          { text: 'Live Station 은 반드시 CDN 과 함께 사용한다.', type: true },
-          { text: 'Custom 화질을 지정할 수 있는 기능은 추후 제공될 예정이다.', type: true },
-          { text: '채널이 생성 중인 상태는 ‘준비’ 상태로 콘솔에 표기된다.', type: false },
         ],
       },
       {
@@ -612,15 +567,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VPC 생성시 생성 가능한 IP 주소 범위가 아닌 것은 무엇인가?',
-        answer: [
-          { text: '10.0.0.0/12', type: false },
-          { text: '192.168.0.0/24', type: false },
-          { text: '192 168.0.0/12', type: true },
-          { text: '172.168.0.0/16', type: false },
-        ],
-      },
-      {
         question: 'Video Player 에서 설정 가능한 기능이 아닌 것은 무엇인가?',
         answer: [
           { text: '재생 속도 조절', type: false },
@@ -648,15 +594,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '이미지 옵티마이저에서 섬네일 생성 규칙을 만드는 방법은?',
-        answer: [
-          { text: 'Query String', type: true },
-          { text: 'Post', type: false },
-          { text: 'Get', type: false },
-          { text: 'URL', type: false },
-        ],
-      },
-      {
         question: '"이것"이 지칭하는 상품은? "이것을 이용하면 네이버 클라우드 플랫폼 Classic 환경에서 다수 VM에 공인 IP를 할당하지 않고 단일 SNAT IP를 쉐어해서 사용할 수 있다."',
         answer: [
           { text: '공인 IP', type: false },
@@ -672,15 +609,6 @@ const ncp202 = [
           { text: 'VPC Peering', type: false },
           { text: 'Internet gateway', type: false },
           { text: 'Network ACL', type: false },
-        ],
-      },
-      {
-        question: '다음 Cloud Log Analytics 상품에 대한 설명으로 틀린 것은?',
-        answer: [
-          { text: '데이터는 최대 200GB 까지 저장 가능하다.', type: true },
-          { text: '로그는 Object Storage로 내보낼 수 있다.', type: false },
-          { text: '이용하기 위해선 서버에 Agent 설치가 필요하다.', type: false },
-          { text: '대시보드를 통해 다양한 데이터를 실시간으로 확인할 수 있다.', type: false },
         ],
       },
       {
@@ -765,24 +693,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '회사 정책 상 클라우드에서 발생하는 로그를 영구보관 해야한다. 이럴 경우, CLA에 설정해줘야 하는 옵션은?',
-        answer: [
-          { text: 'Log expansion를 통해 Object storage상에 로그가 저장될 수 있도록 설정', type: false },
-          { text: 'Archive Log를 통해 Object storage상에 로그가 저장될 수 있도록 설정', type: false },
-          { text: 'Export Log를 통해 Object storage 상에 로그가 저장될 시 있도록 설정', type: true },
-          { text: 'Log store를 통해 Object storage상에 로그가 저장될 수 있도록 설정', type: false },
-        ],
-      },
-      {
-        question: '다음 중, CLA (Cloud Log Analytics) 에 대한 설명으로 잘못된 것은?',
-        answer: [
-          { text: 'Cloud DB for MySQL 로고, 아파치 로그 등이 템플릿으로 제공됩니다.', type: false },
-          { text: '고객의 데이터는 논리적으로 분리된 개별 저장소에 2개 이상의 복제본으로 분산 저장됩니다.', type: false },
-          { text: '저장된 데이터가 100GB를 초과하면 최대 30%까지 과거 데이터부터 매일 삭제될 수 있습니다.', type: false },
-          { text: '다른 연계상품을 사용하고 있을 경우에는 연계상품이 해지될 때 CLA 데이터가 삭제됩니다.', type: true },
-        ],
-      },
-      {
         question: '다음 중, CLA와 연계된 서비스는?',
         answer: [
           { text: 'Object Storage', type: true },
@@ -828,30 +738,12 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Cloud DB for MySQL 상품의 백업에 관련된 내용 중 틀린 것은?',
-        answer: [
-          { text: 'Stand Alone 서버도 DB 백업에 사용할 수 있습니다.', type: false },
-          { text: '기본적인 백업이 하루 한번씩 매일 수행되며, 사용자 설정에 따라 최대 30일까지 보관할 수 있습니다.', type: false },
-          { text: 'backup 파일 복원 요청시 신규 VM이 생성되며, DB 서버는 Recovery 모드로 복권되며 데이터 조회만 가능합니다.', type: false },
-          { text: '손쉬운 backup 방법은 백업 요청서를 작성하여 신청하고 서버에 Agent를 설치하면 됩니다.', type: true },
-        ],
-      },
-      {
         question: '다음 중, Cloud DB for MySQL에 제공되는 High-memory 타입의 최고 VM사양은?',
         answer: [
           { text: '16VCPU, 128GB', type: false },
           { text: '32VCPU, 128GB', type: false },
           { text: '32CPU, 256GB', type: true },
           { text: '48VCPU, 256GB', type: false },
-        ],
-      },
-      {
-        question: '다음 중 Cloud DB for MySQL 에 대한 설명으로 맞는 것은?',
-        answer: [
-          { text: '매일 자동으로 DB백업이 진행되며 최대 6개월까지 보관됩니다.', type: false },
-          { text: '최대 4대까지 복제 슬레이브 DB확장이 가능하여 읽기 부하 분산이 가능합니다.', type: false },
-          { text: '장애 또는 이벤트 발생시 사용자의 메일과 SMS로 장애 현황을 알려드립니다.', type: true },
-          { text: '기본 10GB 데이터 스토리지를 제공하며, 10GB 단위로 3TB까지 자동으로 용량이 증가합니다.', type: false },
         ],
       },
       {
@@ -1062,15 +954,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '이미지 옵티마이저에서 만들어진 섬네일을 호출하는 URL의 구성요소가 아닌 것은?',
-        answer: [
-          { text: 'CDN 도메인', type: false },
-          { text: '오브젝트 스토리지 내의 파일명', type: false },
-          { text: '섬네일 생생 옵션', type: false },
-          { text: '토큰키', type: true },
-        ],
-      },
-      {
         question: 'VDN Transcoder에 대한 설명 중 틀린 것은?',
         answer: [
           { text: 'VOD Transcoder는 CDN과 연계가 가능하다.', type: false },
@@ -1197,15 +1080,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, 네이버클라우드플랫폼 Cloud DB for MS-SQL의 Config group에 대한 설명 중 잘못된 것을 (모두) 고르시오',
-        answer: [
-          { text: 'Cloud DB 서비스에 적용 가능한 Config group을 생성, 변경, 삭제할 수 있다.', type: false },
-          { text: '기본 제공되는 Config group은 변경 및 삭제할 수 없다.', type: false },
-          { text: '삭제하려는 Config group이 적용된 서버가 있더라도 삭제가 가능하다.', type: true },
-          { text: 'Principal DB와 Mirror DB에 서로 다른 Config group 값이 적용 가능하다.', type: true },
-        ],
-      },
-      {
         question: '다음 중, 네이버클라우드플랫폼 VPC 환경에서의 Cloud Insight에 대한 설명 중 옳지 않은 것은?',
         answer: [
           { text: '상품들의 성능 지표를 통합 관리하고, 장애 발생 시 담당자에게 장애 정보를 신속히 전달할 수 있는 모니터링 서비스', type: false },
@@ -1230,15 +1104,6 @@ const ncp202 = [
           { text: 'Redis', type: false },
           { text: 'Aurora', type: true },
           { text: 'MSSQL', type: false },
-        ],
-      },
-      {
-        question: '다음중 Cloud DB for MySQL 상품 특징이 아닌 것은?',
-        answer: [
-          { text: 'Cloud DB 상품은 고가용성 지원을 설정할 경우, Active master DB와 Standby master DB, 총 2대의 서버가 기본 생성된다.', type: false },
-          { text: '슬레이브 DB는 데이터베이스의 읽기부하 분산을 위해 생성하는 복제 DB로 한 대 단위로 생성된다.', type: false },
-          { text: '기본 제공되는 50GB의 디스크는 운영체제를 위한 디스크로 추가 증설이 가능하고, 이용 요금에 포함되지 않음', type: true },
-          { text: 'DB 데이터를 저장하기 위한 데이터 스토리지는 별도로 사용량에 따른 시간 요금으로 과금', type: false },
         ],
       },
       {
@@ -1332,15 +1197,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중 HA 솔루션 등에 활용하기 위한 보조 IP 기능을 제공해주는 상품이름은?',
-        answer: [
-          { text: 'Network Interface - Secondary IP', type: true },
-          { text: 'Network Interface - HAIP', type: false },
-          { text: 'Server – Secondary IP', type: false },
-          { text: 'Server - HP IP', type: false },
-        ],
-      },
-      {
         question: '다음 Cloud Log Analytics 상품에 대한 설명으로 틀린 것은?',
         answer: [
           { text: '데이터는 최대 200GB까지 저장 가능하다.', type: true },
@@ -1395,15 +1251,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼 GRM (Global Route Manager)에 대한 설명으로 잘못된 것을 고르시오.',
-        answer: [
-          { text: 'IP, 도메인 리소스에 대한 분기가 가능하다', type: false },
-          { text: '도메인 리소스에 대한 헬스체크 설정이 가능하다.', type: true },
-          { text: '헬스체크에 대한 로그는 제공하지 않는다.', type: false },
-          { text: 'GRM 리소스 타입은 동일하게 설정해야 한다. (IP와 도메인을 같이 GRM에 바인드할 수 없다.)', type: false },
-        ],
-      },
-      {
         question: 'TCP/IP에서 인터넷 계층에 속하지 않는 프로토콜은?',
         answer: [
           { text: 'TCP', type: true },
@@ -1455,15 +1302,6 @@ const ncp202 = [
           { text: 'uriprefix', type: true },
           { text: 'js', type: false },
           { text: 'Jsprefix', type: false },
-        ],
-      },
-      {
-        question: '다음 중 네이버클라우드플랫폼 Cloud DB 생성시에 자동 생성되거나 설정되는 것이 아닌 것은?',
-        answer: [
-          { text: 'Public 도메인', type: true },
-          { text: 'Private 도메인', type: false },
-          { text: 'ACG', type: false },
-          { text: 'Event History', type: false },
         ],
       },
       {
@@ -1557,30 +1395,12 @@ const ncp202 = [
         ],
       },
       {
-        question: '이미지 옵티마이저에서 섬네일 생성 규칙을 만드는 방법은?',
-        answer: [
-          { text: 'Query String', type: true },
-          { text: 'Post', type: false },
-          { text: 'Get', type: false },
-          { text: 'URL', type: false },
-        ],
-      },
-      {
         question: 'CDN서비스의 Access log는 어디에 저장됩니까?',
         answer: [
           { text: 'NAS', type: false },
           { text: 'Archive Storage', type: false },
           { text: 'Object Storage', type: true },
           { text: 'Block Storage', type: false },
-        ],
-      },
-      {
-        question: '다음 중 Cloud Advisor 상품의 리포트 기능에서 제공하지 않는 점검 항목은?',
-        answer: [
-          { text: 'NAS 스토리지 ACL 관리', type: true },
-          { text: 'Sub Account의 Access Key 관리', type: false },
-          { text: 'Object Storage 버킷 권한', type: false },
-          { text: 'ACG 포트 관리', type: false },
         ],
       },
       {
@@ -1674,24 +1494,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '경로 기반 라우팅 기능을 지원하는 Load Balancer 는 무엇인가?',
-        answer: [
-          { text: 'Classic Load Balancer', type: false },
-          { text: 'Network Load Balancer', type: false },
-          { text: 'Network Proxy Load Balancer', type: false },
-          { text: 'Application Load Balancer', type: true },
-        ],
-      },
-      {
-        question: 'Image Optimizer 상품에 대한 설명으로 틀린 것은?',
-        answer: [
-          { text: 'Cloud Log Analytics 상품과의 연동이 필수이다', type: false },
-          { text: '변환 Rule 의 경우 실제 적용되기 까지 약간의 시간이 소요된다.', type: false },
-          { text: '변환 Rule 은 엑셀파일을 통해 다량으로 불러 올 수 있다.', type: false },
-          { text: '변환된 이미지 미리보기 기능은 제공되지 않는다.', type: true },
-        ],
-      },
-      {
         question: '하나의 VPC에 ACG를 최대 몇 개까지 생성 가능한가요?',
         answer: [
           { text: '5 개', type: false },
@@ -1707,15 +1509,6 @@ const ncp202 = [
           { text: '브라우저 최소화시 자동 정지', type: false },
           { text: '자막 지원', type: false },
           { text: '영상 다운로드', type: true },
-        ],
-      },
-      {
-        question: '네이버클라우드 CDN+ 에 대한 설명으로 잘못된 것을 고르시오',
-        answer: [
-          { text: '오리진으로 네이버 클라우드 플랫폼의 Object Storage 만 사용할 수 없다', type: true },
-          { text: '국내 서비스에 최적화된 CDN 상품이다', type: false },
-          { text: '개인 소장 도메인을 CDN 서비스 도메인으로 사용할 수 있다', type: false },
-          { text: 'CDN 도메인을 HTTPS 로 사용하기 위해서는 오리진에서도 HTTPS 를 지원해야 한다.', type: false },
         ],
       },
       {
@@ -1788,15 +1581,6 @@ const ncp202 = [
           { text: '읽기 기능 시간을 최대 20 시간까지 설정 가능 하다', type: false },
           { text: 'Slave DB 의 스펙을 변경해도, Principal 및 Mirror 서버의 스펙은 변경되지 않는다', type: true },
           { text: 'Slave DB 는 BI 및 Batch 성 작업에 적합하다.', type: false },
-        ],
-      },
-      {
-        question: '다음 중 Cloud Insight 상품에 대한 내용으로 올바르지 않은 것은',
-        answer: [
-          { text: '감시대상에 대해 알람을 받을 수 있다', type: false },
-          { text: '감시대상 상품은 VPC 와 Classic 플랫폼이 상이하다', type: false },
-          { text: '사용자가 별도로 agent 설치를 해야 한다', type: true },
-          { text: 'Notification Recipient 메뉴를 통해 통보 대상자를 생성할 수 있다', type: false },
         ],
       },
       {
@@ -2016,24 +1800,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Cloud Insight에 대한 설명 중 잘못 된 것을 모두 고르시오',
-        answer: [
-          { text: '선택한 메트릭에 대한 알람 레벨은 info, warning으로 설정이 가능하다', type: false },
-          { text: '서버와 관련된 메트릭을 수집하기 위해선 에이전트 설치가 필요하다', type: true },
-          { text: '실제 에이전트가 잘 동작하는지 확인하기 위해선 Linux에서 ps ef | grep agent 명령어로 확인이 가능하다', type: true },
-          { text: '통보 알람 기능을 제공한다', type: false },
-        ],
-      },
-      {
-        question: 'Cloud Hadoop의 근간 스토리지로 사용 가능한 것을 모두 고르시오',
-        answer: [
-          { text: 'Object Storage', type: true },
-          { text: 'Archive Storage', type: false },
-          { text: 'NAS', type: false },
-          { text: 'Block Storage', type: true },
-        ],
-      },
-      {
         question: 'Private Subnet이 외부와 통신할 수 있도록 (A) 서비스를 추가하였고 Private subnet의 (B)의 Outbound rule을 수정하여 외부에 통신할 시에는 A 서비스를 향하도록 수정해야 합니다. A.B에 알맞은 것은?',
         answer: [
           { text: 'A - NAT gateway B - Route table', type: false },
@@ -2121,15 +1887,6 @@ const ncp202 = [
           { text: '해상도 선택 기능이 제공된다.', type: false },
           { text: 'Sub Account에게 권한을 따로 부여할 수 있다.', type: false },
           { text: 'CDN 서비스 연동이 불가능하다.', type: true },
-        ],
-      },
-      {
-        question: 'DSR 기능이 적용되어 보다 빠르고 효율적인 서비스를 구성할 수 있는 Load Balancer는 무엇인가?',
-        answer: [
-          { text: 'Classic Load Balancer', type: false },
-          { text: 'Network Load Balancer', type: false },
-          { text: 'Network Proxy Load Blancer', type: true },
-          { text: 'Application Load Balancer', type: false },
         ],
       },
       {
