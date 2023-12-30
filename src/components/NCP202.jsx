@@ -9,15 +9,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VOD Station 상품에서 제공되는 DRM 기능과 관련된 설명으로 틀린 것은?',
-        answer: [
-          { text: '동영상 파일을 암호화 할 때 사용하는 기술이다', type: false },
-          { text: 'VOD Station에서는 자체 DRM 기능을 제공한다.', type: true },
-          { text: '불법 다운로드 리스크를 줄일 수 있다', type: false },
-          { text: '3가지 유형이 제공된다', type: false },
-        ],
-      },
-      {
         question: '이미지 옵티마이저에서 만들어진 섬네일을 호출하는 URL의 구성 요소가 아닌 것은?',
         answer: [
           { text: 'CDN 도메인', type: false },
@@ -387,15 +378,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, CLA와 연계된 서비스는?',
-        answer: [
-          { text: 'Object Storage', type: true },
-          { text: 'File Storage', type: false },
-          { text: 'NAS', type: false },
-          { text: 'Block Storage', type: false },
-        ],
-      },
-      {
         question: '다음 중, Cloud DB for MySQL에 제공되는 High-memory 타입의 최고 VM사양은?',
         answer: [
           { text: '16vCPU, 128GB', type: false },
@@ -681,15 +663,6 @@ const ncp202 = [
           { text: 'Cloud DB', type: false },
           { text: 'Image Optimizer', type: false },
           { text: 'Object Storage', type: true },
-        ],
-      },
-      {
-        question: '다음 중, CLA와 연계된 서비스는?',
-        answer: [
-          { text: 'Object Storage', type: true },
-          { text: 'File Storage', type: false },
-          { text: 'NAS', type: false },
-          { text: 'Block Storage', type: false },
         ],
       },
       {
