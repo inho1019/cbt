@@ -99,15 +99,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VOD Station 상품에 대한 설명으로 틀린 것은?',
-        answer: [
-          { text: 'DRM 기능이 제공된다', type: false },
-          { text: 'Media Encryption 기능이 제공된다', type: false },
-          { text: '송출할 영상 파일은 NAS에 올려야 한다', type: true },
-          { text: 'HLS, DASH 프로토콜을 지원한다', type: false },
-        ],
-      },
-      {
         question: '경로 기반 라우팅 기능을 지원하는 Load Balancer는 무엇인가?',
         answer: [
           { text: 'Classic Load Balancer', type: false },
@@ -1350,15 +1341,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VOD Station 상품에서 제공되는 DRM 기능과 관련된 설명으로 틀린 것은?',
-        answer: [
-          { text: '동영상 파일을 암호화 할 때 사용하는 기술이다', type: false },
-          { text: 'VOD Station 에서는 자체 DRM 기능을 제공 한다.', type: true },
-          { text: '불법 다운로드 리스크를 줄일 수 있다.', type: false },
-          { text: '3가지 유형이 제공된다.', type: false },
-        ],
-      },
-      {
         question: 'L7 헬스 체크 기능을 지원하지 않는 로드밸런 서 타입은 무엇인가?',
         answer: [
           { text: 'Classic Load Balancer', type: false },
@@ -1662,15 +1644,6 @@ const ncp202 = [
           { text: 'SourceIP Hash', type: false },
           { text: 'Round robin', type: true },
           { text: 'Weighted', type: false },
-        ],
-      },
-      {
-        question: 'VOD Station 상품에 대한 설명으로 틀린 것은?',
-        answer: [
-          { text: 'DRM 기능이 제공된다', type: true },
-          { text: 'Media Encryption 기능이 제공된다', type: false },
-          { text: '송출할 영상 파일은 NAS에 올려야 한다', type: false },
-          { text: 'HLS, DASH 프로토콜을 지원한다', type: false },
         ],
       },
       {
