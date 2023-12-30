@@ -90,15 +90,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Image Optimizer의 경우 이미지에 효과를 줄 수 있는 필터 기능을 사용할 수 있습니다. 사용 가능한 필터가 아닌 것은 무엇인가요?',
-        answer: [
-          { text: '샤픈', type: false },
-          { text: '블러', type: false },
-          { text: '흑백', type: false },
-          { text: '파스텔', type: true },
-        ],
-      },
-      {
         question: '다음 중 로드밸런서의 Target group에 대한 설명 중 옳은 것을 모두 고르시오',
         answer: [
           { text: '한 대의 서버는 하나의 Target Group에만 속할 수 있다', type: false },
@@ -123,15 +114,6 @@ const ncp202 = [
           { text: 'Network Load Balancer', type: false },
           { text: 'Network Proxy Load Balancer', type: false },
           { text: 'Application Load Balancer', type: true },
-        ],
-      },
-      {
-        question: 'CIDR에서 서브넷이 27bit인 경우 몇 개의 IP를 사용할 수 있는가?',
-        answer: [
-          { text: '1', type: false },
-          { text: '6', type: false },
-          { text: '14', type: false },
-          { text: '30', type: true },
         ],
       },
       {
