@@ -18,15 +18,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Application Load Balancer 에서 URL 기반으로 분기하기 위한 조건은 무엇인가?',
-        answer: [
-          { text: 'Host Header', type: false },
-          { text: 'Path Pattern', type: true },
-          { text: 'URL Path', type: false },
-          { text: 'URL 라우팅', type: false },
-        ],
-      },
-      {
         question: '다음 중 UDP로만 제공되는 서비스는 무엇인가?',
         answer: [
           { text: 'DNS 서비스', type: false },
@@ -69,15 +60,6 @@ const ncp202 = [
           { text: 'Input은 Object Storage를 사용할 수 있다', type: false },
           { text: '썸네일 설정시 각 output당 10개의 썸네일이 추출된다', type: false },
           { text: 'Output 경로는 File Storage와 Object Storage에 설정할 수 있다.', type: true },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼 GRM에 대한 설명으로 잘못된 것을 고르시오',
-        answer: [
-          { text: 'IP, 도메인 리소스에 대한 분기가 가능하다', type: false },
-          { text: '도메인 리소스에 대한 헬스 체크 설정이 가능하다', type: true },
-          { text: '헬스 체크에 대한 로그는 제공하지 않는다', type: false },
-          { text: 'GRM 리소스 타입은 동일하게 설정해야 한다. (IP와 도메인을 같이 GRM에 바인드할 수 없다.)', type: false },
         ],
       },
       {
@@ -519,15 +501,6 @@ const ncp202 = [
           { text: 'Archive Storage', type: false },
           { text: 'Object storage', type: true },
           { text: 'Block storage', type: false },
-        ],
-      },
-      {
-        question: 'Video Player 에서 설정 가능한 기능이 아닌 것은 무엇인가?',
-        answer: [
-          { text: '재생 속도 조절', type: false },
-          { text: '브라우저 최소화시 자동 정지', type: false },
-          { text: '자막 지원', type: false },
-          { text: '영상 다운로드', type: true },
         ],
       },
       {
@@ -1341,15 +1314,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼 GRM에 대한 설명으로 잘못된 것을 고르시오',
-        answer: [
-          { text: 'IP 도메인 리소스에 대한 분기가 가능하다', type: false },
-          { text: '도메인 리소스에 대한 헬스체크 설정이 가능하다', type: true },
-          { text: '헬스체크에 대한 로그는 제공하지 않는다.', type: false },
-          { text: 'GRM 리소스 타입은 동일하게 설정해야 한다. (IP 와 도메인을 같이 GRM에 바인드할 수 없다.)', type: false },
-        ],
-      },
-      {
         question: '다음 중 ACG 와 Network ACL 의 설명 중 잘 못된 것을 모두 고르시오.',
         answer: [
           { text: 'Network ACL과 ACG 모두 Inbound/outbound 룰에 대해 설정이 가능하다.', type: false },
@@ -1365,15 +1329,6 @@ const ncp202 = [
           { text: '100 개', type: false },
           { text: '300 개', type: false },
           { text: '500 개', type: true },
-        ],
-      },
-      {
-        question: 'Video Player에서 설정 가능한 기능이 아닌 것은 무엇인가?',
-        answer: [
-          { text: '재생 속도 조절', type: false },
-          { text: '브라우저 최소화시 자동 정지', type: false },
-          { text: '자막 지원', type: false },
-          { text: '영상 다운로드', type: true },
         ],
       },
       {
