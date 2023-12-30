@@ -594,15 +594,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '"이것"이 지칭하는 상품은? "이것을 이용하면 네이버 클라우드 플랫폼 Classic 환경에서 다수 VM에 공인 IP를 할당하지 않고 단일 SNAT IP를 쉐어해서 사용할 수 있다."',
-        answer: [
-          { text: '공인 IP', type: false },
-          { text: 'NAT Gateway', type: true },
-          { text: 'CDN+', type: false },
-          { text: 'GRM', type: false },
-        ],
-      },
-      {
         question: 'Private Subnet에서 외부와 통신하기 위해 추가 생성이 필요한 서비스는?',
         answer: [
           { text: 'NAT Gateway', type: true },
@@ -735,15 +726,6 @@ const ncp202 = [
           { text: '2차 인증까지 설정이 가능하다.', type: true },
           { text: '서브 계정을 일시정지 할 수 있는 기능을 제공한다.', type: true },
           { text: '서브계정에 대한 비밀번호 만료일은 사용자가 변경이 불가능하다.', type: false },
-        ],
-      },
-      {
-        question: '다음 중, Cloud DB for MySQL에 제공되는 High-memory 타입의 최고 VM사양은?',
-        answer: [
-          { text: '16VCPU, 128GB', type: false },
-          { text: '32VCPU, 128GB', type: false },
-          { text: '32CPU, 256GB', type: true },
-          { text: '48VCPU, 256GB', type: false },
         ],
       },
       {
@@ -1089,15 +1071,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버클라우드플랫폼 Cloud DB for MySQL에서 제공하는 이벤트 항목 중 Slow Query Count 항목에 대해 옳은 설명은?',
-        answer: [
-          { text: '1초 이상 실행되는 쿼리 개수', type: true },
-          { text: '쿼리 요청시간이 2초 이상 걸리는 쿼리 개수', type: false },
-          { text: 'Query_time이 3초 이상 걸리는 쿼리개수', type: false },
-          { text: '슬로우쿼리 기준값은 10초이다.', type: false },
-        ],
-      },
-      {
         question: '다음 중 클래식 플랫폼에서 Preinstall Image로 제공하고 있지 않은 DBMS는?',
         answer: [
           { text: 'MariaDB', type: false },
@@ -1377,15 +1350,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, Cloud DB for MySQL에 제공되는 High-memory 타입의 최고 VM사양은?',
-        answer: [
-          { text: '16vCPU, 128GB', type: false },
-          { text: '32vCPU, 128GB', type: false },
-          { text: '32vCPU, 256GB', type: true },
-          { text: '48vCPU, 256GB', type: false },
-        ],
-      },
-      {
         question: 'Live Station에서 Input Protocol은 무엇인가?',
         answer: [
           { text: 'HLS', type: false },
@@ -1446,15 +1410,6 @@ const ncp202 = [
           { text: 'VOD Station 에서는 자체 DRM 기능을 제공 한다.', type: true },
           { text: '불법 다운로드 리스크를 줄일 수 있다.', type: false },
           { text: '3가지 유형이 제공된다.', type: false },
-        ],
-      },
-      {
-        question: '다음과 같이 서브넷을 192.168.1.0/23 올만 들었다. 그렇다면 IP 주소 대역은 어떻게 되는가?',
-        answer: [
-          { text: '192.168.31.0 192.168.31.255', type: false },
-          { text: '192.168.30.0 192.168.31.255', type: true },
-          { text: '192.168.31.0 192.168.32.255', type: false },
-          { text: '192.168.0.0 192.168.255.255', type: false },
         ],
       },
       {
