@@ -1098,15 +1098,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼 VOD Transcoder에 대한 설명으로 잘못된 것은?',
-        answer: [
-          { text: '트랜스코딩된 파일에 캡션 기능을 제공한다.', type: true },
-          { text: '변환 필요 파일은 네이버 클라우드 플랫폼 Object Storage에 있어야 한다.', type: false },
-          { text: '트랜스 코딩된 파일은 잡 생성시 지정한 Object Storage 버킷에 저장된다.', type: false },
-          { text: 'Custom Preset 기능을 제공한다.', type: false },
-        ],
-      },
-      {
         question: '다음 Cloud Log Analytics 상품에 대한 설명으로 틀린 것은?',
         answer: [
           { text: '데이터는 최대 200GB까지 저장 가능하다.', type: true },
