@@ -479,9 +479,9 @@ const ncp202 = [
       {
         question: 'VOD Station 상품에 대한 설명으로 틀린 것은??',
         answer: [
-          { text: 'DRM 기능이 제공된다.', type: false },
+          { text: 'DRM 기능이 제공된다.', type: true },
           { text: 'Media Encryption 기능이 제공된다.', type: false },
-          { text: '송출할 영상 파일은 NAS에 올려야 한다', type: true },
+          { text: '송출할 영상 파일은 NAS에 올려야 한다', type: false },
           { text: 'HLS, DASH 프로토콜을 지원한다', type: false },
         ],
       },
@@ -1239,15 +1239,6 @@ const ncp202 = [
           { text: 'Archive Storage', type: false },
           { text: 'Object Storage', type: true },
           { text: 'Block Storage', type: false },
-        ],
-      },
-      {
-        question: 'VOD Station 서비스와 연동이 되어 있는 서비스들을 모두 고르시오.',
-        answer: [
-          { text: 'NAS', type: false },
-          { text: 'Certificate Manager', type: false },
-          { text: 'Object Storage', type: true },
-          { text: 'CDN', type: true },
         ],
       },
       {
