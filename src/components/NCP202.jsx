@@ -450,15 +450,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중, 네이버클라우드 플랫폼의 로드밸런서 생성시 기본적으로 적용되는 분배 알고리즘은?',
-        answer: [
-          { text: 'Least-connection', type: false },
-          { text: 'SourcelP Hash', type: false },
-          { text: 'Round-robin', type: true },
-          { text: 'Weighted', type: false },
-        ],
-      },
-      {
         question: '네이버 클라우드 플랫폼 VOD Transcoder에 대한 설명으로 잘못된 것을 고르시오',
         answer: [
           { text: 'job 생성 후 설정은 언제든 변경 가능하다.', type: true },
@@ -479,9 +470,9 @@ const ncp202 = [
       {
         question: 'VOD Station 상품에 대한 설명으로 틀린 것은??',
         answer: [
-          { text: 'DRM 기능이 제공된다.', type: true },
+          { text: 'DRM 기능이 제공된다.', type: false },
           { text: 'Media Encryption 기능이 제공된다.', type: false },
-          { text: '송출할 영상 파일은 NAS에 올려야 한다', type: false },
+          { text: '송출할 영상 파일은 NAS에 올려야 한다', type: true },
           { text: 'HLS, DASH 프로토콜을 지원한다', type: false },
         ],
       },
