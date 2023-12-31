@@ -630,15 +630,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'Cloud DB for MySQL에 대한 설명으로 틀린 것은?',
-        answer: [
-          { text: '자동 Fail over 기능을 제공합니다.', type: false },
-          { text: '최대 5대까지 복제 슬레이브 DB 확장이 가능합니다.', type: true },
-          { text: '매일 자동으로 DB백업이 진행되며 이에 전에 60일까지 보관됩니다.', type: true },
-          { text: 'Slow Query 를 해결하기 위한 자동화된 튜닝을 제공합니다.', type: false },
-        ],
-      },
-      {
         question: '다음 중, Sub account에 대한 설명 중 옳은 것을 모두 고르시오.',
         answer: [
           { text: '서브계정들이 이용할 수 있는 권한들을 묶어 놓은 것은 정책(policy)이다.', type: true },
@@ -1053,15 +1044,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '네이버 클라우드 플랫폼 VPC 환경에서의 로드밸런서 상품에 대한 설명으로 잘못된 것을 모두 고르시오.',
-        answer: [
-          { text: 'Public Subnet에 생성 가능하다.', type: true },
-          { text: 'Application 로드 밸런서는 Proxy 타입이다.', type: false },
-          { text: '부하처리 성능에 따라 Small/Medium/ Large 중 선택할 수 있다.', type: false },
-          { text: '성능은 최대 10만 CPS까지 지원한다', type: true },
-        ],
-      },
-      {
         question: '다음 네이버클라우드 플랫폼 VPC 환경에서의 로드밸런서 상품에 대한 설명 중 틀린것은?',
         answer: [
           { text: 'Target Group은 하나 이상의 등록된 대상에 요청을 분배하는데 사용됩니다.', type: false },
@@ -1413,15 +1395,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중 CLA 와 자동으로 연계된 서비스가 아닌 것은',
-        answer: [
-          { text: 'server', type: true },
-          { text: 'Cloud DB', type: false },
-          { text: 'Image Optimizer', type: false },
-          { text: 'Object Storage', type: false },
-        ],
-      },
-      {
         question: '회사 정책 상 클라우드에서 발생하는 로그를 영구보관해야한다 . 이럴 경우 , CLA 에 설정해줘야 하는 옵션은?',
         answer: [
           { text: 'Log expanslon를 통해 Object storage 상에 로그가 저장될 수 있도록 설정', type: false },
@@ -1599,15 +1572,6 @@ const ncp202 = [
           { text: 'MP4', type: true },
           { text: 'MOV', type: false },
           { text: 'WMV', type: false },
-        ],
-      },
-      {
-        question: 'Private Subnet이 외부와 통신할 수 있도록 (A) 서비스를 추가하였고 Private subnet의 (B)의 Outbound rule을 수정하여 외부에 통신할 시에는 A 서비스를 향하도록 수정해야 합니다. A.B에 알맞은 것은?',
-        answer: [
-          { text: 'A - NAT gateway B - Route table', type: false },
-          { text: 'A - Internet gateway B - Route table', type: false },
-          { text: 'A - Internet gateway B - NACL', type: false },
-          { text: 'A - NAT Gateway B - NACL', type: true },
         ],
       },
       {
