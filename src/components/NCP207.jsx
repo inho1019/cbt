@@ -59,15 +59,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Linux에서 볼륨 UUID를 확인하는 명령어는 무엇인가요?',
-        answer: [
-            { text: 'uuid', type: false },
-            { text: 'lsuuid', type: false },
-            { text: 'blkid', type: true },
-            { text: 'df', type: false },
-        ],
-    },
-    {
         question: '리눅스 서버를 운영 중 Too many open files 라는 에러가 발생하였습니다. 이 때 변경이 필요한 설정 파일은?',
         answer: [
             { text: 'syslog.conf', type: false },
@@ -92,15 +83,6 @@ const ncp207 = [
             { text: 'ps', type: false },
             { text: 'top', type: false },
             { text: 'tcpdump', type: true },
-        ],
-    },
-    {
-        question: 'CPU, Memory, Disk I/O 사용량 등 시스템 전반에 걸친 시스템 성능 지표를 수집, 레포트하고 저장하는 명령어는?',
-        answer: [
-            { text: 'nmap', type: false },
-            { text: 'vmstat', type: false },
-            { text: 'sar', type: true },
-            { text: 'iostat', type: false },
         ],
     },
     {
@@ -131,30 +113,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Windows 클라이언트에서 DNS 캐시된 정보를 삭제하고자 할 때 사용하는 명령어는?',
-        answer: [
-            { text: 'mdc flush', type: false },
-            { text: 'nds flush', type: false },
-            { text: 'ipconfig /flushdns', type: true },
-            { text: 'netsh flushdns', type: false },
-        ],
-    },
-    {
         question: 'HTTP 상태 코드 중 연결이 잘못된 것은?',
         answer: [
             { text: '200 - 서버가 요청을 제대로 처리', type: false },
             { text: '300 - 서버가 GET 요청의 일부만 성공적으로 처리했다.', type: true },
             { text: '404 – 서버가 요청한 페이지(Resource)를 찾을 수 없다.', type: false },
             { text: '500 – 서버에 오류가 발생하여 요청을 수행할 수 없다.', type: false },
-        ],
-    },
-    {
-        question: 'IPSec VPN으로 연결된 Server A에서 Server T로 접속이 안되고 있다. VPN 설정은 정상이라면 Server A의 어떤 설정이 문제일 지 Server A의 라우팅 테이블을 보고 유추하시오.',
-        answer: [
-            { text: 'Destination 설정이 잘못되었다. Destination을 0.0.0.0/0의 Gateway를 192.168.100.1로 변경하여야 한다.', type: false },
-            { text: 'Gateway 설정을 잘못되었다. 192.168.100.0의 Gateway를 192.168.1.1로 변경하여야 한다.', type: true },
-            { text: '인터페이스 설정이 잘못되었다. 192.168.100.0/24에 대해서는 eth0로 설정하여야 한다.', type: false },
-            { text: 'Genmask가 잘못되었다. 192.168.100.0에 대해 0.0.0.0으로 설정하여야 한다.', type: false },
         ],
     },
     {
@@ -200,15 +164,6 @@ const ncp207 = [
             { text: 'su - root', type: true },
             { text: 'chroot', type: false },
             { text: 'sudo - root', type: false },
-        ],
-    },
-    {
-        question: 'Java 분산 서비스 및 시스템의 지속적인 성능 분석을 제공하며, 오류 발생 가능성에 대한 진단과 추적을 지원하는 플랫폼 서비스 상품의 이름은?',
-        answer: [
-            { text: 'Pinpoint', type: true },
-            { text: 'API Gateway', type: false },
-            { text: 'SENS', type: false },
-            { text: 'WMS', type: false },
         ],
     },
     {
@@ -275,15 +230,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'SSH에서 root 원격 접속을 막고자 할 때 사용하는 옵션은?',
-        answer: [
-            { text: 'AllowRootLogin No', type: false },
-            { text: 'DenyRootLogin Yes', type: false },
-            { text: 'PermitRootLogin Yes', type: false },
-            { text: 'PermitRootLogin No', type: true },
-        ],
-    },
-    {
         question: 'CentOS 6.x 이상에서는 스토리지 식별을 무엇으로 하나요?',
         answer: [
             { text: '라벨', type: false },
@@ -340,30 +286,12 @@ const ncp207 = [
         ],
     },
     {
-        question: '동일한 Subnet에 생성한 서버와 Cloud DB for MySQL을 연동해야 한다. 서버에 서 데이터베이스 서버로 TCP/3306 포트를 통해 접근해야 하지만 통신이 되고 있지 않다. 다음 중 정상 통신을 위해 해야하는 설정은?',
-        answer: [
-            { text: 'Cloud DB for MySQL ACG에 접근 소스를 서버 IP로 하여 3306 포트 이용 정책을 추가한다.', type: true },
-            { text: '서버의 ACG에 접근 소스를 데이터베이스 도메인으로 하여 3306 포트 허용 정책을 추가한다.', type: false },
-            { text: '두 개체가 포함된 Subnet에 매핑된 NACL에 접근 소스를 Subnet 대역으로 하여 3306 포트 허용 정책을 추가한다.', type: false },
-            { text: '데이터베이스 서버에 접속하여 서버 방화벽을 해제한다.', type: false },
-        ],
-    },
-    {
         question: 'Linux 서버에서 일반적인 시스템 로그를 저장하는 로그파일은 무엇인가요?',
         answer: [
             { text: '/var/log/messages', type: true },
             { text: '/var/log/wtmp', type: false },
             { text: '/var/log/dmesg', type: false },
             { text: '/var/log/secure', type: false },
-        ],
-    },
-    {
-        question: 'VPC 플랫폼에서 Application Load Balancer를 이용중입니다. ALB에 들어오는 액세스 로그 정보를 수집하고자 할 때 가장 올바른 액션은?',
-        answer: [
-            { text: 'Load Balancer에서 액세스 로그 수집 설정을 활성화한다.', type: true },
-            { text: '서버에서 Application Load Balancer 로그를 수집하도록 설정을 변경한다.', type: false },
-            { text: 'ALB의 액세스 로그는 수집이 불가능하다.', type: false },
-            { text: 'Target Group에서 액세스 로그 수집 설정을 활성화한다.', type: false },
         ],
     },
     {
@@ -386,24 +314,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Linux 서버에서 iptables로 정책이 설정되어있다. 설정된 정책을 삭제하기 위한 적합한 명령어는 무엇인가?',
-        answer: [
-            { text: 'jptables -A', type: false },
-            { text: 'iptables -F', type: true },
-            { text: 'iptables -G', type: false },
-            { text: 'iptables -W', type: false },
-        ],
-    },
-    {
-        question: 'CPU, Memory, Disk I/O 사용량 등 시스템 전반에 걸친 시스템 성능 지표를 수집, 레포트하고 저장하는 명령어는?',
-        answer: [
-            { text: 'nmap', type: false },
-            { text: 'vmstat', type: false },
-            { text: 'sar', type: true },
-            { text: 'iostat', type: false },
-        ],
-    },
-    {
         question: 'Windows Server를 이미지로 만든 다음 해당 이미지를 이용해서 서버를 생성하였을 때 다음과 같은 메세지가 출력되었다. 원인과 해결 방법은 무엇인가?',
         img: img4,
         answer: [
@@ -411,15 +321,6 @@ const ncp207 = [
             { text: 'SID 값이 중복되어 발생한 것으로 sysprep을 통해 새로운 SID로 변경한다.', type: true },
             { text: '동일한 컴퓨터 이름이 동일 네트웍상에 있어서 발생한 것으로 컴퓨터 이름을 변경한다.', type: false },
             { text: '커널 오류로 재설치 하여야 한다.', type: false },
-        ],
-    },
-    {
-        question: '동일한 VPC 내에 각기 다른 ACG와 NIC이 매핑되어있는 서버 두대가 동작하고 있습니다. 두 서버간 ping이 가능하게끔 하기 위해 해야하는 작업은?',
-        answer: [
-            { text: '각 ACG에 ICMP 프로토콜 허용 rule 추가', type: true },
-            { text: '각 ACG에 TCP 프로토콜 허용 rule 추가', type: false },
-            { text: '각 ACG에 UDP 프로토콜 허용 rule 추가', type: false },
-            { text: '각 ACG에 IGMP 프로토콜 허용 rule 추가', type: false },
         ],
     },
     {
@@ -477,15 +378,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'SSH 에서 root 원격 접속을 막고자 할 때 사용하는 옵션은?',
-        answer: [
-            { text: 'AllowRootLogin No', type: false },
-            { text: 'DenyRootLogin Yes', type: false },
-            { text: 'PermitRootLogin Yes', type: false },
-            { text: 'PermitRootLogin No', type: true },
-        ],
-    },
-    {
         question: 'syslogd 에 대한 설명으로 틀린 것은?',
         answer: [
             { text: '로그를 수집하는 데몬', type: false },
@@ -522,15 +414,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '다음 중 NMAP 에 대한 설명 중 잘못된 것은?',
-        answer: [
-            { text: '포트스캔용 툴이다.', type: false },
-            { text: '오픈되어 있는 포트에 대해 스캔을 수행한다.', type: false },
-            { text: '방화벽으로 보호되는 호스트에 대해서는 스캔이 불가능하다.', type: true },
-            { text: '리눅스 버전과 윈도우 버전이 제공된다.', type: false },
-        ],
-    },
-    {
         question: 'Classic 플랫폼에서 서버 상품을 이용중입니다. 서버에 IP 를 하나 더 부여해야 하는 상황이 되었습니다. 이 때 올바른 사용 방법은 무엇인가요?',
         answer: [
             { text: 'Private Subnet 을 생성한 후 Network interface 를 부착한다.', type: false },
@@ -540,30 +423,12 @@ const ncp207 = [
         ],
     },
     {
-        question: '도메인에 맵핑된 IP 를 확인할 수 있는 명령어를 고르시오.',
-        answer: [
-            { text: 'whois', type: false },
-            { text: 'nslookup', type: true },
-            { text: 'ipconfig', type: false },
-            { text: 'who', type: false },
-        ],
-    },
-    {
         question: 'VPC 플랫폼 환경에 있는 서버 장애 알람을 받기 위한 세팅이 필요합니다. 이 때 사용해야 하는 상품으로 가장 적절한 것은?',
         answer: [
             { text: 'Cloud Insight', type: true },
             { text: 'Cloud Search', type: false },
             { text: 'Cloud Detector', type: false },
             { text: 'Cloud Checker', type: false },
-        ],
-    },
-    {
-        question: '다음 중 성격이 다른 서비스는?',
-        answer: [
-            { text: 'sftp', type: false },
-            { text: 'samba', type: false },
-            { text: 'nfs', type: false },
-            { text: 'gopher', type: true },
         ],
     },
     {
@@ -621,15 +486,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '김초록씨는 Cloud DB for MySQL 상품을 이용중입니다. 상부에서 고가용성 테스트를 지시하였습니다. 이 때 김초록씨가 해야하는 액션으로 가장 적절한 것은 무엇 인가요?',
-        answer: [
-            { text: 'Master 서버에 고의 장애를 발생시킨다', type: false },
-            { text: 'Slave 서버에 고의 장애를 발생시킨다.', type: false },
-            { text: '할 수 있는 방법이 없다.', type: false },
-            { text: 'DB 관리에서 Master DB Failover 기능을 작동시킨다.', type: true },
-        ],
-    },
-    {
         question: '윈도우 서버의 Process Crash Memory Leak 패턴을 확인하는 디버그 도구는 무엇인가?',
         answer: [
             { text: 'Debug Diag', type: true },
@@ -657,15 +513,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '동일한 Subnet 에 생성한 서버와 Cloud DB for MySQL 을 연동해야 한다. 서버에서 데이터베이스 서버로 TCP/3306 포트를 통해 접근해야 하지만 통신이 되고 있지 않다. 다음 중 정상 통신을 위해 해야하는 설정은?',
-        answer: [
-            { text: 'Cloud DB for MySQL 의 ACG 에 접근 소스를 서버 IP 로 하여 3306 포트 허용 정책을 추가한다.', type: true },
-            { text: '서버의 ACG 에 접근 소스를 데이터베이스 도메인으로 하여 3306 포트 허용 정책을 추가한다.', type: false },
-            { text: '두 개체가 포함된 Subnet 에 매핑된 NACL 에 접근 소스를 Subnet 대역으로 하여 3306 포트 허용 정책을 추가한다.', type: false },
-            { text: '데이터베이스 서버에 접속하여 서버 방화벽을 해제한다.', type: false },
-        ],
-    },
-    {
         question: 'SAR로 물리적 디스크에서 발생한 I/O를 확인하고자 한다. 이 때 사용할 수 있는 옵션은 무엇인가?',
         answer: [
             { text: 'sar -a', type: false },
@@ -690,15 +537,6 @@ const ncp207 = [
             { text: 'psof', type: false },
             { text: 'top', type: false },
             { text: 'lsof', type: true },
-        ],
-    },
-    {
-        question: 'Windows에서 DNS 캐시된 정보를 삭제하고자 할 때 사용하는 명령어는?',
-        answer: [
-            { text: 'mdc flush', type: false },
-            { text: 'ndc flush', type: false },
-            { text: 'ipconfig / flushdns', type: true },
-            { text: 'netsh flushdns', type: false },
         ],
     },
     {
@@ -765,15 +603,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'SSL VPN에 접속하여 Management Console을 이용하여 서버를 새로 생성하고 생성된 서버는 기존에 SSL VPN 접속이 가능한 ACG에 속하도록하여 생성했는데 새로 생성한 서버만 접근이 되지 않는다. 원인과 해결 방법은 무엇인가?',
-        answer: [
-            { text: 'SSLVPN 캐시 문제로 SSL VPN을 재접속한다.', type: false },
-            { text: '웹 브라우저 캐시 문제로 웹 브라우저를 재시작한다.', type: false },
-            { text: 'SSL VPN 라우팅 문제로 SSL VPN을 재접속 한다.', type: false },
-            { text: 'ACG에서 SSL VPN 대역이 포함되어 있지 않아서 발생한 문제로 ACG에 SSL VPN 대역을 추가한다.', type: true },
-        ],
-    },
-    {
         question: 'syslogd에 대한 설명으로 틀린 것은?',
         answer: [
             { text: '로그를 수집하는 데몬', type: false },
@@ -792,15 +621,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Java 분산서비스 및 시스템의 지속적인 성능분석을 제공하여, 오류발생 가능성에 대한 진단과 추적을 지원하는 플랫폼 서비스 상품의 이름은?',
-        answer: [
-            { text: 'Pinpoint', type: true },
-            { text: 'API Gateway', type: false },
-            { text: 'SENS', type: false },
-            { text: 'WMS', type: false },
-        ],
-    },
-    {
         question: '다음 명령어 중 목적이 다른 하나는?',
         answer: [
             { text: 'top', type: false },
@@ -816,15 +636,6 @@ const ncp207 = [
             { text: 'iptables -T', type: false },
             { text: 'iptables -L', type: true },
             { text: 'iptables -N', type: false },
-        ],
-    },
-    {
-        question: '실 서비스 투입 전 리얼환경과 유사환경 구현 후 서버가 수용할 수 있는 사용자(vuser)를 확인할 수 있는 부하테스트를 위한 툴 이름을 고르시오.',
-        answer: [
-            { text: 'ab', type: false },
-            { text: 'nGrinder', type: true },
-            { text: 'Pinpoint', type: false },
-            { text: 'Web Service Monitoring System(WMS)', type: false },
         ],
     },
     {
@@ -855,39 +666,12 @@ const ncp207 = [
         ],
     },
     {
-        question: '다음 중 성격이 다른 서비스는?',
-        answer: [
-            { text: 'sftp', type: false },
-            { text: 'samba', type: false },
-            { text: 'nfs', type: false },
-            { text: 'gopher', type: true },
-        ],
-    },
-    {
-        question: '윈도우 서버의 Process Crash, Memory Leak 패턴을 확인하는 디버그 도구는 무엇인가?',
-        answer: [
-            { text: 'Debug', type: true },
-            { text: 'PAL(Performance Analysis of Logs Tool)', type: false },
-            { text: 'xPerf', type: false },
-            { text: 'Message Analyzer', type: false },
-        ],
-    },
-    {
         question: '리눅스에서 네트워크 트래픽을 확인할 수 있는 명령어를 모두 고르시오.',
         answer: [
             { text: 'netstat -i', type: true },
             { text: 'ifconfig', type: true },
             { text: 'netconfig', type: false },
             { text: 'network', type: false },
-        ],
-    },
-    {
-        question: 'Linux에서 볼륨의 UUID를 확인하는 명령어는 무엇인가요?',
-        answer: [
-            { text: 'uuid', type: false },
-            { text: 'lsuuid', type: false },
-            { text: 'blkid', type: true },
-            { text: 'df', type: false },
         ],
     },
     {
@@ -945,30 +729,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'VPC 플랫폼에서 Application Load Balancer를 이용중입니다. ALB에 들어오는 액세스 로그 정보를 수집하고자 할 때 가장 올바른 액션은? (확인 요망)',
-        answer: [
-            { text: 'Load Balancer에서 액세스 로그 수집 설정을 활성화 한다.', type: true },
-            { text: '서버에서 Application Load Balancer 로그를 수집하도록 설정을 변경한다.', type: false },
-            { text: 'ALB의 액세스 로그는 수집이 불가능하다.', type: false },
-            { text: 'Target Group에서 액세스 로그 수집 설정을 활성화 한다.', type: false },
-        ],
-    },
-    {
         question: '김초록씨는 Sub Account 상품을 통해 여러 사람들과 같은 인프라 환경을 운영중입니다. 상부에서 사용되지 않는 리소스는 없는지 조사하라는 지시가 내려왔습니다. 가장 적절한 액션으로 올바른 것은?',
         answer: [
             { text: '힘을 합쳐 여렷이서 모든 상품 댐을 눌러 조사한다.', type: false },
             { text: 'Resource 상품을 통해 사용하고 있는 전체 리소스를 확인한다.', type: false },
             { text: '리소스를 몇 개 삭제하고 끝낸다.', type: false },
             { text: 'Cloud Advisor 상품을 통해 사용하고 있는 전체 리소스를 확인한다.', type: true },
-        ],
-    },
-    {
-        question: 'Windows 클라이언트에서 DNS 캐시된 정보를 삭제하고자 할 때 사용하는 명령어는?',
-        answer: [
-            { text: 'mdc flush', type: false },
-            { text: 'ndc flush', type: false },
-            { text: 'ipconfig/flushdns', type: true },
-            { text: 'netsh flushdns', type: false },
         ],
     },
     {
@@ -1026,21 +792,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Live Station 상품을 이용하여 주기적으로 실시간 방송을 운영중입니다. 송출에 문제는 없는지 확인하려 합니다. 이 때 가장 올바른 방법은? (확인 요망)',
+        question: 'Live Station 상품을 이용하여 주기적으로 실시간 방송을 운영중입니다. 송출에 문제는 없는지 확인하려 합니다. 이 때 가장 올바른 방법은?',
         answer: [
             { text: '매번 실시간으로 모니터링 한다.', type: false },
             { text: 'Notification Setting에서 송출 실패 에러 알람을 설정하고, 담당자에게 SMS/Email을 발송하도록 한다.', type: true },
             { text: 'Live Management 상품을 이용하여 모니터링 한다.', type: false },
             { text: 'Cloud Search에서 송출 실패 에러 알람을 설정하고, 담당자에게 SMS/Email을 발송하도록 한다.', type: false },
-        ],
-    },
-    {
-        question: '윈도우 서버의 Process Crash, Memory Leak 패턴을 확인하는 디버그 도구는 무엇인가?',
-        answer: [
-            { text: 'Debug Diag', type: true },
-            { text: 'PAL(Performance Analysis of Logs Tool)', type: false },
-            { text: 'xPref', type: false },
-            { text: 'Message Analyzer', type: false },
         ],
     },
     {
