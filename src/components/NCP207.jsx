@@ -212,15 +212,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'VPC 플랫폼 환경에 있는 서버 장애 알람을 받기 위한 세팅이 필요합니다. 이 때 사용해야하는 상품으로 가장 적절한 것은?',
-        answer: [
-            { text: 'Cloud Insight', type: true },
-            { text: 'Cloud Search', type: false },
-            { text: 'Cloud Detector', type: false },
-            { text: 'Cloud Checker', type: false },
-        ],
-    },
-    {
         question: 'CentOS 6.x 이상에서는 스토리지 식별을 무엇으로 하나요?',
         answer: [
             { text: '라벨', type: false },
@@ -666,30 +657,12 @@ const ncp207 = [
         ],
     },
     {
-        question: '네이버 클라우드 플랫폼 Classic 환경에 존재하는 서버의 10.x.x.x 사설 IP 대역 NIC에 두개 이상의 IP를 부여하였을 때 발생할 수 있는 상황은?',
-        answer: [
-            { text: '기존 IP로는 통신이 되나 추가된 IP로 통신이 되지 않는다.', type: false },
-            { text: '추가된 IP 뿐만 아니라 기존 IP도 통신이 되지 않는다', type: true },
-            { text: '서버가 강제 정지된다.', type: false },
-            { text: '기존 IP는 통신이 안되고 추가된 IP로만 통신이 된다', type: false },
-        ],
-    },
-    {
         question: '동일한 VPC 내의 각기 다른 ACG와 NIC가 매핑되어 있는 서버 두 대가 동작하고 있습니다. 두 서버 간 ping이 가능하게 하기 위해 해야하는 작업은?',
         answer: [
             { text: '각 ACG에 ICMP 프로토콜 허용 rule 추가', type: true },
             { text: '각 ACG에 TCP 프로토콜 허용 rule 추가', type: false },
             { text: '각 ACG에 UDP 프로토콜 허용 rule 추가', type: false },
             { text: '각 ACG에 IGMP 프로토콜 허용 rule 추가', type: false },
-        ],
-    },
-    {
-        question: 'VPC 플랫폼 환경에 있는 서버 장애 알람을 받기 위한 세팅이 필요합니다. 이 때 사용해야하는 상품으로 가장 적절한 것은?',
-        answer: [
-            { text: 'Cloud Insight', type: true },
-            { text: 'Cloud Search', type: false },
-            { text: 'Cloud Detector', type: false },
-            { text: 'Cloud Checker', type: false },
         ],
     },
     {
@@ -809,15 +782,6 @@ const ncp207 = [
             { text: '1:성공 / 2:실패', type: false },
             { text: '1:실패 / 2:실패', type: false },
             { text: '1:실패 / 2:성공', type: true },
-        ],
-    },
-    {
-        question: 'Linux 서버에서 사용자 계정에서 root 계정으로 변경하고자 할 때 사용하는 명령어는 무엇인가?',
-        answer: [
-            { text: 'sudo', type: false },
-            { text: 'su – root', type: true },
-            { text: 'chroot', type: false },
-            { text: 'sudo -root', type: false },
         ],
     },
     {
