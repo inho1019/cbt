@@ -1422,15 +1422,6 @@ const ncp202 = [
         ],
       },
       {
-        question: '다음 중 Cloud Log Analytics 상품에 대한 설명으로 틀린 것은?',
-        answer: [
-          { text: '시스템의 로그를 수집하고 분석할 수 있도록 도와주는 상품이다', type: false },
-          { text: '네이버 클라우드 플랫폼에서 제공되는 특정 템플릿 로그에 한해 수집이 가능하다', type: true },
-          { text: 'Custom Log 기능을 통해 사용자가 원하는 로그를 지정하여 수집할 수 있다.', type: false },
-          { text: '고객의 데이터는 논리적으로 분리된 개별 저장소에 2 개 이상의 복제본으로 분산 저장된다', type: false },
-        ],
-      },
-      {
         question: '네이버 클라우드 플랫폼의 운영 노하우를 바탕으로 도출한 자체 모범 사례와 사용자의 이용 내용을 비교 분석하여 좀 더 안전하고 효율적인 서비스가 가능하도록 지원하는 서비스는?',
         answer: [
           { text: 'Cloud Consultant', type: false },
@@ -1446,15 +1437,6 @@ const ncp202 = [
           { text: 'Live Station은 반드시 CDN과 함께 사용되야 한다.', type: false },
           { text: 'Custom 화질을 지정할 수 있는 기능은 추후 제공될 예정이다', type: false },
           { text: '채널이 생성 중인 상태는 준비 상태로 콘솔에 표기된다', type: true },
-        ],
-      },
-      {
-        question: 'VPC 플랫폼에서 로드밸런서 생성시 Small, Medium, Large 성능을 선택할 수 있습니다. 성능의 기준은 무엇인가요?',
-        answer: [
-          { text: '네트웍대역폭(bps)', type: false },
-          { text: '초당연결수(CPS)', type: true },
-          { text: '초당패킷수(PPS)', type: false },
-          { text: '리얼서버대수', type: false },
         ],
       },
       {
