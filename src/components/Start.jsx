@@ -4,7 +4,7 @@ import bono from '../image/bono.jpg'
 import lupy from '../image/biglp.jpg'
 
 const Start = (props) => {
-    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ncp202,ncp207,ran,onRan,mode,max,onTimeUp,timeUp} = props
+    const {onQuestion,onPage,onSel,styles,sel,nca,nca2,ncp200,ncp202,ncp207,ran,onRan,mode,max,onTimeUp,timeUp,onUpCase,upCase} = props
 
     const [num,setNum] = useState(1)
 
@@ -42,6 +42,7 @@ const Start = (props) => {
                         <div className={styles.selSection}>
                             <p style={{fontWeight:'bold'}}>보기랜덤 <input type='checkbox' value={ran} onChange={() => onRan()}/></p>
                             <p style={{fontWeight:'bold'}}>타임어택 <input type='checkbox' value={timeUp} onChange={() => onTimeUp()}/></p>
+                            <p style={{fontWeight:'bold'}}>대문자모드 <input type='checkbox' value={upCase} onChange={() => onUpCase()}/></p>
                         </div>
                     <button onClick={() => onStart()} className={styles.allBut}>시작</button>
                 </div>

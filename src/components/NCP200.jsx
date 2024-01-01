@@ -504,15 +504,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '파일시스템중 파일의 시작위치와 크기를 가지고 데이터를 저장하는 방식으로 고전 적인 파일시스템 구조이며 단순하지만 데이터 공간에 대한 낭비가 심한 파일시스템 방식은 무엇인가?',
-        answer: [
-            { text: '연속 할당 방식', type: true },
-            { text: '연결 할당 방식', type: false },
-            { text: '색인 할당 방식', type: false },
-            { text: '링크 연결 방식', type: false },
-        ]
-    },
-    {
         question: '네이버클라우드플랫폼 루트 볼륨에 대한 설명으로 적절하지 않은 것을 고르시오',
         answer: [
             { text: 'HDD / SSD 두 가지 볼륨 타입을 제공한다.', type: false },

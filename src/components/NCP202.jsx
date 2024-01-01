@@ -702,15 +702,6 @@ const ncp202 = [
         ],
       },
       {
-          question: 'VOD 트랜스코더를 통해 만들어진 영상의 파일 확장자는 무엇인가?',
-          answer: [
-              { text: 'AVI', type: false },
-              { text: 'MP4', type: true },
-              { text: 'MOV', type: false },
-              { text: 'WMV', type: false },
-          ],
-      },
-      {
         question: 'VPC 생성시 생성 가능한 IP 주소 범위가 아닌 것은 무엇인가?',
         answer: [
           { text: '10.0.0.0/8', type: false },
@@ -753,15 +744,6 @@ const ncp202 = [
           { text: 'Round-robin', type: false },
           { text: 'Weighted', type: true },
           { text: 'Fail-over', type: false },
-        ],
-      },
-      {
-        question: '다음 중, WMS에서 \'입력한 로그를 포함하고 있는 모든 로그를 필터링하고 싶을 때 선택하는 필터링 옵션은?',
-        answer: [
-          { text: 'url', type: false },
-          { text: 'urlprefix', type: true },
-          { text: 'js', type: false },
-          { text: 'Jsprefix', type: false },
         ],
       },
       {
@@ -1617,15 +1599,6 @@ const ncp202 = [
           { text: 'API Gateway', type: true },
           { text: 'CLI', type: true },
           { text: 'Sub URL', type: false },
-        ],
-      },
-      {
-        question: '네이버 클라우드 플랫폼의 로드밸런서에 대한 설명으로 옳은 것을 고르시오.',
-        answer: [
-          { text: '총 두 가지 종류의 로드밸런서가 제공된다.', type: false },
-          { text: 'VPC 환경에서는 로드밸런서 생성 시 멀티존 생성이 필수적이다.', type: false },
-          { text: '서비스할 프로토콜의 종류에 따라 Application/Netwrok 타입으로 갈라진다.', type: true },
-          { text: '세션 유지 기능이 필요한 경우, Network 로드밸런서를 사용해야 한다', type: false },
         ],
       },
 ]

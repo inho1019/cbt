@@ -21,6 +21,11 @@ const Main = () => {
     const [mode,setMode] = useState(false)
     const [max,setMax] = useState(1)
     const [timeUp,setTimeUp] = useState(false)
+    const [upCase,setUpCase] = useState(false)
+
+    const onUpCase = () => {
+        setUpCase(!upCase)
+    }
 
     const onTimeUp = () => {
         setTimeUp(!timeUp)
@@ -77,6 +82,7 @@ const Main = () => {
         setWrongData([])
         setRan(false) 
         setTimeUp(false) 
+        setUpCase(false)
     }
 
     const onWrongStart =() => {
@@ -99,11 +105,11 @@ const Main = () => {
             {
                 page === 0 && <Start onQuestion={onQuestion} onPage={onPage} onSel={onSel} styles={styles} sel={sel} 
                             nca={nca.length} nca2={nca2.length} ncp200={ncp200.length} ncp202={ncp202.length} ncp207={ncp207.length}
-                            ran={ran} onRan={onRan} mode={mode} max={max} onTimeUp={onTimeUp}/>
+                            ran={ran} onRan={onRan} mode={mode} max={max} onTimeUp={onTimeUp} timeUp={timeUp} onUpCase={onUpCase} upCase={upCase}/>
             }
             {
                 page === 1 && <Content question={question} datas={datas} onPage={onPage} onResult={onResult} styles={styles} ran={ran} 
-                            onWrong={onWrong} mode={mode} timeUp={timeUp ? 9 : 59}/>
+                            onWrong={onWrong} mode={mode} timeUp={timeUp ? 9 : 59} upCase={upCase}/>
             }
             {
                 page === 2 && <Result result={result} question={question} onReset={onReset} styles={styles} 

@@ -3,7 +3,7 @@ import sleep1 from '../image/sleep1.jpg'
 import sleep2 from '../image/sleep2.jpg'
 
 const Content = (props) => {
-    const {question,datas,onPage,onResult,styles,ran,onWrong,mode,timeUp} = props
+    const {question,datas,onPage,onResult,styles,ran,onWrong,mode,timeUp,upCase} = props
     
     const [num,setNum] = useState(0)
     const [dup,setDup] = useState([])
@@ -88,10 +88,10 @@ const Content = (props) => {
 
     return (
         <div className={styles.box}>
-            <h2 style={{color:'yellowgreen',width:'100px',display:'inline-block',marginBottom:'6px'}}>{num+1} / {question+1}</h2>
+            <h2 style={{color:'yellowgreen',width:'150px',display:'inline-block',marginBottom:'6px'}}>{num+1} / {question+1}</h2>
             <h3 className={styles.timer}>{timer.toString().padStart(2, '0')}:{count.toString().padStart(2, '0')}</h3>
             {datas[num].img !== undefined && <div><img src={datas[num].img} className={styles.dataImg} alt='questionImg'/></div>}
-            <div className={styles.questioin}>{datas[num].question}
+            <div className={styles.questioin}>{upCase ? datas[num].question.toUpperCase() : datas[num].question}
             {datas[num].answer.filter(ans => ans.type).length > 1 && 
             <div className={styles.anwdup}>
             [{dup.length}/{datas[num].answer.filter(ans => ans.type).length}]</div>}
@@ -103,7 +103,7 @@ const Content = (props) => {
                             <button onClick={() => dup.includes(index) ? onDup(index) : onAnswer(ans.type,index)} 
                             disabled={ok} className={styles.ansBut}
                             style={{color: ok && ans.type && (dap ? 'blue' : 'red'),
-                            border: dup.includes(index) && '2px solid black'}}>{ans.text}</button>
+                            border: dup.includes(index) && '2px solid black'}}>{upCase ? ans.text.toUpperCase() : ans.text}</button>
                         </div>
                     )
                 }
