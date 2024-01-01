@@ -184,15 +184,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '일반적으로 DNS 쿼리에 대해 캐싱을 하여 이후 쿼리에 대해 빠르게 응답할 수 있도록 로컬로스트에도 DNS 캐싱을 하게 되는데 DNS 캐싱을 하기 때문에 DNS가 변경된 경우에 잘못된 목적지를 찾아가게 되는 경우가 있다. 때문에 DNS 캐시를 Flush 하여야 하는데 Windows 서버에서 DNS 캐시를 Flush 하기 위한 명령어는 무엇인가?',
-        answer: [
-            { text: 'network restart', type: false },
-            { text: 'ipconfig /flushdns', type: true },
-            { text: 'dns-clean', type: false },
-            { text: 'rndc restart', type: false },
-        ],
-    },
-    {
         question: '리눅스 서버를 사용하던 중 사용 중인 파일 리스트를 확인하고 싶어졌습니다. lsof 명령어를 통해 확인하고자 하는데, 옵션값에 대한 설명을 보고싶을 경우 사용할 수 있는 명령어는?',
         answer: [
             { text: 'lsof -P', type: false },
@@ -238,15 +229,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Windows Server를 이미지로 만든 다음 해당 이미지를 이용해서 서버를 생성하였을 때 다음과 같은 메세지가 출력되었다. 원인과 해결 방법은 무엇인가?',
-        answer: [
-            { text: '파일 시스템에 문제가 발생한 것으로 파일시스템 복구를 시도한다.', type: false },
-            { text: 'SID 값이 중복되어 발생한 것으로 sysprep을 통해 새로운 SID로 변경한다.', type: false },
-            { text: '동일한 컴퓨터 이름이 동일 네트웍상에 있어서 발생한 것으로 컴퓨터 이름을 변경한다', type: true },
-            { text: '커널 오류로 재설치 하여야 한다', type: false },
-        ],
-    },
-    {
         question: '프로세스가 오픈한 파일을 확인하는 명령어는?',
         answer: [
             { text: 'ps', type: false },
@@ -283,30 +265,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'nscd에 대한 설명으로 옳은 것은?',
-        answer: [
-            { text: '네임 서비스를 제공하기 위한 서버 데몬', type: false },
-            { text: '네임 서비스를 이용하기 위한 클라이언트', type: false },
-            { text: '네임 서비스를 캐싱하기 위한 데몬', type: true },
-            { text: '네임 서비스를 분석하는 데몬', type: false },
-        ],
-    },
-    {
         question: 'MySQL 성능 측정 도구가 아닌 것은?',
         answer: [
             { text: 'Percona TPCC', type: false },
             { text: 'workbench', type: true },
             { text: 'Apache Jmeter', type: false },
             { text: 'sysbench', type: false },
-        ],
-    },
-    {
-        question: '실 서비스 투입 전 리얼 환경과 유사 환경 구현 후 서버가 수용할 수 있는 사용자(vuser)를 확인할 수 있는 부하 테스트를 위한 툴 이름을 고르시오.',
-        answer: [
-            { text: 'ab', type: false },
-            { text: 'nGrinder', type: true },
-            { text: 'Pinpoint', type: false },
-            { text: 'Web service Monitoring System (WMS)', type: false },
         ],
     },
     {
@@ -343,24 +307,6 @@ const ncp207 = [
             { text: '3일전 snapshot 내역', type: true },
             { text: '7일전 snapshot 내역', type: false },
             { text: '10일전 snapshot 내역', type: false },
-        ],
-    },
-    {
-        question: '네이버 클라우드 플랫폼 리눅스 서버에 부착된 추가 스토리지의 용량이 점점 부족해지고 있습니다. 현재 할당된 용량은 500GB이며, 500GB를 추가로 부착하려 합니다. 다음 중 가장 올바른 액션은 무엇인가요?',
-        answer: [
-            { text: '추가 스토리지를 하나 더 장착하고, 기존 스토리지와 LVM으로 볼륨을 묶읍니다.', type: false },
-            { text: '서버에 스토리지가 부착된 상태에서 기존', type: false },
-            { text: '서버에 스토리지를 탈착한 상태에서 기존 스토리지 볼륨 용량을 1000GB로 증설합니다', type: true },
-            { text: '서버 스토리지는 한 번 생성된 이후 증설이 불가능합니다', type: false },
-        ],
-    },
-    {
-        question: 'Windows에서 라우팅 테이블을 확인할 수 있는 명령어는 무엇인가?',
-        answer: [
-            { text: 'route -arn', type: false },
-            { text: 'route', type: true },
-            { text: 'route print', type: false },
-            { text: 'netstat', type: false },
         ],
     },
     {
@@ -424,15 +370,6 @@ const ncp207 = [
             { text: 'Storage', type: false },
             { text: 'ACG', type: true },
             { text: 'NACL', type: true },
-        ],
-    },
-    {
-        question: 'Cloud DB for MySQL 운영 중에 문제가 발생하여 에러 로그를 확인해보고자 한다. Cloud DB for MySQL의 로그를 확인해볼 수 있는 방법을 모두 고르시오',
-        answer: [
-            { text: 'CLA에서 Cdb_mysql_error 로그 확인', type: true },
-            { text: 'Cloud DB for MySQL > Monitoring > DB log 확인', type: false },
-            { text: 'Cloud insight 서비스에서 error log 확인', type: true },
-            { text: 'Cloud Resource Manager에서 error log 확인', type: false },
         ],
     },
     {
@@ -517,15 +454,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '다음 명령어 중 목적이 다른 하나는?',
-        answer: [
-            { text: 'top', type: false },
-            { text: 'ps', type: true },
-            { text: 'sar', type: false },
-            { text: 'proc', type: false },
-        ],
-    },
-    {
         question: 'SSH에서 root 원격 접속을 막고자 할 때 사용하는 옵션은?',
         answer: [
             { text: 'AllowRootLogin No', type: false },
@@ -559,15 +487,6 @@ const ncp207 = [
             { text: 'sar -a', type: false },
             { text: 'sar -A', type: true },
             { text: 'sar –L', type: false },
-        ],
-    },
-    {
-        question: '여러 명의 사람들이 공통의 네이버 클라우드 플랫폼 인프라 환경을 이용하고 있다. 누군가 실수로 운영중인 서버를 반납하였다. 다음과 같은 사태를 막고자 할 때 사용할 수 있는 방법은?',
-        answer: [
-            { text: '중요 서버들은 서버 관리 및 설정 변경에서 반납 보호를 설정한다.', type: true },
-            { text: '실수한 사람을 문책한다.', type: false },
-            { text: '서버 이름에 반납 금지를 표기한다.', type: false },
-            { text: 'Resource Manager에서 중요 서버를 설정한다.', type: false },
         ],
     },
     {
@@ -726,15 +645,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'nscd에 대한 설명으로 옳은 것은?',
-        answer: [
-            { text: '네임 서비스를 제공하기 위한 서버 데몬', type: false },
-            { text: '네임 서비스를 이용하기 위한 클라이언트', type: false },
-            { text: '네임 서비스를 개시하기 위한 데몬', type: true },
-            { text: '네임 서비스를 분석하는 데몬', type: false },
-        ],
-    },
-    {
         question: 'VPC 플랫폼에서 Application Load Balancer를 이용중입니다. ALB에 들어오는 액세스 로그 정보를 수집하고자 할 때 가장 올바른 액션은?',
         answer: [
             { text: 'Load Balancer에서 액세스 로그 수집 설정을 활성화한다.', type: true },
@@ -827,15 +737,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '김초록씨는 네이버 클라우드 플랫폼 VPC 플랫폼에서 두 개의 VPC 를 생성하여 사용중입니다. 이 때 두 개의 VPC 간 통신을 가능케 하기 위해선 어떤 상품을 이용해야 하나요? (복수정답)',
-        answer: [
-            { text: 'VPC Peering', type: true },
-            { text: 'NAT Gateway', type: false },
-            { text: 'Route Table', type: false },
-            { text: 'Virtual Private Gateway', type: true },
-        ],
-    },
-    {
         question: '네이버 클라우드 플랫폼 Load Balancer 의 헬스체크에 대한 설명 중 잘못된 것은?',
         answer: [
             { text: '헬스체크 주기는 Classic 환경에서는 6 초 간격이며, VPC 환경에서는 디폴트 30 초이다.', type: false },
@@ -878,24 +779,6 @@ const ncp207 = [
             { text: 'workbench', type: true },
             { text: 'Apache Jmeter', type: false },
             { text: 'sysbench', type: false },
-        ],
-    },
-    {
-        question: '김초록씨는 회사에서 SSH Tool 을 통해 VPC 플랫폼에 생성된 서버에 접속하려 하나 접속이 잘 되고있지 않습니다. 김초록씨에게 해줄 수 있는 조언으로 올바르지 않은 것은?',
-        answer: [
-            { text: 'ACG 에 Rule 이 하나도 없네요. 허용 정책을 넣어주세요!!', type: false },
-            { text: 'NACL 에 전체 대역 거부정책이 우선순의 1 로 들어가있네요! 어음 정책을 우선순위 2 로 넣어주세요!', type: false },
-            { text: '서버에 방화벽이 올라와있진 않은지 서버 접속 콘솔 기능을 통해 확인해보세요!!', type: true },
-            { text: '서버에 공인 IP 가 부착되어있나요?', type: false },
-        ],
-    },
-    {
-        question: '일반적으로 DNS 쿼리에 대해 캐싱을 하여 이후 쿼리에 대해 빠르게 응답할 수 있도록 로컬호스트에도 DNS 캐싱을 하게 되는데 DNS 캐싱을 하기 때문에 DNS 가 변경된 경우에 잘못된 목적지를 찾아가게 되는 경우가 있다. 때문에 DNS 캐시를 Flush 하여야 하는데 Windows 서버에서 DNS 캐시를 Flush 하기 위한 명령어는 무엇인가?',
-        answer: [
-            { text: 'network restart', type: false },
-            { text: 'ipconfig /flushdns', type: true },
-            { text: 'dns-dean', type: false },
-            { text: 'rndc restart', type: false },
         ],
     },
     {
@@ -1079,15 +962,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'www.ncloud.com 은 Apache 를 사용하고 있다. http://www.ncloud.com 을 웹 브라우저에서 접근하면 index.php 를 기본으로 보여주고자 할 때 어느 부분을 변경하여야 할까?',
-        answer: [
-            { text: 'DocumentRoot', type: true },
-            { text: 'Include', type: false },
-            { text: 'AccessConfig', type: false },
-            { text: 'DirectoryIndex', type: false },
-        ],
-    },
-    {
         question: '웹서비스 성능을 측정할 수 있는 툴로 적합하지 않는 것을 고르시오.',
         answer: [
             { text: 'nGrinder', type: false },
@@ -1148,15 +1022,6 @@ const ncp207 = [
             { text: 'sar -b', type: true },
             { text: 'sar -c', type: false },
             { text: 'sar -f', type: false },
-        ],
-    },
-    {
-        question: '여러명의 사람들이 공통의 네이버 클라우드 플랫폼 인프라 환경을 이용하고 있다. 누군가 실수로 운영중인 서버를 반납하였다. 다음과 같은 사태를 막고자 할 때 사용할 수 있는 방법은?',
-        answer: [
-            { text: '중요 서버들을 서버관리 및 설정 환경에서 반납보호를 설정한다.', type: true },
-            { text: '실수한 사람을 문책한다.', type: false },
-            { text: '서버 이름에 반납 금지를 표기한다.', type: false },
-            { text: 'Resource Manager에서 중요 서버를 설정한다.', type: false },
         ],
     },
     {
@@ -1340,15 +1205,6 @@ const ncp207 = [
         ],
     },
     {
-        question: 'WWW. ncloud.com은 Apache를 사용하고 있다. http://www.ncloud.com을 웹 브라우저에서 접근하면 index.php를 기본으로 보여주고자 할 때 어느 부분을 변경하여야 하는가?',
-        answer: [
-            { text: 'DocumentRoot', type: false },
-            { text: 'Include', type: false },
-            { text: 'AccessConfig', type: false },
-            { text: 'DirectoryIndex Paas', type: true },
-        ],
-    },
-    {
         question: 'Linux 서버에서 iptables로 정책이 설정되어 있다. 어떤 정책이 설정되어 있는지 확인하고자 하는 경우 적합한 명령어는 무엇인가?',
         answer: [
             { text: 'iptables -A', type: false },
@@ -1421,30 +1277,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'NCP에 구성한 웹사이트의 지연이 발생하고 있는 상황에서 해당 원인을 파악하기 위해 사용 가능한 NCP 상품으로 적절한 것은?',
-        answer: [
-            { text: 'Web Service Monitoring System', type: false },
-            { text: 'Cloud Log Analytics', type: false },
-            { text: 'nGrinder', type: false },
-            { text: 'Network Traffic Monitoring', type: true },
-        ],
-    },
-    {
         question: '리눅스 서버를 운영 중 Too many Open files 라는 에러가 발생하였습니다. 이 때 변경이 필요한 설정 파일은?',
         answer: [
             { text: 'syslog.conf', type: false },
             { text: 'mailx.conf', type: false },
             { text: 'sysctl.conf', type: true },
             { text: 'session.conf', type: false },
-        ],
-    },
-    {
-        question: '여러 명의 사람들이 공통의 네이버 클라우드 플랫폼 인프라 환경을 이용하고 있다. 누군가 실수로 운영 중인 서버를 반납하였다. 다음과 같은 사태를 막고자 할 때 사용할 수 있는 방법은?',
-        answer: [
-            { text: '중요 서버들은 서버관리 및 설정에서 반납보호를 설정한다.', type: true },
-            { text: '실수한 사람을 문책한다.', type: false },
-            { text: '서버 이름에 반납 금지를 표기한다.', type: false },
-            { text: 'Resource Manager에서 중요 서버를 설정한다.', type: false },
         ],
     },
     {
@@ -1565,30 +1403,12 @@ const ncp207 = [
         ],
     },
     {
-        question: '김초록씨는 회사에서 SSH Tool을 통해 VPC 플랫폼에 생성된 서버에 접속하려고 하나 접속이 잘 되고 있지 않습니다. 김초록씨에게 해줄 수 있는 조언으로 올바르지 않은 것은?',
-        answer: [
-            { text: 'ACG에 Rule이 하나도 없네요. 허용 정책을 넣어주세요!', type: false },
-            { text: 'NACL에 전체 대역 거부 정책이 우선 순위 1로 들어가 있네요! 허용 정책을 우선 순위 2로 넣어주세요!', type: true },
-            { text: '서버에 방화벽이 올라와 있진 않은지 서버 접속 콘솔 기능을 통해 확인해보세요!', type: false },
-            { text: '서버에 공인 IP가 부착되어 있나요?', type: false },
-        ],
-    },
-    {
         question: '김초록씨는 Sub Account 상품을 통해 여러 사람들과 같은 인프라 환경을 운영중입니다. 상부에서 사용되지 않는 리소스는 없는지 조사하라는 지시가 내려왔습니다. 가장 적절한 액션으로 올바른 것은?',
         answer: [
             { text: '힘을 합쳐 여렷이서 모든 상품 댐을 눌러 조사한다.', type: false },
             { text: 'Resource 상품을 통해 사용하고 있는 전체 리소스를 확인한다.', type: false },
             { text: '리소스를 몇 개 삭제하고 끝낸다.', type: false },
             { text: 'Cloud Advisor 상품을 통해 사용하고 있는 전체 리소스를 확인한다.', type: true },
-        ],
-    },
-    {
-        question: '네이버 클라우드 플랫폼 리눅스 서버에 부착한 추가 스토리지의 용량이 점점 부족해지고 있습니다. 현재 할당된 용량은 500GB 이며, 500GB를 추가로 부착하려 합니다. 다음 중 가장 올바른 액션은 무엇인가요?',
-        answer: [
-            { text: '추가 스토리지를 하나 더 장착하고, 기존 스토리지와 LVM으로 볼륨을 묶습니다.', type: false },
-            { text: '서버에 스토리지가 부착된 상태에서 기존 부착된 스토리지 볼륨 용량을 1000GB 로 증설합니다.', type: true },
-            { text: '서버에 스토리지를 탈착한 상태에서 기존 스토리지 볼륨 용량을 1000GB 로 증설합니다.', type: false },
-            { text: '서버 스토리지는 한 번 생성된 이후 증설이 불가능합니다.', type: false },
         ],
     },
     {
@@ -1625,15 +1445,6 @@ const ncp207 = [
             { text: '추가된 IP 뿐만 아니라 기존 IP도 통신이 되지 않는다', type: true },
             { text: '서버가 강제 정지된다.', type: false },
             { text: '기존 IP는 통신이 안되고 추가된 IP로만 통신이 된다', type: false },
-        ],
-    },
-    {
-        question: '김초록씨는 네이버 클라우드 플랫폼 VPC 플랫폼에서 두 개의 VPC를 생성하여 사용중입니다. 이 때 두 개의 VPC 간 통신을 가능케 하기 위해선 어떤 상품을 이용해야 하나요? (복수정답)',
-        answer: [
-            { text: 'VPC Peering', type: true },
-            { text: 'NAT Gateway', type: false },
-            { text: 'Route Table', type: true },
-            { text: 'Virtual Private Gateway', type: false },
         ],
     },
     {

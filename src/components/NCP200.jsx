@@ -1279,15 +1279,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '파일 시스템 중 네트워크로 접근 가능한 파일 시스템이 아닌 것은 무엇인가?',
-        answer: [
-            { text: 'NFS', type: false },
-            { text: 'Object Storage', type: true },
-            { text: 'CIFS', type: false },
-            { text: 'NTFS', type: false },
-        ]
-    },
-    {
         question: '1PB는 몇 GB 인가?',
         answer: [
             { text: '1000GB', type: false },

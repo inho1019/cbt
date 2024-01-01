@@ -711,15 +711,6 @@ const ncp202 = [
           ],
       },
       {
-        question: '다음 중 Network ACL에 대한 설명 중 옳은 것을 모두 고르시오.',
-        answer: [
-          { text: 'VPC에 종속적이다.', type: true },
-          { text: '서버의 NIC단위로 적용이 된다.', type: false },
-          { text: 'default de all permit이다.', type: true },
-          { text: '설정된 우선순위 보다는 모든 규칙을 확인하고 반영한다.', type: false },
-        ],
-      },
-      {
         question: 'VPC 생성시 생성 가능한 IP 주소 범위가 아닌 것은 무엇인가?',
         answer: [
           { text: '10.0.0.0/8', type: false },
@@ -837,15 +828,6 @@ const ncp202 = [
         ],
       },
       {
-        question: 'VDN Transcoder에 대한 설명 중 틀린 것은?',
-        answer: [
-          { text: 'VOD Transcoder는 CDN과 연계가 가능하다.', type: false },
-          { text: 'Input Object Storage를 사용할 수 있다.', type: false },
-          { text: '썸네일 설정시 각 output당 10개의 썸네일이 추출된다.', type: false },
-          { text: 'Output File Storage Object Storage에 설정할 수 있다', type: true },
-        ],
-      },
-      {
         question: '이미지 옵티마이저에서 리사이즈 및 크롭 옵션이 아닌 것은?',
         answer: [
           { text: 'w', type: false },
@@ -951,15 +933,6 @@ const ncp202 = [
           { text: '작업상태', type: false },
           { text: '계정유형', type: false },
           { text: '접속내역', type: true },
-        ],
-      },
-      {
-        question: '다음 중, 네이버클라우드플랫폼 VPC 환경에서의 Cloud Insight에 대한 설명 중 옳지 않은 것은?',
-        answer: [
-          { text: '상품들의 성능 지표를 통합 관리하고, 장애 발생 시 담당자에게 장애 정보를 신속히 전달할 수 있는 모니터링 서비스', type: false },
-          { text: '수집된 네이버 클라우드 플랫폼 및 사용자 애플리케이션의 성능 지표를 하나의 Dashboard로 시각화하여 정보를 보여준다', type: false },
-          { text: 'Sub Account Cloud Insight를 이용할 방법이 없다.', type: true },
-          { text: 'Cloud Insight는 수집한 성능 지표를 최대 1년간 보관한다.', type: false },
         ],
       },
       {
@@ -1392,15 +1365,6 @@ const ncp202 = [
           { text: 'Account Tracer', type: false },
           { text: 'Cloud Activity Analytics', type: false },
           { text: 'Cloud Log Analytics', type: false },
-        ],
-      },
-      {
-        question: '모든 계정의 비용을 통합 결제하고, 모든 계정의 비용을 중앙에서 확인할 수 있으며, 계정 별로 이용 가능한 상품과 그 한도를 정책으로 만들어 관리할 수 있도록 도와주는 상품은?',
-        answer: [
-          { text: 'Organization', type: true },
-          { text: 'Sub Account', type: false },
-          { text: 'Cloud Log Analytics', type: false },
-          { text: 'Cloud Account Management', type: false },
         ],
       },
       {
