@@ -36,15 +36,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '현재 네이버 클라우드 플랫폼에서 멀티존을 제공하고 있는 리전은?',
-        answer: [
-            { text: '일본', type: false },
-            { text: '한국', type: true },
-            { text: '독일', type: false },
-            { text: '홍콩', type: false },
-        ]
-    },
-    {
         question: '국내서비스로 한국 대상으로 대용량 파일 다운로드를 하고자 한다. 이 때 현재 사용 가능한 적절한 상품은?',
         answer: [
             { text: 'CDN', type: false },
@@ -528,15 +519,6 @@ const ncp200 = [
             { text: '서버의 상태와 무관하게 추가 스토리지는 detach 할 수 있다.', type: false },
             { text: '서버가 “운영 중" 상태라도 서버 내부에서 마운트(mount)만 되지 않았다면 추가 스토리지는 detach 할 수 있다.', type: true },
             { text: '서버 상태가 “정지” 상태라면 추가 스토리지는 detach 할 수 없다.', type: false },
-        ]
-    },
-    {
-        question: 'Container Registry 상품에 대한 설명으로 틀린 것은?',
-        answer: [
-            { text: '도커 CLI 를 이용하여 조작할 수 있다.', type: false },
-            { text: 'Public, Private Endpoint 가 제공된다.', type: false },
-            { text: '컨테이너 취약점 분석 기능을 제공한다.', type: false },
-            { text: '실제 Container 이미지는 Block Storage 에 보관한다.', type: true },
         ]
     },
     {
