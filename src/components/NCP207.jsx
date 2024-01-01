@@ -176,15 +176,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '윈도우 서버에서 syslog 역할을 수행하는 것은?',
-        answer: [
-            { text: 'sar', type: false },
-            { text: 'netmon', type: false },
-            { text: 'event viewer', type: true },
-            { text: '성능 모니터', type: false },
-        ],
-    },
-    {
         question: '아파치 웹서버 성능 측정 툴인 ab의 여러 옵션들 중 프록시 서버를 사용해 요청할 수 있는 옵션은?',
         answer: [
             { text: 'n', type: false },
@@ -324,15 +315,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '서버의 CPU 가 100%를 사용하면서 서비스가 정상적이지 못하다. 어떤 파일이 100%를 사용하는지 확인하기 위한 리눅스 명령어는 무엇인가?',
-        answer: [
-            { text: 'Is', type: false },
-            { text: 'top', type: true },
-            { text: 'proc', type: false },
-            { text: 'Isof', type: false },
-        ],
-    },
-    {
         question: 'Windows 클라이언트에서 DNS 캐시된 정보를 삭제하고자 할 때 사용하는 명령어는?',
         answer: [
             { text: 'mdc flush', type: false },
@@ -378,48 +360,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'syslogd 에 대한 설명으로 틀린 것은?',
-        answer: [
-            { text: '로그를 수집하는 데몬', type: false },
-            { text: 'UDP 프로토콜의 514 번 포트를 사용한다.', type: false },
-            { text: '클라이언트는 클라이언트 프로그램을 이용하여야 한다.', type: true },
-            { text: '기본적으로 /var/log/messages 에 로그를 기록한다.', type: false },
-        ],
-    },
-    {
-        question: '윈도우 서버에서 syslog 역할을 수행하는 것은?',
-        answer: [
-            { text: 'sar', type: false },
-            { text: 'netmon', type: false },
-            { text: 'event viewer', type: true },
-            { text: '성능 모니터', type: false },
-        ],
-    },
-    {
-        question: 'Live Station 상품을 이용하여 주기적으로 실시간 방송을 운영중입니다. 송출에 문제는 없는지 확인하려 합니다. 이 때 가장 올바른 방법은?',
-        answer: [
-            { text: '매번 실시간으로 모니터링 한다.', type: false },
-            { text: 'Notification Setting 에서 송출 실패 에러 알림을 설정하고 담당자에게 SMS/Email 을 발송하도록 한다.', type: true },
-            { text: 'Live Management 상품을 이용하여 모니터링한다.', type: false },
-            { text: 'Cloud Search 에서 송출 실패 에러 알람을 설정하고, 담당자에게 SMS/Email 을 발송하도록 한다.', type: false },
-        ],
-    },
-    {
         question: '다음 프로그램 중 성격이 다른 프로그램은?',
         answer: [
             { text: 'tcpdump', type: false },
             { text: 'network monitor', type: false },
             { text: 'nmap', type: true },
             { text: 'wireshark', type: false },
-        ],
-    },
-    {
-        question: 'Classic 플랫폼에서 서버 상품을 이용중입니다. 서버에 IP 를 하나 더 부여해야 하는 상황이 되었습니다. 이 때 올바른 사용 방법은 무엇인가요?',
-        answer: [
-            { text: 'Private Subnet 을 생성한 후 Network interface 를 부착한다.', type: false },
-            { text: 'Network Interface 를 단독 생성하여 부착한다.', type: true },
-            { text: '기존 사용하던 Network Interface 에 Secondary IP 를 추가한다.', type: false },
-            { text: '서버 IP 를 추가 부여하는 것이 불가능하다.', type: false },
         ],
     },
     {
@@ -432,39 +378,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Cloud DB for MySQL 운영 중에 문제가 발생하여 에러 로그를 확인해보고자 한다. Cloud DB for MySQL 의 로그를 확인해볼 수 있는 방법을 모두 고르시오',
-        answer: [
-            { text: 'CLA 에서 CDB_mysql_error 로 확인', type: true },
-            { text: 'Cloud DB for MySQL > Monitoring > DB Log 에서 확인', type: false },
-            { text: 'Cloud insight 서비스에서 error log 확인', type: true },
-            { text: 'Cloud Resource Manger 에서 error log 확인', type: false },
-        ],
-    },
-    {
         question: 'Java 분산 서비스 및 시스템의 지속적인 성능 분석을 제공하며, 오류 발생 가능성에 대한 진단과 추적을 지원하는 플랫폼 서비스 상품의 이름은?',
         answer: [
             { text: 'Pinpoint', type: true },
             { text: 'API Gateway', type: false },
             { text: 'SENS', type: false },
             { text: 'WMS', type: false },
-        ],
-    },
-    {
-        question: '아파치 웹서버 성능 측정 툴인 ab 의 여러 옵션들 중 프록시 서버를 사용해 요청할 수 있는 옵션은?',
-        answer: [
-            { text: 'n', type: false },
-            { text: 'x', type: true },
-            { text: 'g', type: false },
-            { text: 't', type: false },
-        ],
-    },
-    {
-        question: 'VPC 플랫폼을 사용중입니다. 사내 네트워크에서 네이버 클라우드 플랫폼 인프라에 구축한 서버로 ping 이 가지 않습니다. 이 때 정책적으로 살펴보아야 하는 요소에는 어떤 것들이 있습니까? (복수정답)',
-        answer: [
-            { text: 'Server Image', type: false },
-            { text: 'Storage', type: false },
-            { text: 'ACG', type: true },
-            { text: 'NACL', type: true },
         ],
     },
     {
@@ -729,15 +648,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '김초록씨는 Sub Account 상품을 통해 여러 사람들과 같은 인프라 환경을 운영중입니다. 상부에서 사용되지 않는 리소스는 없는지 조사하라는 지시가 내려왔습니다. 가장 적절한 액션으로 올바른 것은?',
-        answer: [
-            { text: '힘을 합쳐 여렷이서 모든 상품 댐을 눌러 조사한다.', type: false },
-            { text: 'Resource 상품을 통해 사용하고 있는 전체 리소스를 확인한다.', type: false },
-            { text: '리소스를 몇 개 삭제하고 끝낸다.', type: false },
-            { text: 'Cloud Advisor 상품을 통해 사용하고 있는 전체 리소스를 확인한다.', type: true },
-        ],
-    },
-    {
         question: 'nscd에 대한 설명으로 옳은 것은?',
         answer: [
             { text: '네임 서비스를 제공하기 위한 서버 데몬', type: false },
@@ -801,15 +711,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '다음 프로그램 중 성격이 다른 프로그램은?',
-        answer: [
-            { text: 'tcpdump', type: false },
-            { text: 'network monitor', type: false },
-            { text: 'nmap', type: true },
-            { text: 'wireshark', type: false },
-        ],
-    },
-    {
         question: '로그에 대하여 정해진 처리방식으로 삭제하거나 파일을 바꿔줌으로써, 시스템 성능을 높이는 역할을 수행하는 것은?',
         answer: [
             { text: 'logtemp', type: false },
@@ -837,39 +738,12 @@ const ncp207 = [
         ],
     },
     {
-        question: 'Classic 플랫폼을 사용중입니다. SSL VPN 상품을 신청 후, 네이버 클라우드 플랫폼 서버에 접속을 시도 시 접속이 되지 않습니다. 어떤 부분을 확인해야 하나요?',
-        answer: [
-            { text: 'NACL', type: false },
-            { text: 'ACG', type: true },
-            { text: 'Subnet', type: false },
-            { text: 'Public IP', type: false },
-        ],
-    },
-    {
-        question: '김초록씨는 네이버 클라우드 플랫폼에서 여러 대의 SSD 서버를 운영중입니다. 상부에서 서버 운영 비용을 절감할 수 있는 대안을 제시하라는 지시가 내려왔습니다. 이 때 성능이 저하되어서는 안됩니다. 가장 올바른 방법은 무엇인가요?',
-        answer: [
-            { text: '사용하고 있는 스토리지 종류는 HDD로 변경한다', type: false },
-            { text: 'Auto Scaling을 통해 트래픽에 따라 서버가 자동으로 증감하도록 구조를 변경한다.', type: true },
-            { text: '운영중인 서버 스펙을 한 단계 낮춘다', type: false },
-            { text: '서버를 몇 대 지워 눈속임 한다.', type: false },
-        ],
-    },
-    {
         question: 'Cloud DB for MySQL 운영 중에 문제가 발생하여 에러 로그를 확인해보고자 한다. Cloud DB for MySQL의 로그를 확인해 볼 수 있는 방법을 모두 고르시오',
         answer: [
             { text: 'CLA에서 Cdb_mysql_error 로그 확인', type: true },
             { text: 'Cloud DB for MySQL > Monitoring > DB Log에서 확인', type: true },
             { text: 'Cloud Insight 서비스에서 error log 확인', type: false },
             { text: 'Cloud Resource Manager에서 error log 확인', type: false },
-        ],
-    },
-    {
-        question: 'VPC 플랫폼을 사용중입니다. 사내 네트워크에서 네이버 클라우드 플랫폼 인프라에 구축한 서버로 ping이 가지 않습니다. 이 때 정책적으로 살펴보아야 하는 요소에는 어떤 것들이 있습니까? (복수 정답)',
-        answer: [
-            { text: 'Server Image', type: false },
-            { text: 'Storage', type: false },
-            { text: 'ACG', type: true },
-            { text: 'NACL', type: true },
         ],
     },
     {
@@ -888,15 +762,6 @@ const ncp207 = [
             { text: 'Slave 서버에 고의 장애를 발생시킨다', type: false },
             { text: '할 수 있는 방법이 없다', type: false },
             { text: 'DB 관리에서 Master DB Fail Over 기능을 작동시킨다', type: true },
-        ],
-    },
-    {
-        question: 'Classic 플랫폼을 사용중입니다. SSL VPN 상품을 신청 후, 네이버 클라우드 플랫폼 서버에 접속을 시도 시 접속이 되지 않습니다. 어떤 부분을 확인해야 하나요?',
-        answer: [
-            { text: 'NACL', type: false },
-            { text: 'ACG', type: true },
-            { text: 'Subnet', type: false },
-            { text: 'Public IP', type: false },
         ],
     },
     {
@@ -921,10 +786,10 @@ const ncp207 = [
     {
         question: '다음 중, Cloud DB for MS-SQL의 백업에 대한 설명 중 옳은 것은?',
         answer: [
-            { text: 'DB 백업파일 보관기간은 최소 1일에서 최대 20일까지 선택할 수 있습니다', type: true },
+            { text: 'DB 백업파일 보관기간은 최소 1일에서 최대 20일까지 선택할 수 있습니다', type: false },
             { text: 'DB 백업파일은 별도의 스토리지에 보관되며, 보관 비용은 Cloud DB for MS-SQL 사용 요금에 포함되어 있습니다.', type: false },
             { text: '백업 시간은 사용자 정의 선택시 15분 단위로 선택이 가능합니다.', type: false },
-            { text: '백업 시간으로 자동을 선택하게 되면, 매번 임의의 시간에 백업이 진행됩니다.', type: false },
+            { text: '백업 시간으로 자동을 선택하게 되면, 매번 임의의 시간에 백업이 진행됩니다.', type: true },
         ],
     },
     {
