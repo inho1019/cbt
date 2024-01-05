@@ -23,11 +23,11 @@ const Start = (props) => {
             <h3>시험 유형을 선택하세요</h3>
             <select onChange={(e) => onSelect(e)} className={styles.sel}>
                 <option value='-1'>선택</option>
-                <option value='0'>NCA 문제은행({nca})</option>
-                <option value='1'>NCA 예상기출({nca2})</option>
-                <option value='2'>NCP200 문제은행({ncp200})</option>
-                <option value='3'>NCP202 문제은행({ncp202})</option>
-                <option value='4'>NCP207 문제은행({ncp207})</option>
+                <option value='0'>NCA({nca})</option>
+                <option value='1'>NCA 예상({nca2})</option>
+                <option value='2'>NCP200({ncp200})</option>
+                <option value='3'>NCP202({ncp202})</option>
+                <option value='4'>NCP207({ncp207})</option>
             </select>
             {
                 sel !== '-1' && <div>

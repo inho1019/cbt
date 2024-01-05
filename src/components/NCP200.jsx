@@ -279,15 +279,6 @@ const ncp200 = [
         ]
     },
     {
-        question: '다음 중 네이버 클라우드 플랫폼의 특징으로 올바른 것은? (복수정답)',
-        answer: [
-            { text: '24 시간 365 일 운영하는 고객센터를 보유', type: true },
-            { text: '국내에 데이터센터를 1 개 보유', type: false },
-            { text: '웹콘솔만 사용 가능', type: false },
-            { text: '다양한 리전을 보유', type: true },
-        ]
-    },
-    {
         question: '네이버 클라우드 플랫폼 쿠버네티스의 Ingress 에 대한 설명으로 틀린 것은?',
         answer: [
             { text: '외부에서 오는 Traffic 들을 클러스터 내부의 Service 로 라우팅하기 위한 규칙의 집합이다.', type: false },

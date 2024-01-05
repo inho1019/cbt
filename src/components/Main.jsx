@@ -12,7 +12,7 @@ import styles from '../css/cbt.module.css';
 const Main = () => {
     const [result,setResult] = useState(0)
     const [question,setQuestion] = useState(0)
-    const [page,setPage] = useState(-1)
+    const [page,setPage] = useState(0)
     const [sel,setSel] = useState('-1')
     const [datas,setDatas] = useState([])
     const [wrongData,setWrongData] = useState([])
@@ -95,7 +95,7 @@ const Main = () => {
     return (
         <div className={styles.box}>
             <h2  style={{color: mode ? '#ffd6e1' : 'skyblue'}} onClick={()=>setMode(!mode)}>{page >= 0 && 'NAVER Cloud Certified CBT'}</h2>
-            <h2>{sel === '0' && 'NCA 문제은행'}{sel === '1' && 'NCA 예상기출'}{sel === '2' && 'NCP200 문제은행'}{sel === '3' && 'NCP202 문제은행'}{sel === '4' && 'NCP207 문제은행'}</h2>
+            <h2>{sel === '0' && 'NCA'}{sel === '1' && 'NCA 예상'}{sel === '2' && 'NCP200'}{sel === '3' && 'NCP202'}{sel === '4' && 'NCP207'}</h2>
             {
                 page === -1 && <div>
                     <p>패스워드 입력 : <input type='password' value={pass} onChange={(e) => setPass(e.target.value)}/></p>

@@ -785,15 +785,6 @@ const ncp207 = [
         ],
     },
     {
-        question: '실 서버스 투입 전 리얼 환경과 유사 환경 구현 후 서버가 수용할 수 있는 사용자(vuser)를 확인할 수 있는 부하 테스트를 위한 툴 이름을 고르시오.',
-        answer: [
-            { text: 'Wireshark', type: false },
-            { text: 'nGninder', type: true },
-            { text: 'Pinpoint', type: false },
-            { text: 'Web Service Monitoring System (WMS)', type: false },
-        ],
-    },
-    {
         question: '네이버 클라우드 플랫폼 Load Balancer의 헬스체크에 대한 설명 중 잘못된 것은?',
         answer: [
             { text: 'VPC 환경에서는 헬스체크 간격이 디폴트 30초이지만, 수치 변경이 가능하다.', type: false },
